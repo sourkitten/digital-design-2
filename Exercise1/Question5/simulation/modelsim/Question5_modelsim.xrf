@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question5/Question5.bdf
+source_file = 1, C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question5/Question5.vwf
+source_file = 1, C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question5/db/Question5.cbx.xml
+design_name = Question5
+instance = comp, \K~I , K, Question5, 1
+instance = comp, \CLK~I , CLK, Question5, 1
+instance = comp, \CLRN~I , CLRN, Question5, 1
+instance = comp, \SET~I , SET, Question5, 1
+instance = comp, \inst~1 , inst~1, Question5, 1
+instance = comp, \J~I , J, Question5, 1
+instance = comp, \inst~3 , inst~3, Question5, 1
+instance = comp, \inst~0 , inst~0, Question5, 1
+instance = comp, \inst~_emulated , inst~_emulated, Question5, 1
+instance = comp, \inst~2 , inst~2, Question5, 1
+instance = comp, \Q~I , Q, Question5, 1
