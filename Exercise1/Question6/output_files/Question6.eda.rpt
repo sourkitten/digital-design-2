@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Question6
-Thu Mar 10 21:22:03 2022
+Thu Mar 10 22:51:38 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Mar 10 21:22:03 2022 ;
+; EDA Netlist Writer Status ; Successful - Thu Mar 10 22:51:38 2022 ;
 ; Revision Name             ; Question6                             ;
 ; Top-level Entity Name     ; Question6                             ;
 ; Family                    ; Cyclone II                            ;
@@ -84,12 +84,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Mar 10 21:22:02 2022
+    Info: Processing started: Thu Mar 10 22:51:37 2022
 Info: Command: quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog Question6 -c Question6
 Info (204026): Generated files "Question6.vo", "Question6_fast.vo", "Question6_v.sdo" and "Question6_v_fast.sdo" in directory "C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question6/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4517 megabytes
-    Info: Processing ended: Thu Mar 10 21:22:03 2022
+    Info: Processing ended: Thu Mar 10 22:51:38 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

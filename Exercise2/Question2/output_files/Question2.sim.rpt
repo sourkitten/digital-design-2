@@ -1,0 +1,310 @@
+Simulator report for Question2
+Sun Mar 13 16:45:12 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 860.0 ns     ;
+; Simulation Netlist Size     ; 129 nodes    ;
+; Simulation Coverage         ;      90.70 % ;
+; Total Number of Transitions ; 1333         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                   ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                 ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                              ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                    ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                     ;               ;
+; Vector input source                                                                        ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2/Question2/Question2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                      ; On            ;
+; Check outputs                                                                              ; Off                                                                     ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                      ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                      ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                      ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                      ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                     ; Off           ;
+; Detect glitches                                                                            ; Off                                                                     ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                     ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                     ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                     ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                     ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                      ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                              ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                     ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                     ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                    ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      90.70 % ;
+; Total nodes checked                                 ; 129          ;
+; Total output ports checked                          ; 129          ;
+; Total output ports with complete 1/0-value coverage ; 117          ;
+; Total output ports with no 1/0-value coverage       ; 11           ;
+; Total output ports with no 1-value coverage         ; 11           ;
+; Total output ports with no 0-value coverage         ; 12           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                  ;
++---------------------------------------------+---------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                            ; Output Port Type ;
++---------------------------------------------+---------------------------------------------+------------------+
+; |accumulator|Hex6[6]                        ; |accumulator|Hex6[6]                        ; pin_out          ;
+; |accumulator|Hex6[5]                        ; |accumulator|Hex6[5]                        ; pin_out          ;
+; |accumulator|Hex6[4]                        ; |accumulator|Hex6[4]                        ; pin_out          ;
+; |accumulator|Hex6[3]                        ; |accumulator|Hex6[3]                        ; pin_out          ;
+; |accumulator|Hex6[2]                        ; |accumulator|Hex6[2]                        ; pin_out          ;
+; |accumulator|Hex6[1]                        ; |accumulator|Hex6[1]                        ; pin_out          ;
+; |accumulator|Hex6[0]                        ; |accumulator|Hex6[0]                        ; pin_out          ;
+; |accumulator|R[7]                           ; |accumulator|R[7]                           ; pin_out          ;
+; |accumulator|R[6]                           ; |accumulator|R[6]                           ; pin_out          ;
+; |accumulator|R[5]                           ; |accumulator|R[5]                           ; pin_out          ;
+; |accumulator|R[4]                           ; |accumulator|R[4]                           ; pin_out          ;
+; |accumulator|R[3]                           ; |accumulator|R[3]                           ; pin_out          ;
+; |accumulator|R[2]                           ; |accumulator|R[2]                           ; pin_out          ;
+; |accumulator|R[1]                           ; |accumulator|R[1]                           ; pin_out          ;
+; |accumulator|R[0]                           ; |accumulator|R[0]                           ; pin_out          ;
+; |accumulator|clk                            ; |accumulator|clk                            ; out              ;
+; |accumulator|reset                          ; |accumulator|reset                          ; out              ;
+; |accumulator|E                              ; |accumulator|E                              ; out              ;
+; |accumulator|I[3]                           ; |accumulator|I[3]                           ; out              ;
+; |accumulator|I[2]                           ; |accumulator|I[2]                           ; out              ;
+; |accumulator|I[1]                           ; |accumulator|I[1]                           ; out              ;
+; |accumulator|I[0]                           ; |accumulator|I[0]                           ; out              ;
+; |accumulator|Hex7[6]                        ; |accumulator|Hex7[6]                        ; pin_out          ;
+; |accumulator|Hex7[5]                        ; |accumulator|Hex7[5]                        ; pin_out          ;
+; |accumulator|Hex7[4]                        ; |accumulator|Hex7[4]                        ; pin_out          ;
+; |accumulator|Hex7[3]                        ; |accumulator|Hex7[3]                        ; pin_out          ;
+; |accumulator|Hex7[2]                        ; |accumulator|Hex7[2]                        ; pin_out          ;
+; |accumulator|Hex7[1]                        ; |accumulator|Hex7[1]                        ; pin_out          ;
+; |accumulator|Hex7[0]                        ; |accumulator|Hex7[0]                        ; pin_out          ;
+; |accumulator|SEG7_LUT:inst10|WideOr0        ; |accumulator|SEG7_LUT:inst10|WideOr0        ; out0             ;
+; |accumulator|SEG7_LUT:inst10|WideOr1        ; |accumulator|SEG7_LUT:inst10|WideOr1        ; out0             ;
+; |accumulator|SEG7_LUT:inst10|WideOr2        ; |accumulator|SEG7_LUT:inst10|WideOr2        ; out0             ;
+; |accumulator|SEG7_LUT:inst10|WideOr3        ; |accumulator|SEG7_LUT:inst10|WideOr3        ; out0             ;
+; |accumulator|SEG7_LUT:inst10|WideOr4        ; |accumulator|SEG7_LUT:inst10|WideOr4        ; out0             ;
+; |accumulator|SEG7_LUT:inst10|WideOr5        ; |accumulator|SEG7_LUT:inst10|WideOr5        ; out0             ;
+; |accumulator|SEG7_LUT:inst10|WideOr6        ; |accumulator|SEG7_LUT:inst10|WideOr6        ; out0             ;
+; |accumulator|Question2:inst1|xor1           ; |accumulator|Question2:inst1|xor1           ; out0             ;
+; |accumulator|Question2:inst1|xoe2           ; |accumulator|Question2:inst1|xoe2           ; out0             ;
+; |accumulator|Question2:inst1|xor3           ; |accumulator|Question2:inst1|xor3           ; out0             ;
+; |accumulator|Question2:inst1|xor4           ; |accumulator|Question2:inst1|xor4           ; out0             ;
+; |accumulator|Question2:inst1|FA:inst8|inst1 ; |accumulator|Question2:inst1|FA:inst8|inst1 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst8|inst  ; |accumulator|Question2:inst1|FA:inst8|inst  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst6|inst6 ; |accumulator|Question2:inst1|FA:inst6|inst6 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst6|inst3 ; |accumulator|Question2:inst1|FA:inst6|inst3 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst6|inst4 ; |accumulator|Question2:inst1|FA:inst6|inst4 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst6|inst2 ; |accumulator|Question2:inst1|FA:inst6|inst2 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst6|inst1 ; |accumulator|Question2:inst1|FA:inst6|inst1 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst6|inst  ; |accumulator|Question2:inst1|FA:inst6|inst  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst7|inst6 ; |accumulator|Question2:inst1|FA:inst7|inst6 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst7|inst3 ; |accumulator|Question2:inst1|FA:inst7|inst3 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst7|inst4 ; |accumulator|Question2:inst1|FA:inst7|inst4 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst7|inst2 ; |accumulator|Question2:inst1|FA:inst7|inst2 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst7|inst1 ; |accumulator|Question2:inst1|FA:inst7|inst1 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst7|inst  ; |accumulator|Question2:inst1|FA:inst7|inst  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst5|inst6 ; |accumulator|Question2:inst1|FA:inst5|inst6 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst5|inst3 ; |accumulator|Question2:inst1|FA:inst5|inst3 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst5|inst4 ; |accumulator|Question2:inst1|FA:inst5|inst4 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst5|inst2 ; |accumulator|Question2:inst1|FA:inst5|inst2 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst5|inst1 ; |accumulator|Question2:inst1|FA:inst5|inst1 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst5|inst  ; |accumulator|Question2:inst1|FA:inst5|inst  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst4|inst6 ; |accumulator|Question2:inst1|FA:inst4|inst6 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst4|inst3 ; |accumulator|Question2:inst1|FA:inst4|inst3 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst4|inst4 ; |accumulator|Question2:inst1|FA:inst4|inst4 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst4|inst2 ; |accumulator|Question2:inst1|FA:inst4|inst2 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst4|inst1 ; |accumulator|Question2:inst1|FA:inst4|inst1 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst4|inst  ; |accumulator|Question2:inst1|FA:inst4|inst  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst3|inst6 ; |accumulator|Question2:inst1|FA:inst3|inst6 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst3|inst3 ; |accumulator|Question2:inst1|FA:inst3|inst3 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst3|inst4 ; |accumulator|Question2:inst1|FA:inst3|inst4 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst3|inst2 ; |accumulator|Question2:inst1|FA:inst3|inst2 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst3|inst1 ; |accumulator|Question2:inst1|FA:inst3|inst1 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst3|inst  ; |accumulator|Question2:inst1|FA:inst3|inst  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst2|inst6 ; |accumulator|Question2:inst1|FA:inst2|inst6 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst2|inst3 ; |accumulator|Question2:inst1|FA:inst2|inst3 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst2|inst4 ; |accumulator|Question2:inst1|FA:inst2|inst4 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst2|inst2 ; |accumulator|Question2:inst1|FA:inst2|inst2 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst2|inst1 ; |accumulator|Question2:inst1|FA:inst2|inst1 ; out0             ;
+; |accumulator|Question2:inst1|FA:inst2|inst  ; |accumulator|Question2:inst1|FA:inst2|inst  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst|inst6  ; |accumulator|Question2:inst1|FA:inst|inst6  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst|inst3  ; |accumulator|Question2:inst1|FA:inst|inst3  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst|inst2  ; |accumulator|Question2:inst1|FA:inst|inst2  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst|inst1  ; |accumulator|Question2:inst1|FA:inst|inst1  ; out0             ;
+; |accumulator|Question2:inst1|FA:inst|inst   ; |accumulator|Question2:inst1|FA:inst|inst   ; out0             ;
+; |accumulator|lpm_ff:inst|dffs[7]            ; |accumulator|lpm_ff:inst|dffs[7]            ; regout           ;
+; |accumulator|lpm_ff:inst|dffs[6]            ; |accumulator|lpm_ff:inst|dffs[6]            ; regout           ;
+; |accumulator|lpm_ff:inst|dffs[5]            ; |accumulator|lpm_ff:inst|dffs[5]            ; regout           ;
+; |accumulator|lpm_ff:inst|dffs[4]            ; |accumulator|lpm_ff:inst|dffs[4]            ; regout           ;
+; |accumulator|lpm_ff:inst|dffs[3]            ; |accumulator|lpm_ff:inst|dffs[3]            ; regout           ;
+; |accumulator|lpm_ff:inst|dffs[2]            ; |accumulator|lpm_ff:inst|dffs[2]            ; regout           ;
+; |accumulator|lpm_ff:inst|dffs[1]            ; |accumulator|lpm_ff:inst|dffs[1]            ; regout           ;
+; |accumulator|lpm_ff:inst|dffs[0]            ; |accumulator|lpm_ff:inst|dffs[0]            ; regout           ;
+; |accumulator|SEG7_LUT:inst11|WideOr0        ; |accumulator|SEG7_LUT:inst11|WideOr0        ; out0             ;
+; |accumulator|SEG7_LUT:inst11|WideOr1        ; |accumulator|SEG7_LUT:inst11|WideOr1        ; out0             ;
+; |accumulator|SEG7_LUT:inst11|WideOr2        ; |accumulator|SEG7_LUT:inst11|WideOr2        ; out0             ;
+; |accumulator|SEG7_LUT:inst11|WideOr3        ; |accumulator|SEG7_LUT:inst11|WideOr3        ; out0             ;
+; |accumulator|SEG7_LUT:inst11|WideOr4        ; |accumulator|SEG7_LUT:inst11|WideOr4        ; out0             ;
+; |accumulator|SEG7_LUT:inst11|WideOr5        ; |accumulator|SEG7_LUT:inst11|WideOr5        ; out0             ;
+; |accumulator|SEG7_LUT:inst11|WideOr6        ; |accumulator|SEG7_LUT:inst11|WideOr6        ; out0             ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~0     ; |accumulator|SEG7_LUT:inst10|Decoder0~0     ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~1     ; |accumulator|SEG7_LUT:inst10|Decoder0~1     ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~2     ; |accumulator|SEG7_LUT:inst10|Decoder0~2     ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~3     ; |accumulator|SEG7_LUT:inst10|Decoder0~3     ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~4     ; |accumulator|SEG7_LUT:inst10|Decoder0~4     ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~5     ; |accumulator|SEG7_LUT:inst10|Decoder0~5     ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~6     ; |accumulator|SEG7_LUT:inst10|Decoder0~6     ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~7     ; |accumulator|SEG7_LUT:inst10|Decoder0~7     ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~0     ; |accumulator|SEG7_LUT:inst11|Decoder0~0     ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~1     ; |accumulator|SEG7_LUT:inst11|Decoder0~1     ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~2     ; |accumulator|SEG7_LUT:inst11|Decoder0~2     ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~3     ; |accumulator|SEG7_LUT:inst11|Decoder0~3     ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~6     ; |accumulator|SEG7_LUT:inst11|Decoder0~6     ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~7     ; |accumulator|SEG7_LUT:inst11|Decoder0~7     ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~10    ; |accumulator|SEG7_LUT:inst11|Decoder0~10    ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~11    ; |accumulator|SEG7_LUT:inst11|Decoder0~11    ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~12    ; |accumulator|SEG7_LUT:inst11|Decoder0~12    ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~13    ; |accumulator|SEG7_LUT:inst11|Decoder0~13    ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~14    ; |accumulator|SEG7_LUT:inst11|Decoder0~14    ; out              ;
++---------------------------------------------+---------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                   ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |accumulator|Question2:inst1|FA:inst|inst4 ; |accumulator|Question2:inst1|FA:inst|inst4 ; out0             ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~8    ; |accumulator|SEG7_LUT:inst10|Decoder0~8    ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~9    ; |accumulator|SEG7_LUT:inst10|Decoder0~9    ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~10   ; |accumulator|SEG7_LUT:inst10|Decoder0~10   ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~11   ; |accumulator|SEG7_LUT:inst10|Decoder0~11   ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~12   ; |accumulator|SEG7_LUT:inst10|Decoder0~12   ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~13   ; |accumulator|SEG7_LUT:inst10|Decoder0~13   ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~4    ; |accumulator|SEG7_LUT:inst11|Decoder0~4    ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~5    ; |accumulator|SEG7_LUT:inst11|Decoder0~5    ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~8    ; |accumulator|SEG7_LUT:inst11|Decoder0~8    ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~9    ; |accumulator|SEG7_LUT:inst11|Decoder0~9    ; out              ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                   ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |accumulator|Question2:inst1|FA:inst|inst4 ; |accumulator|Question2:inst1|FA:inst|inst4 ; out0             ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~8    ; |accumulator|SEG7_LUT:inst10|Decoder0~8    ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~9    ; |accumulator|SEG7_LUT:inst10|Decoder0~9    ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~10   ; |accumulator|SEG7_LUT:inst10|Decoder0~10   ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~11   ; |accumulator|SEG7_LUT:inst10|Decoder0~11   ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~12   ; |accumulator|SEG7_LUT:inst10|Decoder0~12   ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~13   ; |accumulator|SEG7_LUT:inst10|Decoder0~13   ; out              ;
+; |accumulator|SEG7_LUT:inst10|Decoder0~14   ; |accumulator|SEG7_LUT:inst10|Decoder0~14   ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~4    ; |accumulator|SEG7_LUT:inst11|Decoder0~4    ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~5    ; |accumulator|SEG7_LUT:inst11|Decoder0~5    ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~8    ; |accumulator|SEG7_LUT:inst11|Decoder0~8    ; out              ;
+; |accumulator|SEG7_LUT:inst11|Decoder0~9    ; |accumulator|SEG7_LUT:inst11|Decoder0~9    ; out              ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Mar 13 16:45:12 2022
+Info: Command: quartus_sim --simulation_results_format=VWF Question2 -c Question2
+Info (324025): Using vector source file "C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2/Question2/Question2.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning (324036): Found clock-sensitive change during active clock edge at time 60.0 ns on register "|accumulator|lpm_ff:inst|dffs[0]"
+Warning (324036): Found clock-sensitive change during active clock edge at time 100.0 ns on register "|accumulator|lpm_ff:inst|dffs[2]"
+Warning (324036): Found clock-sensitive change during active clock edge at time 100.0 ns on register "|accumulator|lpm_ff:inst|dffs[1]"
+Warning (324036): Found clock-sensitive change during active clock edge at time 140.0 ns on register "|accumulator|lpm_ff:inst|dffs[3]"
+Warning (324036): Found clock-sensitive change during active clock edge at time 180.0 ns on register "|accumulator|lpm_ff:inst|dffs[4]"
+Warning (324036): Found clock-sensitive change during active clock edge at time 260.0 ns on register "|accumulator|lpm_ff:inst|dffs[7]"
+Warning (324036): Found clock-sensitive change during active clock edge at time 260.0 ns on register "|accumulator|lpm_ff:inst|dffs[6]"
+Warning (324036): Found clock-sensitive change during active clock edge at time 260.0 ns on register "|accumulator|lpm_ff:inst|dffs[5]"
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      90.70 %
+Info (328052): Number of transitions in simulation is 1333
+Info (324045): Vector file Question2.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4442 megabytes
+    Info: Processing ended: Sun Mar 13 16:45:12 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

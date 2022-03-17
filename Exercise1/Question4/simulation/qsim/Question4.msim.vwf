@@ -307,13 +307,14 @@ TRANSITION_LIST("Question4_vlg_vec_tst|Q")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
+		LEVEL X FOR 4.186;
+		LEVEL 0 FOR 77.52;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 23.459;
+		LEVEL 0 FOR 100.246;
+		LEVEL 1 FOR 76.295;
+		LEVEL 0 FOR 18.294;
 	}
 }
 
@@ -400,7 +401,7 @@ TRANSITION_LIST("Question4_vlg_vec_tst|i1|CLK~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 25.0;
+		LEVEL 0 FOR 25.84;
 		LEVEL 1 FOR 25.0;
 		LEVEL 0 FOR 25.0;
 		LEVEL 1 FOR 25.0;
@@ -415,7 +416,7 @@ TRANSITION_LIST("Question4_vlg_vec_tst|i1|CLK~combout")
 		LEVEL 0 FOR 25.0;
 		LEVEL 1 FOR 25.0;
 		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 25.0;
+		LEVEL 1 FOR 24.16;
 	}
 }
 
@@ -424,10 +425,10 @@ TRANSITION_LIST("Question4_vlg_vec_tst|i1|CLRN~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 25.0;
+		LEVEL 0 FOR 25.979;
 		LEVEL 1 FOR 175.0;
 		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 150.0;
+		LEVEL 1 FOR 149.021;
 	}
 }
 
@@ -436,9 +437,9 @@ TRANSITION_LIST("Question4_vlg_vec_tst|i1|SET~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 300.0;
+		LEVEL 1 FOR 300.979;
 		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
+		LEVEL 1 FOR 49.021;
 	}
 }
 
@@ -447,8 +448,9 @@ TRANSITION_LIST("Question4_vlg_vec_tst|i1|inst~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 300.0;
-		LEVEL 1 FOR 100.0;
+		LEVEL X FOR 1.087;
+		LEVEL 0 FOR 301.024;
+		LEVEL 1 FOR 97.889;
 	}
 }
 
@@ -457,11 +459,11 @@ TRANSITION_LIST("Question4_vlg_vec_tst|i1|D~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 50.85;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 150.0;
+		LEVEL 0 FOR 149.15;
 	}
 }
 
@@ -470,12 +472,13 @@ TRANSITION_LIST("Question4_vlg_vec_tst|i1|inst~3_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL X FOR 4.946;
+		LEVEL 0 FOR 50.85;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 47.026;
+		LEVEL 1 FOR 97.178;
 	}
 }
 
@@ -484,12 +487,13 @@ TRANSITION_LIST("Question4_vlg_vec_tst|i1|inst~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 25.0;
+		LEVEL X FOR 0.814;
+		LEVEL 1 FOR 25.979;
 		LEVEL 0 FOR 175.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 50.277;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 47.93;
 	}
 }
 
@@ -498,12 +502,13 @@ TRANSITION_LIST("Question4_vlg_vec_tst|i1|inst~_emulated_regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 77.357;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 175.0;
-		LEVEL 1 FOR 25.0;
+		LEVEL 1 FOR 25.386;
+		LEVEL 0 FOR 174.614;
+		LEVEL 1 FOR 22.425;
 	}
 }
 
@@ -512,13 +517,14 @@ TRANSITION_LIST("Question4_vlg_vec_tst|i1|inst~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
+		LEVEL X FOR 0.815;
+		LEVEL 0 FOR 77.52;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 23.459;
+		LEVEL 0 FOR 100.246;
+		LEVEL 1 FOR 76.295;
+		LEVEL 0 FOR 21.665;
 	}
 }
 

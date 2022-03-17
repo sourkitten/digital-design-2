@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise2\Question1\simulation\qsim
+vaccumulator
+Z1 I]5EOkjbLWlV4cIL[B=j[:3
+Z2 VHfQOcNXKeUh]Vk[c=bJdU2
+Z3 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise2\Question1\simulation\qsim
+Z4 w1647544994
+Z5 8Question1.vo
+Z6 FQuestion1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Question1.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 XBkRPVdkP<TdU9hj<GTS]1
+!s85 0
+Z11 !s108 1647544995.433000
+Z12 !s107 Question1.vo|
+!s101 -O0
+vaccumulator_vlg_check_tst
+!i10b 1
+!s100 Vg3ZMRKQdOX_ba`O7ao:d1
+IS`FgSf:m[WAGQQ:X5GK_50
+Z13 VSZCzC>5RaT6IgeY8C_a=93
+R3
+Z14 w1647544993
+Z15 8Question1.vt
+Z16 FQuestion1.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1647544995.537000
+Z18 !s107 Question1.vt|
+Z19 !s90 -work|work|Question1.vt|
+!s101 -O0
+R9
+vaccumulator_vlg_sample_tst
+!i10b 1
+Z20 !s100 :MOLXQK]XaOQYhBST>Aj?0
+Z21 Ig5PO?i=VYRVBiVcTZn=7E1
+Z22 VR_e6FUFa4z^21i?;WLaZL3
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+vaccumulator_vlg_vec_tst
+!i10b 1
+!s100 2YUFBG]FBiPV?Ybe1l`Y;2
+IUFjcl7dFQbh9^7C?RJ5mi3
+Z23 V]`K]f[KoBNjIVB5ITdg^`3
+R3
+R14
+R15
+R16
+Z24 L0 291
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+vQuestion1
+Z25 IKVk8USbO2S4IOAkf597L_3
+Z26 VeOj6dTjgbP?>^<SIbBj>R0
+R3
+Z27 w1647173248
+R5
+R6
+L0 31
+R7
+r1
+31
+R9
+Z28 n@question1
+Z29 !s100 jkN?=6SMAnON9X6BW6FcD1
+Z30 !s108 1647173250.440000
+R12
+R8
+!i10b 1
+!s85 0
+!s101 -O0
+vQuestion1_vlg_check_tst
+Z31 IFhCNY:H2:VR97nIeGY;<?1
+Z32 VSDI<<3@^f?V`TZ_Z^[nI;0
+R3
+Z33 w1647173246
+R15
+R16
+L0 59
+R7
+r1
+31
+Z34 !s108 1647173250.661000
+Z35 !s107 Question1.vt|
+R19
+R9
+Z36 n@question1_vlg_check_tst
+Z37 !s100 ZZE0R4hlaB`I4LbA_3^Z=3
+!i10b 1
+!s85 0
+!s101 -O0
+vQuestion1_vlg_sample_tst
+Z38 IA6ma>m7IZG75o5>JK]G[o1
+Z39 V:62Z;moD:3J8L6@W6f:z;1
+R3
+R33
+R15
+R16
+L0 29
+R7
+r1
+31
+R34
+R35
+R19
+R9
+Z40 n@question1_vlg_sample_tst
+Z41 !s100 1m<NK5175CD6=dQ]dXlTK3
+!i10b 1
+!s85 0
+!s101 -O0
+vQuestion1_vlg_vec_tst
+Z42 IYZ1RJQjcH_ATDMVdo`9Y>3
+Z43 V5cezemHb@:eV_JSKPZmb?0
+R3
+R33
+R15
+R16
+Z44 L0 279
+R7
+r1
+31
+R34
+R35
+R19
+R9
+Z45 n@question1_vlg_vec_tst
+Z46 !s100 2c37YD1@2mBolV7FDGY_;3
+!i10b 1
+!s85 0
+!s101 -O0

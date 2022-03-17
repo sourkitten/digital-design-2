@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Question4
-Thu Mar 10 20:48:36 2022
+Thu Mar 10 22:49:05 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 10 20:48:36 2022           ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 10 22:49:05 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Question4                                       ;
 ; Top-level Entity Name              ; Question4                                       ;
@@ -233,7 +233,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Mar 10 20:48:35 2022
+    Info: Processing started: Thu Mar 10 22:49:04 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Question4 -c Question4
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file question4.bdf
@@ -249,7 +249,7 @@ Info (21057): Implemented 9 device resources after synthesis - the final resourc
     Info (21061): Implemented 4 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4595 megabytes
-    Info: Processing ended: Thu Mar 10 20:48:36 2022
+    Info: Processing ended: Thu Mar 10 22:49:05 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

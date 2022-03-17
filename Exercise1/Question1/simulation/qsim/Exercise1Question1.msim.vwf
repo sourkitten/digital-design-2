@@ -227,10 +227,8 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|A")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 100.0;
 	}
 }
 
@@ -239,8 +237,10 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|B")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
 	}
 }
 
@@ -250,8 +250,8 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|Y0")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.473;
-		LEVEL 1 FOR 50.979;
-		LEVEL 0 FOR 144.548;
+		LEVEL 1 FOR 50.703;
+		LEVEL 0 FOR 144.824;
 	}
 }
 
@@ -261,9 +261,9 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|Y1")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.19;
-		LEVEL 0 FOR 101.203;
+		LEVEL 0 FOR 50.979;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 44.607;
+		LEVEL 0 FOR 94.831;
 	}
 }
 
@@ -273,9 +273,9 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|Y2")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.468;
-		LEVEL 0 FOR 50.979;
+		LEVEL 0 FOR 100.979;
 		LEVEL 1 FOR 49.726;
-		LEVEL 0 FOR 94.827;
+		LEVEL 0 FOR 44.827;
 	}
 }
 
@@ -285,8 +285,8 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|Y3")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.206;
-		LEVEL 0 FOR 151.225;
-		LEVEL 1 FOR 44.569;
+		LEVEL 0 FOR 150.979;
+		LEVEL 1 FOR 44.815;
 	}
 }
 
@@ -361,10 +361,8 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|i1|A~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.979;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 49.021;
+		LEVEL 0 FOR 100.979;
+		LEVEL 1 FOR 99.021;
 	}
 }
 
@@ -373,8 +371,10 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|i1|B~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.979;
-		LEVEL 1 FOR 99.021;
+		LEVEL 0 FOR 50.979;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 49.021;
 	}
 }
 
@@ -384,8 +384,8 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|i1|inst2~0_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 0.839;
-		LEVEL 0 FOR 151.225;
-		LEVEL 1 FOR 47.936;
+		LEVEL 0 FOR 150.979;
+		LEVEL 1 FOR 48.182;
 	}
 }
 
@@ -395,9 +395,9 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|i1|inst2~1_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.112;
-		LEVEL 0 FOR 50.979;
+		LEVEL 0 FOR 100.979;
 		LEVEL 1 FOR 49.726;
-		LEVEL 0 FOR 98.183;
+		LEVEL 0 FOR 48.183;
 	}
 }
 
@@ -407,9 +407,9 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|i1|inst2~2_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 0.833;
-		LEVEL 0 FOR 101.203;
+		LEVEL 0 FOR 50.979;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 47.964;
+		LEVEL 0 FOR 98.188;
 	}
 }
 
@@ -419,8 +419,8 @@ TRANSITION_LIST("Exercise1Question1_vlg_vec_tst|i1|inst3~combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.105;
-		LEVEL 0 FOR 50.979;
-		LEVEL 1 FOR 147.916;
+		LEVEL 0 FOR 50.703;
+		LEVEL 1 FOR 148.192;
 	}
 }
 

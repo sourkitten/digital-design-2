@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Question4
-Thu Mar 10 20:50:42 2022
+Thu Mar 10 22:49:39 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Mar 10 20:50:42 2022 ;
+; EDA Netlist Writer Status ; Successful - Thu Mar 10 22:49:39 2022 ;
 ; Revision Name             ; Question4                             ;
 ; Top-level Entity Name     ; Question4                             ;
 ; Family                    ; Cyclone II                            ;
@@ -50,7 +50,8 @@ applicable agreement for further details.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate netlist for functional simulation only                                                   ; On                        ;
+; Generate netlist for functional simulation only                                                   ; Off                       ;
+; Time scale                                                                                        ; 1 ps                      ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -65,13 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                 ;
-+--------------------------------------------------------------------------------------------+
-; Generated Files                                                                            ;
-+--------------------------------------------------------------------------------------------+
-; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question4/simulation/modelsim/Question4.vo ;
-+--------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                         ;
++----------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                    ;
++----------------------------------------------------------------------------------------------------+
+; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question4/simulation/modelsim/Question4.vo         ;
+; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question4/simulation/modelsim/Question4_fast.vo    ;
+; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question4/simulation/modelsim/Question4_v.sdo      ;
+; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question4/simulation/modelsim/Question4_v_fast.sdo ;
++----------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,12 +84,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Mar 10 20:50:42 2022
-Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Question4 -c Question4
-Info (204019): Generated file Question4.vo in folder "C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question4/simulation/modelsim/" for EDA simulation tool
+    Info: Processing started: Thu Mar 10 22:49:39 2022
+Info: Command: quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog Question4 -c Question4
+Info (204026): Generated files "Question4.vo", "Question4_fast.vo", "Question4_v.sdo" and "Question4_v_fast.sdo" in directory "C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise1/Question4/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4517 megabytes
-    Info: Processing ended: Thu Mar 10 20:50:42 2022
+    Info: Processing ended: Thu Mar 10 22:49:39 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 

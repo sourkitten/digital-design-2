@@ -1,0 +1,2529 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 160.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 0.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("accumulator_vlg_vec_tst|clk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|I")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|I[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "accumulator_vlg_vec_tst|I";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|I[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "accumulator_vlg_vec_tst|I";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|I[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "accumulator_vlg_vec_tst|I";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|I[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "accumulator_vlg_vec_tst|I";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|reset")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex6[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex6[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex6[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex6[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex6[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex6[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex6[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex7[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex7[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex7[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex7[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex7[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex7[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|Hex7[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|R[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|R[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|R[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|R[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|R[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|R[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|R[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|R[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|sampler")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|gnd")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|vcc")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|unknown")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|devclrn")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|devpor")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|devoe")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|clk~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst|inst~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|reset~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst2|inst1~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst2|inst6~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst3|inst1~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst3|inst6~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst4|inst1~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst11|WideOr0~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst11|WideOr1~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst11|WideOr2~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst11|WideOr3~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst11|WideOr4~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst11|WideOr5~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst11|WideOr6~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|clk~clk_delay_ctrl_clkout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|clk~clkctrl_outclk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst5|inst~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst5|inst1~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst6|inst~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst8|inst~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst1|inst7|inst~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst10|WideOr0~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst10|WideOr1~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst10|WideOr2~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst10|WideOr3~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst10|WideOr4~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst10|WideOr5~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst10|WideOr6~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst|dffs[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst|dffs[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst|dffs[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst|dffs[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst|dffs[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst|dffs[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst|dffs[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|inst|dffs[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|I~combout[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|I~combout[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|I~combout[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("accumulator_vlg_vec_tst|i1|I~combout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|clk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|I[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|I[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|I[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 60.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|I[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|reset")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex6[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.731;
+		LEVEL 1 FOR 52.6;
+		LEVEL 0 FOR 19.802;
+		LEVEL 1 FOR 19.866;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.134;
+		LEVEL 0 FOR 2.867;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex6[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.742;
+		LEVEL 0 FOR 32.146;
+		LEVEL 1 FOR 60.126;
+		LEVEL 0 FOR 20.328;
+		LEVEL 1 FOR 19.77;
+		LEVEL 0 FOR 22.888;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex6[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.296;
+		LEVEL 0 FOR 32.6;
+		LEVEL 1 FOR 60.124;
+		LEVEL 0 FOR 62.98;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex6[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.444;
+		LEVEL 0 FOR 32.472;
+		LEVEL 1 FOR 20.454;
+		LEVEL 0 FOR 19.8;
+		LEVEL 1 FOR 40.2;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 2.63;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex6[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.352;
+		LEVEL 0 FOR 92.276;
+		LEVEL 1 FOR 20.324;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 2.048;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex6[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.892;
+		LEVEL 0 FOR 92.732;
+		LEVEL 1 FOR 20.326;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 2.05;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex6[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.875;
+		LEVEL 0 FOR 32.6;
+		LEVEL 1 FOR 20.438;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 19.824;
+		LEVEL 0 FOR 22.263;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex7[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.626;
+		LEVEL 1 FOR 132.6;
+		LEVEL 0 FOR 22.774;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex7[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.64;
+		LEVEL 0 FOR 112.525;
+		LEVEL 1 FOR 42.835;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex7[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.104;
+		LEVEL 0 FOR 112.435;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 23.461;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex7[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.108;
+		LEVEL 0 FOR 112.435;
+		LEVEL 1 FOR 20.143;
+		LEVEL 0 FOR 23.314;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex7[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.078;
+		LEVEL 0 FOR 132.461;
+		LEVEL 1 FOR 23.461;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex7[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.143;
+		LEVEL 0 FOR 155.857;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|Hex7[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.137;
+		LEVEL 0 FOR 112.435;
+		LEVEL 1 FOR 20.104;
+		LEVEL 0 FOR 23.324;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|R[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3.675;
+		LEVEL 0 FOR 156.325;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|R[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3.672;
+		LEVEL 0 FOR 156.328;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|R[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3.899;
+		LEVEL 0 FOR 132.6;
+		LEVEL 1 FOR 23.501;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|R[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3.674;
+		LEVEL 0 FOR 112.6;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 23.726;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|R[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3.626;
+		LEVEL 0 FOR 92.6;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 3.774;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|R[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3.7;
+		LEVEL 0 FOR 72.6;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 3.7;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|R[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3.846;
+		LEVEL 0 FOR 52.6;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 3.554;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|R[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3.703;
+		LEVEL 0 FOR 32.6;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 3.697;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|sampler")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|gnd")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|vcc")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|unknown")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|devclrn")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|devpor")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|devoe")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|clk~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.842;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 9.158;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst|inst~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2.934;
+		LEVEL 0 FOR 20.999;
+		LEVEL 1 FOR 9.208;
+		LEVEL 0 FOR 10.792;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 9.208;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 6.859;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|reset~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 20.852;
+		LEVEL 0 FOR 139.148;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst2|inst1~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2.848;
+		LEVEL 0 FOR 30.895;
+		LEVEL 1 FOR 19.398;
+		LEVEL 0 FOR 10.706;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 9.294;
+		LEVEL 1 FOR 10.792;
+		LEVEL 0 FOR 9.81;
+		LEVEL 1 FOR 19.398;
+		LEVEL 0 FOR 0.602;
+		LEVEL 1 FOR 6.257;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst2|inst6~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.833;
+		LEVEL 0 FOR 52.459;
+		LEVEL 1 FOR 10.824;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 9.176;
+		LEVEL 0 FOR 10.637;
+		LEVEL 1 FOR 9.504;
+		LEVEL 0 FOR 19.859;
+		LEVEL 1 FOR 6.708;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst3|inst1~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2.921;
+		LEVEL 0 FOR 50.953;
+		LEVEL 1 FOR 10.046;
+		LEVEL 0 FOR 0.778;
+		LEVEL 1 FOR 8.443;
+		LEVEL 0 FOR 10.779;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 0.778;
+		LEVEL 1 FOR 9.176;
+		LEVEL 0 FOR 10.046;
+		LEVEL 1 FOR 0.591;
+		LEVEL 0 FOR 8.63;
+		LEVEL 1 FOR 0.874;
+		LEVEL 0 FOR 9.905;
+		LEVEL 1 FOR 9.221;
+		LEVEL 0 FOR 0.733;
+		LEVEL 1 FOR 6.126;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst3|inst6~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.248;
+		LEVEL 0 FOR 62.675;
+		LEVEL 1 FOR 0.608;
+		LEVEL 0 FOR 8.873;
+		LEVEL 1 FOR 10.519;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 0.421;
+		LEVEL 1 FOR 9.06;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 6.596;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst4|inst1~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2.817;
+		LEVEL 0 FOR 61.516;
+		LEVEL 1 FOR 0.608;
+		LEVEL 0 FOR 8.873;
+		LEVEL 1 FOR 10.002;
+		LEVEL 0 FOR 0.517;
+		LEVEL 1 FOR 8.808;
+		LEVEL 0 FOR 11.192;
+		LEVEL 1 FOR 19.483;
+		LEVEL 0 FOR 0.517;
+		LEVEL 1 FOR 0.421;
+		LEVEL 0 FOR 8.387;
+		LEVEL 1 FOR 0.673;
+		LEVEL 0 FOR 10.002;
+		LEVEL 1 FOR 9.325;
+		LEVEL 0 FOR 0.673;
+		LEVEL 1 FOR 6.186;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst11|WideOr0~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.65;
+		LEVEL 0 FOR 52.6;
+		LEVEL 1 FOR 19.802;
+		LEVEL 0 FOR 19.866;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.134;
+		LEVEL 1 FOR 5.948;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst11|WideOr1~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.649;
+		LEVEL 0 FOR 32.146;
+		LEVEL 1 FOR 60.126;
+		LEVEL 0 FOR 20.328;
+		LEVEL 1 FOR 19.77;
+		LEVEL 0 FOR 25.981;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst11|WideOr2~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.195;
+		LEVEL 0 FOR 32.6;
+		LEVEL 1 FOR 60.124;
+		LEVEL 0 FOR 66.081;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst11|WideOr3~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.322;
+		LEVEL 0 FOR 32.472;
+		LEVEL 1 FOR 20.454;
+		LEVEL 0 FOR 19.8;
+		LEVEL 1 FOR 40.2;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 5.752;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst11|WideOr4~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.651;
+		LEVEL 0 FOR 92.276;
+		LEVEL 1 FOR 20.324;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 5.749;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst11|WideOr5~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.191;
+		LEVEL 0 FOR 92.732;
+		LEVEL 1 FOR 20.326;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 5.751;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst11|WideOr6~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.188;
+		LEVEL 0 FOR 32.6;
+		LEVEL 1 FOR 20.438;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 19.824;
+		LEVEL 0 FOR 25.95;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|clk~clk_delay_ctrl_clkout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.196;
+		LEVEL 0 FOR 10.842;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 8.962;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|clk~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.196;
+		LEVEL 0 FOR 10.842;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 8.962;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst5|inst~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.656;
+		LEVEL 0 FOR 82.159;
+		LEVEL 1 FOR 0.516;
+		LEVEL 0 FOR 9.438;
+		LEVEL 1 FOR 19.372;
+		LEVEL 0 FOR 11.19;
+		LEVEL 1 FOR 0.421;
+		LEVEL 0 FOR 8.389;
+		LEVEL 1 FOR 0.628;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 6.231;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst5|inst1~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.857;
+		LEVEL 0 FOR 112.6;
+		LEVEL 1 FOR 10.877;
+		LEVEL 0 FOR 0.421;
+		LEVEL 1 FOR 8.702;
+		LEVEL 0 FOR 26.543;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst6|inst~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.266;
+		LEVEL 0 FOR 112.6;
+		LEVEL 1 FOR 10.877;
+		LEVEL 0 FOR 0.421;
+		LEVEL 1 FOR 7.977;
+		LEVEL 0 FOR 0.725;
+		LEVEL 1 FOR 26.134;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst8|inst~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.996;
+		LEVEL 0 FOR 159.004;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst1|inst7|inst~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.996;
+		LEVEL 0 FOR 132.6;
+		LEVEL 1 FOR 0.274;
+		LEVEL 0 FOR 26.13;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst10|WideOr0~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.515;
+		LEVEL 0 FOR 132.6;
+		LEVEL 1 FOR 25.885;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst10|WideOr1~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.517;
+		LEVEL 0 FOR 112.525;
+		LEVEL 1 FOR 45.958;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst10|WideOr2~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.023;
+		LEVEL 0 FOR 112.435;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 26.542;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst10|WideOr3~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.018;
+		LEVEL 0 FOR 112.435;
+		LEVEL 1 FOR 20.143;
+		LEVEL 0 FOR 26.404;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst10|WideOr4~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.991;
+		LEVEL 0 FOR 132.461;
+		LEVEL 1 FOR 26.548;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst10|WideOr5~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.02;
+		LEVEL 0 FOR 158.98;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst10|WideOr6~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.023;
+		LEVEL 0 FOR 112.435;
+		LEVEL 1 FOR 20.104;
+		LEVEL 0 FOR 26.438;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst|dffs[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 159.782;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst|dffs[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 159.782;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst|dffs[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 132.6;
+		LEVEL 1 FOR 27.182;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst|dffs[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 112.6;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 27.182;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst|dffs[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 92.6;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 7.182;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst|dffs[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 72.6;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 7.182;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst|dffs[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 52.6;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 7.182;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|inst|dffs[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 32.6;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 7.182;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|I~combout[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 80.999;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 19.001;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|I~combout[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 60.999;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 19.001;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|I~combout[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.999;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 59.001;
+	}
+}
+
+TRANSITION_LIST("accumulator_vlg_vec_tst|i1|I~combout[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.999;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 39.001;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|clk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|I";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+	CHILDREN = 2, 3, 4, 5;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|I[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|I[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|I[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|I[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|reset";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex6[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex6[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex6[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex6[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex6[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex6[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex6[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex7[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex7[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex7[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex7[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex7[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex7[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|Hex7[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|R[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|R[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|R[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|R[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|R[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 25;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|R[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 26;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|R[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 27;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|R[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 28;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|sampler";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 29;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|gnd";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 30;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|vcc";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 31;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|unknown";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 32;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|devclrn";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 33;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|devpor";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 34;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|devoe";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 35;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|clk~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 36;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst|inst~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 37;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|reset~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 38;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst2|inst1~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 39;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst2|inst6~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 40;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst3|inst1~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 41;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst3|inst6~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 42;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst4|inst1~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 43;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst11|WideOr0~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 44;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst11|WideOr1~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 45;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst11|WideOr2~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 46;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst11|WideOr3~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 47;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst11|WideOr4~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 48;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst11|WideOr5~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 49;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst11|WideOr6~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 50;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|clk~clk_delay_ctrl_clkout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 51;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|clk~clkctrl_outclk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 52;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst5|inst~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 53;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst5|inst1~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 54;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst6|inst~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 55;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst8|inst~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 56;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst1|inst7|inst~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 57;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst10|WideOr0~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 58;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst10|WideOr1~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 59;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst10|WideOr2~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 60;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst10|WideOr3~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 61;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst10|WideOr4~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 62;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst10|WideOr5~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 63;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst10|WideOr6~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 64;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst|dffs[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 65;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst|dffs[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 66;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst|dffs[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 67;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst|dffs[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 68;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst|dffs[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 69;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst|dffs[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 70;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst|dffs[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 71;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|inst|dffs[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 72;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|I~combout[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 73;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|I~combout[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 74;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|I~combout[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 75;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "accumulator_vlg_vec_tst|i1|I~combout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 76;
+	TREE_LEVEL = 0;
+}
+;

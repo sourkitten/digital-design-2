@@ -8,7 +8,7 @@ Z1 !s100 [@>3k:8h5`OROjBY8UIHI3
 Z2 IA>X<FB;CcBk;LN0`_IRQa3
 Z3 VXhL9nicgj;@eN>J@ja5E]3
 Z4 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise1\Question3\simulation\qsim
-Z5 w1646935061
+Z5 w1647164107
 Z6 8Exercise1Question3.vo
 Z7 FExercise1Question3.vo
 L0 31
@@ -20,7 +20,7 @@ Z10 o-work work -O0
 Z11 n@exercise1@question3
 !i10b 1
 !s85 0
-Z12 !s108 1646935062.245000
+Z12 !s108 1647164108.961000
 Z13 !s107 Exercise1Question3.vo|
 !s101 -O0
 vExercise1Question3_vlg_check_tst
@@ -29,57 +29,57 @@ Z14 !s100 65]oYD4e0PeCl:ab2E4WY0
 Z15 IK`3=LHL=jX5ekXT;IS;zf2
 Z16 Vdgdcn22=R;alSMISQi5692
 R4
-Z17 w1646935060
-Z18 8Exercise1Question3.vt
-Z19 FExercise1Question3.vt
+R5
+Z17 8Exercise1Question3.vt
+Z18 FExercise1Question3.vt
 L0 61
 R8
 r1
 !s85 0
 31
-Z20 !s108 1646935062.321000
-Z21 !s107 Exercise1Question3.vt|
-Z22 !s90 -work|work|Exercise1Question3.vt|
+Z19 !s108 1647164109.052000
+Z20 !s107 Exercise1Question3.vt|
+Z21 !s90 -work|work|Exercise1Question3.vt|
 !s101 -O0
 R10
-Z23 n@exercise1@question3_vlg_check_tst
+Z22 n@exercise1@question3_vlg_check_tst
 vExercise1Question3_vlg_sample_tst
 !i10b 1
-Z24 !s100 C?QlZ1UFk:z:YVEll_D_70
-Z25 I9R7SkTP;P`Lzzb5j5HY3V1
-Z26 Vel6:fZCeM2E;5:ORH]>oC3
+Z23 !s100 C?QlZ1UFk:z:YVEll_D_70
+Z24 I9R7SkTP;P`Lzzb5j5HY3V1
+Z25 Vel6:fZCeM2E;5:ORH]>oC3
 R4
+R5
 R17
 R18
-R19
 L0 29
 R8
 r1
 !s85 0
 31
+R19
 R20
 R21
-R22
 !s101 -O0
 R10
-Z27 n@exercise1@question3_vlg_sample_tst
+Z26 n@exercise1@question3_vlg_sample_tst
 vExercise1Question3_vlg_vec_tst
 !i10b 1
-Z28 !s100 JaV>1YJnEiS>J9QkF_zMX2
-Z29 IDm1eHKY@Hcf@eY2f]aCn<0
-Z30 VAU=NEVd12`^5ZajiJ9O4]0
+Z27 !s100 JaV>1YJnEiS>J9QkF_zMX2
+Z28 IDm1eHKY@Hcf@eY2f]aCn<0
+Z29 VAU=NEVd12`^5ZajiJ9O4]0
 R4
+R5
 R17
 R18
-R19
-Z31 L0 183
+Z30 L0 183
 R8
 r1
 !s85 0
 31
+R19
 R20
 R21
-R22
 !s101 -O0
 R10
-Z32 n@exercise1@question3_vlg_vec_tst
+Z31 n@exercise1@question3_vlg_vec_tst
