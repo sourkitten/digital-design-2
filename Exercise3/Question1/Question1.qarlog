@@ -1,0 +1,32 @@
+Quartus II Archive log --	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Question1.qarlog
+
+Archive:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Question1.qar
+Date:		Sun Mar 20 17:35:21 2022
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Acc_LCD.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Accumulator.out.sdc
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/FA.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/HA.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/LCD.hex
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Question1.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Question1.out.sdc
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Question1.qpf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Question1.qsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Question1.vwf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Question1_450MHz.out.sdc
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Question1_450_05MHz.out.sdc
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/Question1_500MHz.out.sdc
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/accumulator.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/accumulator.vwf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/assignment_defaults.qdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question1/incremental_db/compiled_partitions/Question1.db_info
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/LCD_Display.vhd
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/NewLCD.bdf
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/Rom.hex
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/lpm_rom0.vhd
+	======= Total: 21 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

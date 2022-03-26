@@ -8,7 +8,7 @@ Z1 !s100 jno0I0z[IbP4Om^ZG1CZX0
 Z2 IDm]^XeKQlH]8kd7=FjkI@2
 Z3 V796n@[>k17nDeGR0b7fU92
 Z4 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise2\Question2\simulation\qsim
-Z5 w1647539515
+Z5 w1647767979
 Z6 8Question2.vo
 Z7 FQuestion2.vo
 L0 31
@@ -19,7 +19,7 @@ Z9 !s90 -work|work|Question2.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1647539517.501000
+Z11 !s108 1647767981.114000
 Z12 !s107 Question2.vo|
 !s101 -O0
 vaccumulator_vlg_check_tst
@@ -28,7 +28,7 @@ Z13 !s100 h0;gb^f]d;i<?]4GO[TkI0
 Z14 I6CCPU`]1nb?4k8I_Rag681
 Z15 VSZCzC>5RaT6IgeY8C_a=93
 R4
-Z16 w1647539514
+Z16 w1647767978
 Z17 8Question2.vt
 Z18 FQuestion2.vt
 L0 63
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1647539517.674000
+Z19 !s108 1647767981.234000
 Z20 !s107 Question2.vt|
 Z21 !s90 -work|work|Question2.vt|
 !s101 -O0

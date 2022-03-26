@@ -1,0 +1,32 @@
+Quartus II Archive log --	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/Question2.qarlog
+
+Archive:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/Question2.qar
+Date:		Sun Mar 20 17:54:20 2022
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/FA.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/FA.bsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/HA.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/HA.bsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/LCD.hex
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/Question2.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/Question2.out.sdc
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/Question2.qpf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/Question2.qsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/Question2.vwf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/db/Question2.sim.vwf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/incremental_db/compiled_partitions/Question2.db_info
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/mux21.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/o8bit_adder.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/o8bit_rshifter_loader.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise3/Question2/o8bit_rshifter_loader.vwf
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/LCD_Display.vhd
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/NewLCD.bdf
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/Rom.hex
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/lpm_rom0.vhd
+c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 21 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

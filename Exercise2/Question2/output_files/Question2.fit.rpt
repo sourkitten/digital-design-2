@@ -1,5 +1,5 @@
 Fitter report for Question2
-Thu Mar 17 21:24:36 2022
+Sun Mar 20 17:25:35 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Mar 17 21:24:36 2022           ;
+; Fitter Status                      ; Successful - Sun Mar 20 17:25:35 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Question2                                       ;
 ; Top-level Entity Name              ; accumulator                                     ;
@@ -339,14 +339,14 @@ The pin-out file can be found in C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2
 ; Hex7[4] ; L7    ; 2        ; 0            ; 24           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; Hex7[5] ; P9    ; 2        ; 0            ; 25           ; 4           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; Hex7[6] ; N9    ; 2        ; 0            ; 25           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; R[0]    ; T4    ; 1        ; 0            ; 14           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; R[1]    ; AE13  ; 8        ; 31           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; R[2]    ; Y1    ; 1        ; 0            ; 9            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; R[3]    ; Y3    ; 1        ; 0            ; 7            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; R[4]    ; R6    ; 1        ; 0            ; 14           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; R[5]    ; T3    ; 1        ; 0            ; 15           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; R[6]    ; F10   ; 3        ; 14           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; R[7]    ; R4    ; 1        ; 0            ; 16           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; R[0]    ; P7    ; 1        ; 0            ; 15           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; R[1]    ; R3    ; 1        ; 0            ; 17           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; R[2]    ; T9    ; 1        ; 0            ; 16           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; R[3]    ; R4    ; 1        ; 0            ; 16           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; R[4]    ; K1    ; 2        ; 0            ; 25           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; R[5]    ; R5    ; 1        ; 0            ; 16           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; R[6]    ; L10   ; 2        ; 0            ; 23           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; R[7]    ; T10   ; 1        ; 0            ; 16           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 +---------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
@@ -356,13 +356,13 @@ The pin-out file can be found in C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
 ; 1        ; 10 / 64 ( 16 % ) ; 3.3V          ; --           ;
-; 2        ; 13 / 59 ( 22 % ) ; 3.3V          ; --           ;
-; 3        ; 1 / 56 ( 2 % )   ; 3.3V          ; --           ;
+; 2        ; 15 / 59 ( 25 % ) ; 3.3V          ; --           ;
+; 3        ; 0 / 56 ( 0 % )   ; 3.3V          ; --           ;
 ; 4        ; 0 / 58 ( 0 % )   ; 3.3V          ; --           ;
 ; 5        ; 3 / 65 ( 5 % )   ; 3.3V          ; --           ;
 ; 6        ; 2 / 59 ( 3 % )   ; 3.3V          ; --           ;
 ; 7        ; 2 / 58 ( 3 % )   ; 3.3V          ; --           ;
-; 8        ; 1 / 56 ( 2 % )   ; 3.3V          ; --           ;
+; 8        ; 0 / 56 ( 0 % )   ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -511,7 +511,7 @@ The pin-out file can be found in C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2
 ; AE10     ; 169        ; 8        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE11     ; 174        ; 8        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE12     ; 182        ; 8        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AE13     ; 183        ; 8        ; R[1]                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE13     ; 183        ; 8        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE14     ; 188        ; 7        ; I[3]                                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AE15     ; 189        ; 7        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE16     ; 200        ; 7        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -662,7 +662,7 @@ The pin-out file can be found in C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2
 ; F7       ; 14         ; 2        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F8       ;            ;          ; GNDA_PLL3                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F9       ; 470        ; 3        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F10      ; 462        ; 3        ; R[6]                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; F10      ; 462        ; 3        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F11      ; 454        ; 3        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F12      ; 440        ; 3        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F13      ; 423        ; 4        ; RESERVED_INPUT                           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -757,7 +757,7 @@ The pin-out file can be found in C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2
 ; J24      ; 338        ; 5        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J25      ; 327        ; 5        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J26      ; 326        ; 5        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; K1       ; 42         ; 2        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; K1       ; 42         ; 2        ; R[4]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K2       ; 43         ; 2        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K3       ; 41         ; 2        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K4       ; 40         ; 2        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -792,7 +792,7 @@ The pin-out file can be found in C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2
 ; L7       ; 47         ; 2        ; Hex7[4]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L8       ; 59         ; 2        ; #TMS                                     ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; L9       ; 49         ; 2        ; Hex7[2]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; L10      ; 52         ; 2        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; L10      ; 52         ; 2        ; R[6]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; L11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; L12      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -867,7 +867,7 @@ The pin-out file can be found in C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2
 ; P4       ; 70         ; 1        ; Hex6[1]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; P5       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; P6       ; 78         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; P7       ; 77         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; P7       ; 77         ; 1        ; R[0]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P8       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P9       ; 46         ; 2        ; Hex7[5]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; P10      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -889,10 +889,10 @@ The pin-out file can be found in C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2
 ; P26      ; 306        ; 6        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; R1       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R2       ; 71         ; 1        ; Hex6[0]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; R3       ; 72         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; R4       ; 73         ; 1        ; R[7]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; R5       ; 74         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; R6       ; 81         ; 1        ; R[4]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R3       ; 72         ; 1        ; R[1]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R4       ; 73         ; 1        ; R[3]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R5       ; 74         ; 1        ; R[5]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R6       ; 81         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R7       ; 82         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R8       ; 110        ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R9       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -915,14 +915,14 @@ The pin-out file can be found in C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2
 ; R26      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T1       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; T2       ; 79         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T3       ; 80         ; 1        ; R[5]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T4       ; 83         ; 1        ; R[0]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T3       ; 80         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; T4       ; 83         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; T5       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T6       ; 93         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T7       ; 92         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T8       ; 111        ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T9       ; 76         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T10      ; 75         ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; T9       ; 76         ; 1        ; R[2]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T10      ; 75         ; 1        ; R[7]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; T12      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1017,9 +1017,9 @@ The pin-out file can be found in C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2
 ; W24      ; 271        ; 6        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W25      ; 273        ; 6        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W26      ; 274        ; 6        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; Y1       ; 103        ; 1        ; R[2]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; Y1       ; 103        ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y2       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; Y3       ; 108        ; 1        ; R[3]                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; Y3       ; 108        ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y4       ; 109        ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y5       ; 121        ; 1        ; RESERVED_INPUT                           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y6       ;            ;          ; GND_PLL1                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1160,14 +1160,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; I[0]                       ;                   ;         ;
 ; clk                        ;                   ;         ;
 ; reset                      ;                   ;         ;
-;      - lpm_ff:inst|dffs[7] ; 1                 ; 6       ;
-;      - lpm_ff:inst|dffs[6] ; 1                 ; 6       ;
-;      - lpm_ff:inst|dffs[5] ; 1                 ; 6       ;
-;      - lpm_ff:inst|dffs[4] ; 1                 ; 6       ;
-;      - lpm_ff:inst|dffs[3] ; 1                 ; 6       ;
-;      - lpm_ff:inst|dffs[2] ; 1                 ; 6       ;
-;      - lpm_ff:inst|dffs[1] ; 1                 ; 6       ;
-;      - lpm_ff:inst|dffs[0] ; 1                 ; 6       ;
+;      - lpm_ff:inst|dffs[7] ; 0                 ; 6       ;
+;      - lpm_ff:inst|dffs[6] ; 0                 ; 6       ;
+;      - lpm_ff:inst|dffs[5] ; 0                 ; 6       ;
+;      - lpm_ff:inst|dffs[4] ; 0                 ; 6       ;
+;      - lpm_ff:inst|dffs[3] ; 0                 ; 6       ;
+;      - lpm_ff:inst|dffs[2] ; 0                 ; 6       ;
+;      - lpm_ff:inst|dffs[1] ; 0                 ; 6       ;
+;      - lpm_ff:inst|dffs[0] ; 0                 ; 6       ;
 ; E                          ;                   ;         ;
 ; I[1]                       ;                   ;         ;
 ; I[2]                       ;                   ;         ;
@@ -1251,14 +1251,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Other Routing Resource Type ; Usage                 ;
 +-----------------------------+-----------------------+
-; Block interconnects         ; 37 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 17 / 3,315 ( < 1 % )  ;
-; C4 interconnects            ; 42 / 60,840 ( < 1 % ) ;
-; Direct links                ; 4 / 94,460 ( < 1 % )  ;
+; Block interconnects         ; 38 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 3 / 3,315 ( < 1 % )   ;
+; C4 interconnects            ; 28 / 60,840 ( < 1 % ) ;
+; Direct links                ; 12 / 94,460 ( < 1 % ) ;
 ; Global clocks               ; 1 / 16 ( 6 % )        ;
-; Local interconnects         ; 13 / 33,216 ( < 1 % ) ;
-; R24 interconnects           ; 16 / 3,091 ( < 1 % )  ;
-; R4 interconnects            ; 40 / 81,294 ( < 1 % ) ;
+; Local interconnects         ; 12 / 33,216 ( < 1 % ) ;
+; R24 interconnects           ; 12 / 3,091 ( < 1 % )  ;
+; R4 interconnects            ; 13 / 81,294 ( < 1 % ) ;
 +-----------------------------+-----------------------+
 
 
@@ -1414,12 +1414,12 @@ Critical Warning (169085): No exact pin location assignment(s) for 8 pins of 29 
     Info (169086): Pin R[2] not assigned to an exact location on the device
     Info (169086): Pin R[1] not assigned to an exact location on the device
     Info (169086): Pin R[0] not assigned to an exact location on the device
-Info (332104): Reading SDC File: 'Question2_100MHz.out.sdc'
+Info (332104): Reading SDC File: 'Question2_418MHz.out.sdc'
 Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
 Info (332111): Found 1 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
-    Info (332111):   10.000          clk
+    Info (332111):    2.400          clk
 Info (176353): Automatically promoted node clk (placed in PIN N23 (LVDS126p, DPCLK7/DQS0R/CQ1R))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
@@ -1450,8 +1450,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-    Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.22 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 22 output pins without output pin load capacitance assignment
     Info (306007): Pin "Hex6[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1483,9 +1482,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2/Question2/output_files/Question2.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4881 megabytes
-    Info: Processing ended: Thu Mar 17 21:24:36 2022
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Processing ended: Sun Mar 20 17:25:35 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +----------------------------+

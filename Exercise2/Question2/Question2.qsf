@@ -59,16 +59,6 @@ set_global_assignment -name SIMULATION_MODE TIMING
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
-set_global_assignment -name SDC_FILE Question2_100MHz.out.sdc
-set_global_assignment -name VECTOR_WAVEFORM_FILE Question2.vwf
-set_global_assignment -name SOURCE_FILE Question2.qsf
-set_global_assignment -name BSF_FILE Question2.bsf
-set_global_assignment -name BDF_FILE Question2.bdf
-set_global_assignment -name BSF_FILE HA.bsf
-set_global_assignment -name BDF_FILE HA.bdf
-set_global_assignment -name BSF_FILE FA.bsf
-set_global_assignment -name BDF_FILE FA.bdf
-set_global_assignment -name BDF_FILE accumulator.bdf
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_N23 -to clk
 set_location_assignment PIN_AF14 -to E
@@ -92,4 +82,14 @@ set_location_assignment PIN_N26 -to I[1]
 set_location_assignment PIN_N25 -to I[0]
 set_location_assignment PIN_V2 -to reset
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise2/Question2/Question2.vwf"
+set_global_assignment -name SDC_FILE Question2_418MHz.out.sdc
+set_global_assignment -name VECTOR_WAVEFORM_FILE Question2.vwf
+set_global_assignment -name SOURCE_FILE Question2.qsf
+set_global_assignment -name BSF_FILE Question2.bsf
+set_global_assignment -name BDF_FILE Question2.bdf
+set_global_assignment -name BSF_FILE HA.bsf
+set_global_assignment -name BDF_FILE HA.bdf
+set_global_assignment -name BSF_FILE FA.bsf
+set_global_assignment -name BDF_FILE FA.bdf
+set_global_assignment -name BDF_FILE accumulator.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

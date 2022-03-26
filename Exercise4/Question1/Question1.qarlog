@@ -1,0 +1,22 @@
+Quartus II Archive log --	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Question1.qarlog
+
+Archive:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Question1.qar
+Date:		Sat Mar 26 15:05:25 2022
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Adder8bit.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Datapath.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Datapath.vwf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/FA.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/LoaderShifter.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Question1.qpf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Question1.qsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Register.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/ZFlag.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/incremental_db/compiled_partitions/Question1.db_info
+c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
