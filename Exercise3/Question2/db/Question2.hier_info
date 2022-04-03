@@ -1,9 +1,16 @@
 |Question2
-LCD_RS <= NewLCD:inst1.LCD_RS
-reset => NewLCD:inst1.Reset~
-reset => o8bit_rshifter_loader:SLA.reset
-reset => o8bit_rshifter_loader:SLB.reset
-CLK50 => NewLCD:inst1.CLK_50MHz
+LCD_RS <= NewLCD:inst2.LCD_RS
+reset => NewLCD:inst2.Reset~
+reset => inst4.IN0
+CLK50 => NewLCD:inst2.CLK_50MHz
+DBUS[0] <> NewLCD:inst2.DATA_BUS[0]
+DBUS[1] <> NewLCD:inst2.DATA_BUS[1]
+DBUS[2] <> NewLCD:inst2.DATA_BUS[2]
+DBUS[3] <> NewLCD:inst2.DATA_BUS[3]
+DBUS[4] <> NewLCD:inst2.DATA_BUS[4]
+DBUS[5] <> NewLCD:inst2.DATA_BUS[5]
+DBUS[6] <> NewLCD:inst2.DATA_BUS[6]
+DBUS[7] <> NewLCD:inst2.DATA_BUS[7]
 A[0] <= o8bit_rshifter_loader:SLA.Y[0]
 A[1] <= o8bit_rshifter_loader:SLA.Y[1]
 A[2] <= o8bit_rshifter_loader:SLA.Y[2]
@@ -12,8 +19,7 @@ A[4] <= o8bit_rshifter_loader:SLA.Y[4]
 A[5] <= o8bit_rshifter_loader:SLA.Y[5]
 A[6] <= o8bit_rshifter_loader:SLA.Y[6]
 A[7] <= o8bit_rshifter_loader:SLA.Y[7]
-CLK => o8bit_rshifter_loader:SLA.CLK
-CLK => o8bit_rshifter_loader:SLB.CLK
+CLK => inst3.IN0
 Sin => o8bit_rshifter_loader:SLA.Sin
 Sin => o8bit_rshifter_loader:SLB.Sin
 S => o8bit_rshifter_loader:SLA.S
@@ -26,21 +32,13 @@ B[4] <= o8bit_rshifter_loader:SLB.Y[4]
 B[5] <= o8bit_rshifter_loader:SLB.Y[5]
 B[6] <= o8bit_rshifter_loader:SLB.Y[6]
 B[7] <= o8bit_rshifter_loader:SLB.Y[7]
-LCD_E <= NewLCD:inst1.LCD_E
-LCD_RW <= NewLCD:inst1.LCD_RW
-LCD_ONOFF <= NewLCD:inst1.LCD_STATUS_OUT
-LCD_BLONOFF <= NewLCD:inst1.LCD_BL_STATUS_OUT
-DBUS[0] <= NewLCD:inst1.DATA_BUS[0]
-DBUS[1] <= NewLCD:inst1.DATA_BUS[1]
-DBUS[2] <= NewLCD:inst1.DATA_BUS[2]
-DBUS[3] <= NewLCD:inst1.DATA_BUS[3]
-DBUS[4] <= NewLCD:inst1.DATA_BUS[4]
-DBUS[5] <= NewLCD:inst1.DATA_BUS[5]
-DBUS[6] <= NewLCD:inst1.DATA_BUS[6]
-DBUS[7] <= NewLCD:inst1.DATA_BUS[7]
+LCD_E <= NewLCD:inst2.LCD_E
+LCD_RW <= NewLCD:inst2.LCD_RW
+LCD_ONOFF <= NewLCD:inst2.LCD_STATUS_OUT
+LCD_BLONOFF <= NewLCD:inst2.LCD_BL_STATUS_OUT
 
 
-|Question2|NewLCD:inst1
+|Question2|NewLCD:inst2
 LCD_RS <= LCD_Display:inst.LCD_RS
 Reset~ => LCD_Display:inst.reset
 CLK_50MHz => LCD_Display:inst.clk_50Mhz
@@ -186,7 +184,7 @@ LCD_STATUS_OUT <= LCD_Display:inst.LCD_STATUS_OUT
 LCD_BL_STATUS_OUT <= LCD_Display:inst.LCD_BL_STATUS_OUT
 
 
-|Question2|NewLCD:inst1|LCD_Display:inst
+|Question2|NewLCD:inst2|LCD_Display:inst
 reset => LCD_RW_INT.PRESET
 reset => LCD_RS~reg0.ACLR
 reset => LCD_E~reg0.PRESET
@@ -408,7 +406,7 @@ DATA_BUS[6] <> DATA_BUS[6]
 DATA_BUS[7] <> DATA_BUS[7]
 
 
-|Question2|NewLCD:inst1|lpm_rom0:inst1
+|Question2|NewLCD:inst2|lpm_rom0:inst1
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -425,7 +423,7 @@ q[6] <= altsyncram:altsyncram_component.q_a[6]
 q[7] <= altsyncram:altsyncram_component.q_a[7]
 
 
-|Question2|NewLCD:inst1|lpm_rom0:inst1|altsyncram:altsyncram_component
+|Question2|NewLCD:inst2|lpm_rom0:inst1|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -471,7 +469,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Question2|NewLCD:inst1|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_7f71:auto_generated
+|Question2|NewLCD:inst2|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_7f71:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR

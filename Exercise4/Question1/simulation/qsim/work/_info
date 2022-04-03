@@ -2,13 +2,13 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise4\Question1\simulation\qsim
-vDatapath
-Z1 !s100 ia]mZXF1`bWklTF`Q62LB0
-Z2 I=1co]21PI3zbRScgC?O1@3
-Z3 Vf]aF=iZV?2KZm:E_[2>g<0
+Z0 dC:\Users\Natty\Downloads\Question1 (1)_restored\simulation\qsim
+vQuestion1
+Z1 !s100 3WSRT9c_nHHDMcAnTceA73
+Z2 I@^JWoXlJLGd4d<ezBRQ:G0
+Z3 Vz7^24=<<69ah1WQ2ScVKM2
 Z4 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise4\Question1\simulation\qsim
-Z5 w1648299614
+Z5 w1648989874
 Z6 8Question1.vo
 Z7 FQuestion1.vo
 L0 31
@@ -17,69 +17,69 @@ r1
 31
 Z9 !s90 -work|work|Question1.vo|
 Z10 o-work work -O0
-Z11 n@datapath
+Z11 n@question1
 !i10b 1
 !s85 0
-Z12 !s108 1648299615.754000
+Z12 !s108 1648989875.281000
 Z13 !s107 Question1.vo|
 !s101 -O0
-vDatapath_vlg_check_tst
+vQuestion1_vlg_check_tst
 !i10b 1
-!s100 DeYf;7^m<ihTz1`ll6LnA1
-IA>zK5HS8?SjXoLZ2<Jn3Y0
-Z14 V^Gkob@5R[=6^VmH=C4FJ32
+Z14 !s100 MPmgMSI8E:3T_0mHEeCS00
+Z15 IhfkjekP2[Bgfhk8Laod^A0
+Z16 VbM`LmTiacgfL2H5B8K[gI1
 R4
-R5
-Z15 8Question1.vt
-Z16 FQuestion1.vt
-L0 79
+Z17 w1648989873
+Z18 8Question1.vt
+Z19 FQuestion1.vt
+L0 65
 R8
 r1
 !s85 0
 31
-Z17 !s108 1648299615.851000
-Z18 !s107 Question1.vt|
-Z19 !s90 -work|work|Question1.vt|
+Z20 !s108 1648989875.390000
+Z21 !s107 Question1.vt|
+Z22 !s90 -work|work|Question1.vt|
 !s101 -O0
 R10
-Z20 n@datapath_vlg_check_tst
-vDatapath_vlg_sample_tst
+Z23 n@question1_vlg_check_tst
+vQuestion1_vlg_sample_tst
 !i10b 1
-Z21 !s100 c?O2c`8bNDI;^Xm9hH3Kb3
-Z22 Ij08I>h9RCLl[0cIhEVA?E1
-Z23 VCS3o462Re2b4;5TPoE=d33
+Z24 !s100 5dlMhGJD]NWf>5_HJgTln1
+Z25 I>m:i]7PZ9S9>7dSd:9RMX3
+Z26 V<m_RllelWcSQYX^ZiaifI1
 R4
-R5
-R15
-R16
+R17
+R18
+R19
 L0 29
 R8
 r1
 !s85 0
 31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@question1_vlg_sample_tst
+vQuestion1_vlg_vec_tst
+!i10b 1
+!s100 7Z9k_O915JcO<TeU^5[Bi0
+I<UQkJhPdRgUoGb4?PXN<32
+Z28 V5cezemHb@:eV_JSKPZmb?0
+R4
 R17
 R18
 R19
-!s101 -O0
-R10
-Z24 n@datapath_vlg_sample_tst
-vDatapath_vlg_vec_tst
-!i10b 1
-!s100 hAnc0?Lo6Khk;8zj42SPl0
-IPe=Vck;zNV<CBkC;C3;AK1
-Z25 V4LSCebLYh<Lb7?m[@][QW1
-R4
-R5
-R15
-R16
-L0 630
+Z29 L0 559
 R8
 r1
 !s85 0
 31
-R17
-R18
-R19
+R20
+R21
+R22
 !s101 -O0
 R10
-Z26 n@datapath_vlg_vec_tst
+Z30 n@question1_vlg_vec_tst

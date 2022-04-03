@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "03/20/2022 16:43:21"
+// Generated on "04/03/2022 14:43:03"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Question2
 // 
@@ -30,48 +30,64 @@ module Question2_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg CLK;
+reg CLK50;
+reg [7:0] treg_DBUS;
 reg reset;
 reg S;
 reg Sin;
 // wires                                               
 wire [7:0] A;
 wire [7:0] B;
+wire [7:0] DBUS;
+wire LCD_BLONOFF;
+wire LCD_E;
+wire LCD_ONOFF;
+wire LCD_RS;
+wire LCD_RW;
 
 // assign statements (if any)                          
+assign DBUS = treg_DBUS;
 Question2 i1 (
 // port map - connection between master ports and signals/registers   
 	.A(A),
 	.B(B),
 	.CLK(CLK),
+	.CLK50(CLK50),
+	.DBUS(DBUS),
+	.LCD_BLONOFF(LCD_BLONOFF),
+	.LCD_E(LCD_E),
+	.LCD_ONOFF(LCD_ONOFF),
+	.LCD_RS(LCD_RS),
+	.LCD_RW(LCD_RW),
 	.reset(reset),
 	.S(S),
 	.Sin(Sin)
 );
 initial 
 begin 
-#160000 $finish;
+#150000 $finish;
 end 
 
 // reset
 initial
 begin
-	reset = 1'b1;
-	reset = #10000 1'b0;
+	reset = 1'b0;
+	reset = #5350 1'b1;
 end 
 
 // CLK
-always
-begin
-	CLK = 1'b0;
-	CLK = #10000 1'b1;
-	#10000;
-end 
-
-// S
 initial
 begin
-	S = 1'b1;
-	S = #20000 1'b0;
+	CLK = 1'b1;
+	CLK = #10000 1'b0;
+	# 10000;
+	repeat(6)
+	begin
+		CLK = 1'b1;
+		CLK = #10000 1'b0;
+		# 10000;
+	end
+	CLK = 1'b1;
 end 
 
 // Sin
@@ -80,9 +96,16 @@ begin
 	Sin = 1'b1;
 	Sin = #20000 1'b0;
 end 
+
+// S
+initial
+begin
+	S = 1'b1;
+	S = #20000 1'b0;
+end 
 initial 
 begin 
-#160000 $finish;
+#150000 $finish;
 end 
 endmodule
 

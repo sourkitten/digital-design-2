@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 320 208 488 224)
+	(rect 320 216 488 232)
 	(text "INPUT" (rect 125 0 158 12)(font "Arial" (font_size 6)))
 	(text "reset" (rect 5 0 30 13)(font "Arial" ))
 	(pt 168 8)
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 232 16 400 32)
 	(text "INPUT" (rect 125 0 158 12)(font "Arial" (font_size 6)))
-	(text "data[7..0]" (rect 5 0 59 13)(font "Arial" ))
+	(text "data[7..0]" (rect 5 0 58 13)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -174,7 +174,7 @@ applicable agreement for further details.
 	(flipy)
 )
 (symbol
-	(rect 520 200 568 232)
+	(rect 520 208 568 240)
 	(text "NOT" (rect 1 0 23 12)(font "Arial" (font_size 6)))
 	(text "inst8" (rect 3 21 28 34)(font "Arial" ))
 	(port
@@ -459,11 +459,15 @@ applicable agreement for further details.
 )
 (connector
 	(pt 672 216)
-	(pt 568 216)
+	(pt 672 224)
 )
 (connector
-	(pt 488 216)
-	(pt 520 216)
+	(pt 672 224)
+	(pt 568 224)
+)
+(connector
+	(pt 488 224)
+	(pt 520 224)
 )
 (junction (pt 448 24))
 (junction (pt 448 88))
