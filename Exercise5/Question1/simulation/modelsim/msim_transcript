@@ -1,0 +1,274 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Question1_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {Question1.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Adder8
+# 
+# Top level modules:
+# 	Adder8
+# 
+# vcom -93 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/Adder8_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Adder8_tb
+# -- Compiling architecture Adder8_tb_arch of Adder8_tb
+# 
+# vsim -t 1ps -L cycloneii_ver -L gate_work -L work -voptargs="+acc"  Adder8_tb
+# vsim -L cycloneii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps Adder8_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.adder8_tb(adder8_tb_arch)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/Adder8_tb.vhd(31): Instantiation of 'Adder8' failed.
+# 
+#         Region: /adder8_tb
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Question1_run_msim_gate_verilog.do PAUSED at line 12
+vsim work.Adder8
+# vsim work.Adder8 
+# Loading work.Adder8
+# ** Error: (vsim-3033) Question1.vo(117): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(142): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(178): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(214): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(242): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(267): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(303): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(331): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(348): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(373): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(401): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(426): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(454): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(479): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(515): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(543): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(560): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(585): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(613): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(638): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(666): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(683): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(708): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(744): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(772): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(789): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(806): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(831): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(867): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(895): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(912): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(937): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(973): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1001): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1018): Instantiation of 'cycloneii_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1043): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1079): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1115): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1151): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1187): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1223): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1259): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1295): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) Question1.vo(1331): Instantiation of 'cycloneii_io' failed. The design unit was not found.
+# 
+#         Region: /Adder8
+#         Searched libraries:
+#             C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/simulation/modelsim/gate_work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Question1_run_msim_gate_verilog.do PAUSED at line 12
