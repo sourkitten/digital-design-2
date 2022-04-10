@@ -10,12 +10,17 @@ entity Question1 is
         YIN             : in     vl_logic_vector(7 downto 0);
         Q0              : out    vl_logic;
         Z               : out    vl_logic;
-        HEX4            : out    vl_logic_vector(6 downto 0);
-        Y               : out    vl_logic_vector(7 downto 0);
-        HEX5            : out    vl_logic_vector(6 downto 0);
-        HEX6            : out    vl_logic_vector(6 downto 0);
+        LCD_RS          : out    vl_logic;
+        CLK50           : in     vl_logic;
+        DBUS            : inout  vl_logic_vector(7 downto 0);
         X               : out    vl_logic_vector(7 downto 0);
-        HEX7            : out    vl_logic_vector(6 downto 0);
-        Sum             : out    vl_logic_vector(7 downto 0)
+        Y               : out    vl_logic_vector(7 downto 0);
+        LCD_E           : out    vl_logic;
+        LCD_RW          : out    vl_logic;
+        LCD_ONOFF       : out    vl_logic;
+        LCD_BLONOFF     : out    vl_logic;
+        HEX6            : out    vl_logic_vector(6 downto 0);
+        Sum             : out    vl_logic_vector(7 downto 0);
+        HEX7            : out    vl_logic_vector(6 downto 0)
     );
 end Question1;

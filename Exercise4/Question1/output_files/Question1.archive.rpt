@@ -1,5 +1,5 @@
 Archive Project report for Question1
-Sun Apr 03 15:58:26 2022
+Fri Apr 08 03:16:41 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -35,7 +35,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Sun Apr 03 15:58:26 2022 ;
+; Archive Project Status ; Successful - Fri Apr 08 03:16:41 2022 ;
 ; Revision Name          ; Question1                             ;
 ; Top-level Entity Name  ; Question1                             ;
 ; Family                 ; Cyclone II                            ;
@@ -56,10 +56,10 @@ Info: ----------------------------------------------------------
 Info: Generated report 'Question1.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/altera/13.0sp1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4452 megabytes
-    Info: Processing ended: Sun Apr 03 15:58:26 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4451 megabytes
+    Info: Processing ended: Fri Apr 08 03:16:41 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +-------------------------------------------------------------------------+
@@ -70,10 +70,14 @@ Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
 ; Adder8bit.bdf                                                           ;
 ; assignment_defaults.qdf                                                 ;
 ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Question1.vwf ;
+; C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/LCD_Display.vhd ;
+; C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/lpm_rom0.vhd    ;
+; C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/NewLCD.bdf      ;
 ; C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/SEG7_LUT.v      ;
 ; ControlUnit.bdf                                                         ;
 ; Datapath.bdf                                                            ;
 ; Datapath.vwf                                                            ;
+; DEC24.bdf                                                               ;
 ; FA.bdf                                                                  ;
 ; incremental_db/compiled_partitions/Question1.db_info                    ;
 ; LoaderShifter.bdf                                                       ;
@@ -85,6 +89,7 @@ Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
 ; Question1_245MHz.out.sdc                                                ;
 ; Question1_500MHz.out.sdc                                                ;
 ; Register.bdf                                                            ;
+; Rom.hex                                                                 ;
 ; ZFlag.bdf                                                               ;
 +-------------------------------------------------------------------------+
 

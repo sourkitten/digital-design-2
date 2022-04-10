@@ -1,12 +1,13 @@
 Quartus II Archive log --	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Question1.qarlog
 
 Archive:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Question1.qar
-Date:		Sun Apr 03 15:58:26 2022
+Date:		Fri Apr 08 03:16:41 2022
 Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 
 	=========== Files Selected: ===========
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Adder8bit.bdf
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/ControlUnit.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/DEC24.bdf
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Datapath.bdf
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Datapath.vwf
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/FA.bdf
@@ -19,11 +20,15 @@ C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Question1.vwf
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Question1_245MHz.out.sdc
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Question1_500MHz.out.sdc
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Register.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/Rom.hex
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/ZFlag.bdf
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/assignment_defaults.qdf
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise4/Question1/incremental_db/compiled_partitions/Question1.db_info
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/LCD_Display.vhd
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/NewLCD.bdf
 C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/SEG7_LUT.v
-	======= Total: 18 files to archive =======
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/lpm_rom0.vhd
+	======= Total: 23 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.
