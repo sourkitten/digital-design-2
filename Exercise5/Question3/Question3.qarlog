@@ -1,0 +1,22 @@
+Quartus II Archive log --	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/Question3.qarlog
+
+Archive:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/Question3.qar
+Date:		Sun Apr 10 14:21:59 2022
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/D_FF.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/D_FF_VWF.vwf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/D_FF_test.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/D_FFvsLatch.vwf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/MyLatch.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/Question3.qpf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/Question3.qsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/Question3_1GHz.out.sdc
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/Question3_2.23ns.out.sdc
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question3/incremental_db/compiled_partitions/Question3.db_info
+c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

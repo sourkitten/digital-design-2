@@ -1,0 +1,22 @@
+Quartus II Archive log --	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/Question2.qarlog
+
+Archive:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/Question2.qar
+Date:		Sun Apr 10 14:22:20 2022
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/Adder8.bsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/Adder8.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/Adder8.vhd.bak
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/Adder8test.vwf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/FA.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/FA.vhd.bak
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/Question2.qpf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/Question2.qsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/incremental_db/compiled_partitions/Question2.db_info
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/simulation/modelsim/Adder8_tb.vhd
+c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

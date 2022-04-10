@@ -1,5 +1,5 @@
 Archive Project report for Question1
-Sun Apr 03 17:54:49 2022
+Sun Apr 10 14:23:48 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -35,9 +35,9 @@ applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Sun Apr 03 17:54:49 2022 ;
+; Archive Project Status ; Successful - Sun Apr 10 14:23:48 2022 ;
 ; Revision Name          ; Question1                             ;
-; Top-level Entity Name  ; Adder8                                ;
+; Top-level Entity Name  ; MUX16_1                               ;
 ; Family                 ; Cyclone II                            ;
 +------------------------+---------------------------------------+
 
@@ -57,8 +57,8 @@ Info: Generated report 'Question1.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/altera/13.0sp1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4451 megabytes
-    Info: Processing ended: Sun Apr 03 17:54:49 2022
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sun Apr 10 14:23:48 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
@@ -67,12 +67,8 @@ Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
 +--------------------------------------------------------------------------+
 ; File Name                                                                ;
 +--------------------------------------------------------------------------+
-; Adder8.vhd                                                               ;
-; Adder8test.vwf                                                           ;
 ; c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf                  ;
 ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question1/Adder8test.vwf ;
-; FA.vhd                                                                   ;
-; HA.vhd                                                                   ;
 ; incremental_db/compiled_partitions/Question1.db_info                     ;
 ; MUX4_1.vhd                                                               ;
 ; MUX4_1.vwf                                                               ;
