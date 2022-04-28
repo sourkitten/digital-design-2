@@ -1,0 +1,108 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise6\simulation\modelsim
+Ectrllogic
+Z1 w1651176497
+Z2 DPx4 work 12 declarations 0 22 2:C8ki0d@:@hbAm:4G<k12
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise6\simulation\modelsim
+Z8 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd
+Z9 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd
+l0
+L8
+VnI_fo56YIe37T?Vz_g@5o3
+Z10 OV;C;10.1d;51
+33
+Z11 !s108 1651177170.388000
+Z12 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd|
+Z13 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd|
+Z14 o-2008 -work work -O0
+Z15 tExplicit 1
+!s100 ZCJ2lOkVJ2@NU9RPPdKOk0
+!i10b 1
+Adataflow
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 ctrllogic 0 22 nI_fo56YIe37T?Vz_g@5o3
+l21
+L15
+V:zOI?:6QC`iTj?GQ`M?7Z1
+R10
+33
+R11
+R12
+R13
+R14
+R15
+!s100 EX9G>ZoKGgfWP`Z1LHA6o2
+!i10b 1
+Ectrllogic_tb
+Z16 w1651176660
+R2
+R4
+Z17 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R3
+R5
+R6
+R7
+Z18 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/CtrlLogic_tb.vhd
+Z19 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/CtrlLogic_tb.vhd
+l0
+L11
+VA4W`3`K;YBb_]B<>FOz^T2
+!s100 cC0Ghl;<doB1Fg_AgH;m`0
+R10
+33
+!i10b 1
+Z20 !s108 1651177170.555000
+Z21 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/CtrlLogic_tb.vhd|
+Z22 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/CtrlLogic_tb.vhd|
+R14
+R15
+Actrllogic_tb_arch
+R2
+R4
+R17
+R3
+R5
+R6
+DEx4 work 12 ctrllogic_tb 0 22 A4W`3`K;YBb_]B<>FOz^T2
+l48
+L16
+VYBX39nodG;fCPo2o:L81X0
+!s100 n1C76J:X]i9[2e[U6?F8[1
+R10
+33
+!i10b 1
+R20
+R21
+R22
+R14
+R15
+Pdeclarations
+R5
+R6
+w1651174952
+R7
+8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd
+FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd
+l0
+L4
+V2:C8ki0d@:@hbAm:4G<k12
+R10
+33
+R14
+R15
+!s100 :;F=QcW8OWA_=7QJ[NGe^0
+!i10b 1
+!s108 1651177170.245000
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd|
+!s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd|

@@ -15,7 +15,7 @@ L4
 VO3:gPfka]ljz6zPNhVUeD0
 Z7 OV;C;10.1d;51
 33
-Z8 !s108 1649584822.961000
+Z8 !s108 1651171490.110000
 Z9 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/Adder8.vhd|
 Z10 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/Adder8.vhd|
 Z11 o-2008 -work work -O0
@@ -55,7 +55,7 @@ V6ATZ6=@IOY3RX;QjJ?`l_2
 R7
 33
 !i10b 1
-Z19 !s108 1649584823.053000
+Z19 !s108 1651171490.243000
 Z20 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/simulation/modelsim/Adder8_tb.vhd|
 Z21 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/simulation/modelsim/Adder8_tb.vhd|
 R11
@@ -91,7 +91,7 @@ L4
 VZi=2FU]RW=U4L2AD`o8NF3
 R7
 33
-Z25 !s108 1649584822.832000
+Z25 !s108 1651171489.960000
 Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/FA.vhd|
 Z27 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question2/FA.vhd|
 R11

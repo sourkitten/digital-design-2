@@ -1,0 +1,26 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise5\Question5\simulation\modelsim
+vCounter8
+!i10b 1
+!s100 83E=6kWb0l]P9C:Fl550@3
+IidRKPa<=FM1N70AFKGi[o1
+Vkb?^c:DIKeJn4JPUVRTO@1
+Z1 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise5\Question5\simulation\modelsim
+w1650019416
+8Question5.vo
+FQuestion5.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1650019441.282000
+!s107 Question5.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Question5.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+n@counter8

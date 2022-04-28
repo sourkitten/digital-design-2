@@ -12,9 +12,9 @@ architecture RTL of Counter8 is
 begin
 	seq0	:	process (CLK, CLR, SET)
 	begin
-		if	(CLR='1') then
+		if	(CLR='0') then
 			REG <= (REG'range=>'0');
-		elsif	(SET='1') then
+		elsif	(SET='0') then
 			REG <= (REG'range=>'1');
 		elsif (CLK'event and CLK = '1') then
 			if (EN = '1') then

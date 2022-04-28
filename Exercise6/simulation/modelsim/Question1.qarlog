@@ -1,0 +1,38 @@
+Quartus II Archive log --	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/Question1.qarlog
+
+Archive:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/Question1.qar
+Date:		Thu Apr 28 23:02:09 2022
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Adder.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Question1.qpf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Question1.qsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Question1_nativelink_simulation.rpt
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vwf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/incremental_db/compiled_partitions/Question1.db_info
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.asm.rpt
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.done
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.eda.rpt
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.fit.rpt
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.fit.smsg
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.fit.summary
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.flow.rpt
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.jdi
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.map.rpt
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.map.summary
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.pin
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.pof
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.sof
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.sta.rpt
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/output_files/Question1.sta.summary
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/CtrlLogic_tb.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/Declare.vhd
+C:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf
+c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 27 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

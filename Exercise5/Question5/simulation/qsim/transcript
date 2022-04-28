@@ -20,6 +20,7 @@
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_clk_delay_ctrl
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
@@ -27,7 +28,13 @@
 # Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading work.Question5_vlg_sample_tst
 # Loading work.Question5_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from Question5_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from Question5_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /Question5_vlg_vec_tst File: Question5.vt
 # Simulation passed !
-# ** Note: $finish    : Question5.vt(349)
+# ** Note: $finish    : Question5.vt(289)
 #    Time: 500 ns  Iteration: 0  Instance: /Question5_vlg_vec_tst/tb_out

@@ -72,7 +72,7 @@ SIGNAL("Question5_vlg_vec_tst|SET")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG0")
+SIGNAL("Question5_vlg_vec_tst|HEX1[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -82,7 +82,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG0")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG1")
+SIGNAL("Question5_vlg_vec_tst|HEX1[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -92,7 +92,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG1")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG2")
+SIGNAL("Question5_vlg_vec_tst|HEX1[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -102,7 +102,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG2")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG3")
+SIGNAL("Question5_vlg_vec_tst|HEX1[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -112,7 +112,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG3")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG4")
+SIGNAL("Question5_vlg_vec_tst|HEX1[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -122,7 +122,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG4")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG5")
+SIGNAL("Question5_vlg_vec_tst|HEX1[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -132,7 +132,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG5")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG6")
+SIGNAL("Question5_vlg_vec_tst|HEX1[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -142,7 +142,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG6")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG20")
+SIGNAL("Question5_vlg_vec_tst|HEX2[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -152,7 +152,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG20")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG21")
+SIGNAL("Question5_vlg_vec_tst|HEX2[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -162,7 +162,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG21")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG22")
+SIGNAL("Question5_vlg_vec_tst|HEX2[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -172,7 +172,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG22")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG23")
+SIGNAL("Question5_vlg_vec_tst|HEX2[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -182,7 +182,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG23")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG24")
+SIGNAL("Question5_vlg_vec_tst|HEX2[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -192,7 +192,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG24")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG25")
+SIGNAL("Question5_vlg_vec_tst|HEX2[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -202,7 +202,7 @@ SIGNAL("Question5_vlg_vec_tst|oSEG25")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|oSEG26")
+SIGNAL("Question5_vlg_vec_tst|HEX2[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -372,6 +372,16 @@ SIGNAL("Question5_vlg_vec_tst|i1|CLK~combout")
 	PARENT = "";
 }
 
+SIGNAL("Question5_vlg_vec_tst|i1|CLK~clk_delay_ctrl_clkout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("Question5_vlg_vec_tst|i1|CLK~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -382,7 +392,7 @@ SIGNAL("Question5_vlg_vec_tst|i1|CLK~clkctrl_outclk")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|i1|SET~combout")
+SIGNAL("Question5_vlg_vec_tst|i1|CLR~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -392,7 +402,7 @@ SIGNAL("Question5_vlg_vec_tst|i1|SET~combout")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|i1|CLR~combout")
+SIGNAL("Question5_vlg_vec_tst|i1|SET~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -422,17 +432,7 @@ SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[4]~1_combout")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|i1|inst|Add0~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[1]~15_combout")
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[0]~17_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -472,7 +472,7 @@ SIGNAL("Question5_vlg_vec_tst|i1|EN~combout")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[1]~_emulated_regout")
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[0]~_emulated_regout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -482,7 +482,7 @@ SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[1]~_emulated_regout")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[1]~14_combout")
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[0]~16_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -602,6 +602,46 @@ SIGNAL("Question5_vlg_vec_tst|i1|inst|Add0~5")
 	PARENT = "";
 }
 
+SIGNAL("Question5_vlg_vec_tst|i1|inst|Add0~6_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[4]~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[4]~_emulated_regout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[4]~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("Question5_vlg_vec_tst|i1|inst|Add0~7")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -662,6 +702,46 @@ SIGNAL("Question5_vlg_vec_tst|i1|inst|Add0~9")
 	PARENT = "";
 }
 
+SIGNAL("Question5_vlg_vec_tst|i1|inst|Add0~10_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[6]~7_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[6]~_emulated_regout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[6]~6_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("Question5_vlg_vec_tst|i1|inst|Add0~11")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -712,117 +792,7 @@ SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[7]~8_combout")
 	PARENT = "";
 }
 
-SIGNAL("Question5_vlg_vec_tst|i1|inst|Add0~6_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[4]~3_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[4]~_emulated_regout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[4]~2_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|Add0~10_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[6]~7_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[6]~_emulated_regout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[6]~6_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("Question5_vlg_vec_tst|i1|inst1|WideOr0~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[0]~17_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[0]~_emulated_regout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[0]~16_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -883,6 +853,46 @@ SIGNAL("Question5_vlg_vec_tst|i1|inst1|WideOr5~0_combout")
 }
 
 SIGNAL("Question5_vlg_vec_tst|i1|inst1|WideOr6~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Question5_vlg_vec_tst|i1|inst|Add0~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[1]~15_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[1]~_emulated_regout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Question5_vlg_vec_tst|i1|inst|REG[1]~14_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1025,8 +1035,8 @@ TRANSITION_LIST("Question5_vlg_vec_tst|CLR")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1.048;
-		LEVEL 0 FOR 498.952;
+		LEVEL 1 FOR 5.764;
+		LEVEL 0 FOR 494.236;
 	}
 }
 
@@ -1052,204 +1062,210 @@ TRANSITION_LIST("Question5_vlg_vec_tst|SET")
 	}
 }
 
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG0")
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX1[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
+		LEVEL X FOR 12.424;
+		LEVEL 1 FOR 361.279;
+		LEVEL 0 FOR 25.484;
+		LEVEL 1 FOR 100.813;
 	}
 }
 
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG1")
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX1[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 12.932;
+		LEVEL 0 FOR 487.068;
 	}
 }
 
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG2")
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX1[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 12.943;
+		LEVEL 0 FOR 487.057;
 	}
 }
 
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG3")
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX1[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 12.949;
+		LEVEL 0 FOR 361.833;
+		LEVEL 1 FOR 24.989;
+		LEVEL 0 FOR 100.229;
 	}
 }
 
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG4")
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX1[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
+		LEVEL X FOR 12.356;
+		LEVEL 0 FOR 361.584;
+		LEVEL 1 FOR 25.427;
+		LEVEL 0 FOR 100.633;
 	}
 }
 
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG5")
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX1[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
+		LEVEL X FOR 12.658;
+		LEVEL 0 FOR 361.833;
+		LEVEL 1 FOR 24.869;
+		LEVEL 0 FOR 100.64;
 	}
 }
 
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG6")
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX1[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 360.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 110.0;
+		LEVEL X FOR 13.197;
+		LEVEL 0 FOR 486.803;
 	}
 }
 
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG20")
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX2[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG21")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 180.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG22")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 280.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 50.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG23")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG24")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 50.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG25")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 30.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|oSEG26")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL X FOR 10.634;
+		LEVEL 1 FOR 46.832;
+		LEVEL 0 FOR 199.999;
+		LEVEL 1 FOR 19.992;
 		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 14.838;
+		LEVEL 0 FOR 25.162;
+		LEVEL 1 FOR 40.009;
+		LEVEL 0 FOR 62.534;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX2[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.887;
+		LEVEL 0 FOR 26.793;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 160.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 22.32;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX2[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.601;
+		LEVEL 0 FOR 26.831;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 19.706;
+		LEVEL 0 FOR 20.294;
+		LEVEL 1 FOR 19.999;
+		LEVEL 0 FOR 100.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 42.568;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX2[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.809;
+		LEVEL 0 FOR 26.83;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 39.993;
+		LEVEL 1 FOR 20.007;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 70.0;
+		LEVEL 0 FOR 34.856;
+		LEVEL 1 FOR 25.137;
+		LEVEL 0 FOR 20.007;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 39.993;
+		LEVEL 1 FOR 20.007;
+		LEVEL 0 FOR 2.361;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX2[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.67;
+		LEVEL 0 FOR 46.767;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 280.019;
+		LEVEL 1 FOR 39.714;
+		LEVEL 0 FOR 40.267;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 42.563;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX2[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.822;
+		LEVEL 0 FOR 106.787;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 2.391;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|HEX2[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.791;
+		LEVEL 0 FOR 26.822;
+		LEVEL 1 FOR 19.973;
+		LEVEL 0 FOR 40.028;
+		LEVEL 1 FOR 19.999;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 19.973;
+		LEVEL 0 FOR 60.027;
+		LEVEL 1 FOR 19.973;
+		LEVEL 0 FOR 40.028;
+		LEVEL 1 FOR 19.999;
+		LEVEL 0 FOR 2.387;
 	}
 }
 
@@ -1258,9 +1274,10 @@ TRANSITION_LIST("Question5_vlg_vec_tst|Q[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 10.031;
+		LEVEL 0 FOR 361.89;
+		LEVEL 1 FOR 25.183;
+		LEVEL 0 FOR 102.896;
 	}
 }
 
@@ -1269,9 +1286,10 @@ TRANSITION_LIST("Question5_vlg_vec_tst|Q[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 10.084;
+		LEVEL 0 FOR 361.833;
+		LEVEL 1 FOR 24.984;
+		LEVEL 0 FOR 103.099;
 	}
 }
 
@@ -1280,9 +1298,10 @@ TRANSITION_LIST("Question5_vlg_vec_tst|Q[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 10.747;
+		LEVEL 0 FOR 361.53;
+		LEVEL 1 FOR 25.427;
+		LEVEL 0 FOR 102.296;
 	}
 }
 
@@ -1291,9 +1310,10 @@ TRANSITION_LIST("Question5_vlg_vec_tst|Q[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 10.891;
+		LEVEL 0 FOR 361.833;
+		LEVEL 1 FOR 24.989;
+		LEVEL 0 FOR 102.287;
 	}
 }
 
@@ -1302,9 +1322,10 @@ TRANSITION_LIST("Question5_vlg_vec_tst|Q[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 10.101;
+		LEVEL 0 FOR 266.818;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 103.081;
 	}
 }
 
@@ -1313,12 +1334,13 @@ TRANSITION_LIST("Question5_vlg_vec_tst|Q[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
+		LEVEL X FOR 9.905;
+		LEVEL 0 FOR 86.823;
 		LEVEL 1 FOR 180.0;
 		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 60.0;
+		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 30.0;
+		LEVEL 1 FOR 23.272;
 	}
 }
 
@@ -1327,17 +1349,18 @@ TRANSITION_LIST("Question5_vlg_vec_tst|Q[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
+		LEVEL X FOR 9.92;
+		LEVEL 0 FOR 46.794;
 		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 140.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 14.856;
+		LEVEL 1 FOR 25.144;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 30.0;
+		LEVEL 0 FOR 23.286;
 	}
 }
 
@@ -1346,26 +1369,27 @@ TRANSITION_LIST("Question5_vlg_vec_tst|Q[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL X FOR 10.144;
+		LEVEL 0 FOR 26.82;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 14.83;
+		LEVEL 1 FOR 25.17;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 3.036;
 	}
 }
 
@@ -1374,8 +1398,8 @@ TRANSITION_LIST("Question5_vlg_vec_tst|sampler")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1.048;
-		LEVEL 0 FOR 8.952;
+		LEVEL X FOR 5.764;
+		LEVEL 0 FOR 4.236;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
@@ -1487,7 +1511,7 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|CLK~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 10.842;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
@@ -1536,7 +1560,66 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|CLK~combout")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 9.158;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|CLK~clk_delay_ctrl_clkout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.2;
+		LEVEL 0 FOR 10.842;
 		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 8.958;
 	}
 }
 
@@ -1545,7 +1628,8 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|CLK~clkctrl_outclk")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL X FOR 0.2;
+		LEVEL 0 FOR 10.842;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
@@ -1594,18 +1678,7 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|CLK~clkctrl_outclk")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|SET~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 8.958;
 	}
 }
 
@@ -1614,8 +1687,19 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|CLR~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1.048;
-		LEVEL 0 FOR 498.952;
+		LEVEL 1 FOR 6.626;
+		LEVEL 0 FOR 493.374;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|SET~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 360.842;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 119.158;
 	}
 }
 
@@ -1624,9 +1708,10 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[7]~27_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
+		LEVEL X FOR 5.054;
+		LEVEL 0 FOR 360.842;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 114.104;
 	}
 }
 
@@ -1635,466 +1720,9 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 140.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[1]~15_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1.048;
-		LEVEL 0 FOR 358.952;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~0clkctrl_outclk")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1.048;
-		LEVEL 0 FOR 358.952;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|EN~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 260.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[1]~_emulated_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 30.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[1]~14_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 30.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~1")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 30.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 180.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 50.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[2]~13_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 180.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 50.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[2]~_emulated_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 180.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 30.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[2]~12_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 180.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 30.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~3")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 130.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 110.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~4_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 130.0;
-		LEVEL 1 FOR 230.0;
-		LEVEL 0 FOR 140.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[3]~11_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 130.0;
-		LEVEL 1 FOR 370.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[3]~_emulated_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 110.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[3]~10_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~5")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~7")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 360.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~8_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[5]~5_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 140.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[5]~_emulated_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 390.0;
-		LEVEL 1 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[5]~4_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~9")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~11")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 360.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~12_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[7]~9_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 140.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[7]~_emulated_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 390.0;
-		LEVEL 1 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[7]~8_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~6_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~3_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 140.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~_emulated_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 390.0;
-		LEVEL 1 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~10_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[6]~7_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 140.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[6]~_emulated_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 390.0;
-		LEVEL 1 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[6]~6_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
-	}
-}
-
-TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst1|WideOr0~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 6.519;
+		LEVEL 0 FOR 361.649;
+		LEVEL 1 FOR 131.832;
 	}
 }
 
@@ -2103,27 +1731,63 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[0]~17_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 10.0;
+		LEVEL X FOR 7.183;
+		LEVEL 1 FOR 26.74;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 30.0;
+		LEVEL 1 FOR 120.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 6.077;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.771;
+		LEVEL 1 FOR 6.626;
+		LEVEL 0 FOR 354.172;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 113.431;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~0clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.34;
+		LEVEL 1 FOR 6.626;
+		LEVEL 0 FOR 354.172;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 112.862;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|EN~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 140.999;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 259.001;
 	}
 }
 
@@ -2132,27 +1796,26 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[0]~_emulated_regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 32.647;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 30.0;
+		LEVEL 0 FOR 120.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 7.135;
 	}
 }
 
@@ -2161,26 +1824,459 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[0]~16_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL X FOR 6.521;
+		LEVEL 0 FOR 26.82;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 14.83;
+		LEVEL 1 FOR 25.17;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 6.659;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.326;
+		LEVEL 0 FOR 66.82;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 14.932;
+		LEVEL 1 FOR 25.068;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 25.854;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.736;
+		LEVEL 0 FOR 66.82;
+		LEVEL 1 FOR 19.445;
+		LEVEL 0 FOR 0.555;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 19.445;
+		LEVEL 1 FOR 0.555;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 19.445;
+		LEVEL 0 FOR 0.555;
+		LEVEL 1 FOR 14.932;
+		LEVEL 0 FOR 24.513;
+		LEVEL 1 FOR 0.555;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 19.445;
+		LEVEL 0 FOR 0.555;
+		LEVEL 1 FOR 25.444;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[2]~13_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 8.135;
+		LEVEL 0 FOR 66.82;
+		LEVEL 1 FOR 19.445;
+		LEVEL 0 FOR 0.555;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 19.445;
+		LEVEL 1 FOR 0.555;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 19.445;
+		LEVEL 0 FOR 0.555;
+		LEVEL 1 FOR 14.214;
+		LEVEL 0 FOR 0.718;
+		LEVEL 1 FOR 24.513;
+		LEVEL 0 FOR 0.555;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 19.445;
+		LEVEL 1 FOR 0.555;
+		LEVEL 0 FOR 25.045;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[2]~_emulated_regout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 92.646;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 16.062;
+		LEVEL 0 FOR 23.938;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 27.136;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[2]~12_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.498;
+		LEVEL 0 FOR 86.823;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 26.679;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.151;
+		LEVEL 1 FOR 86.823;
+		LEVEL 0 FOR 0.243;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 19.757;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 0.243;
+		LEVEL 1 FOR 14.932;
+		LEVEL 0 FOR 24.825;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 0.243;
+		LEVEL 1 FOR 25.783;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.561;
+		LEVEL 0 FOR 247.066;
+		LEVEL 1 FOR 114.932;
+		LEVEL 0 FOR 130.441;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[3]~11_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 8.267;
+		LEVEL 0 FOR 247.066;
+		LEVEL 1 FOR 113.501;
+		LEVEL 0 FOR 1.431;
+		LEVEL 1 FOR 129.735;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[3]~_emulated_regout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 272.647;
+		LEVEL 1 FOR 96.062;
+		LEVEL 0 FOR 23.938;
+		LEVEL 1 FOR 107.135;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[3]~10_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.522;
+		LEVEL 0 FOR 266.818;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 106.66;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~5")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.325;
+		LEVEL 0 FOR 346.72;
+		LEVEL 1 FOR 0.243;
+		LEVEL 0 FOR 14.932;
+		LEVEL 1 FOR 24.923;
+		LEVEL 0 FOR 105.857;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~6_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.735;
+		LEVEL 0 FOR 361.271;
+		LEVEL 1 FOR 0.624;
+		LEVEL 0 FOR 24.365;
+		LEVEL 1 FOR 0.558;
+		LEVEL 0 FOR 105.447;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 8.133;
+		LEVEL 0 FOR 361.036;
+		LEVEL 1 FOR 0.235;
+		LEVEL 0 FOR 0.624;
+		LEVEL 1 FOR 24.365;
+		LEVEL 0 FOR 0.558;
+		LEVEL 1 FOR 105.049;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~_emulated_regout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 392.646;
+		LEVEL 1 FOR 107.136;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[4]~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.497;
+		LEVEL 0 FOR 361.833;
+		LEVEL 1 FOR 24.989;
+		LEVEL 0 FOR 106.681;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~7")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.146;
+		LEVEL 1 FOR 362.145;
+		LEVEL 0 FOR 24.677;
+		LEVEL 1 FOR 106.032;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~8_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.556;
+		LEVEL 0 FOR 361.148;
+		LEVEL 1 FOR 0.997;
+		LEVEL 0 FOR 130.299;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[5]~5_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 8.08;
+		LEVEL 0 FOR 362.145;
+		LEVEL 1 FOR 129.775;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[5]~_emulated_regout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 392.646;
+		LEVEL 1 FOR 107.136;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[5]~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.492;
+		LEVEL 0 FOR 361.53;
+		LEVEL 1 FOR 25.427;
+		LEVEL 0 FOR 106.551;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~9")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.147;
+		LEVEL 0 FOR 362.215;
+		LEVEL 1 FOR 24.742;
+		LEVEL 0 FOR 105.896;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~10_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.557;
+		LEVEL 0 FOR 361.485;
+		LEVEL 1 FOR 0.73;
+		LEVEL 0 FOR 24.254;
+		LEVEL 1 FOR 0.488;
+		LEVEL 0 FOR 105.486;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[6]~7_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.956;
+		LEVEL 0 FOR 361.209;
+		LEVEL 1 FOR 0.276;
+		LEVEL 0 FOR 0.73;
+		LEVEL 1 FOR 24.254;
+		LEVEL 0 FOR 0.488;
+		LEVEL 1 FOR 105.087;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[6]~_emulated_regout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 392.646;
+		LEVEL 1 FOR 107.136;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[6]~6_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.495;
+		LEVEL 0 FOR 361.833;
+		LEVEL 1 FOR 24.984;
+		LEVEL 0 FOR 106.688;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~11")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.185;
+		LEVEL 1 FOR 362.248;
+		LEVEL 0 FOR 24.569;
+		LEVEL 1 FOR 105.998;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~12_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.595;
+		LEVEL 0 FOR 361.33;
+		LEVEL 1 FOR 0.918;
+		LEVEL 0 FOR 130.157;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[7]~9_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.993;
+		LEVEL 0 FOR 361.175;
+		LEVEL 1 FOR 0.155;
+		LEVEL 0 FOR 0.918;
+		LEVEL 1 FOR 129.759;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[7]~_emulated_regout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 392.646;
+		LEVEL 1 FOR 107.136;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[7]~8_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.42;
+		LEVEL 0 FOR 361.89;
+		LEVEL 1 FOR 25.183;
+		LEVEL 0 FOR 106.507;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst1|WideOr0~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 9.07;
+		LEVEL 0 FOR 361.279;
+		LEVEL 1 FOR 25.484;
+		LEVEL 0 FOR 104.167;
 	}
 }
 
@@ -2189,7 +2285,12 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst1|WideOr1~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
+		LEVEL X FOR 9.576;
+		LEVEL 0 FOR 360.76;
+		LEVEL 1 FOR 0.572;
+		LEVEL 0 FOR 24.917;
+		LEVEL 1 FOR 0.573;
+		LEVEL 0 FOR 103.602;
 	}
 }
 
@@ -2198,7 +2299,10 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst1|WideOr2~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
+		LEVEL X FOR 9.575;
+		LEVEL 0 FOR 386.317;
+		LEVEL 1 FOR 0.505;
+		LEVEL 0 FOR 103.603;
 	}
 }
 
@@ -2207,9 +2311,10 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst1|WideOr3~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 9.58;
+		LEVEL 0 FOR 361.833;
+		LEVEL 1 FOR 24.989;
+		LEVEL 0 FOR 103.598;
 	}
 }
 
@@ -2218,9 +2323,10 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst1|WideOr4~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 8.758;
+		LEVEL 0 FOR 361.584;
+		LEVEL 1 FOR 25.427;
+		LEVEL 0 FOR 104.231;
 	}
 }
 
@@ -2229,9 +2335,10 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst1|WideOr5~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL X FOR 9.071;
+		LEVEL 0 FOR 361.833;
+		LEVEL 1 FOR 24.869;
+		LEVEL 0 FOR 104.227;
 	}
 }
 
@@ -2240,7 +2347,88 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst1|WideOr6~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
+		LEVEL X FOR 9.575;
+		LEVEL 0 FOR 386.252;
+		LEVEL 1 FOR 0.57;
+		LEVEL 0 FOR 103.603;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|Add0~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.451;
+		LEVEL 0 FOR 26.722;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 5.827;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[1]~15_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 8.026;
+		LEVEL 0 FOR 26.722;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 34.388;
+		LEVEL 1 FOR 45.612;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 5.252;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[1]~_emulated_regout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.218;
+		LEVEL 0 FOR 52.647;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 27.135;
+	}
+}
+
+TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst|REG[1]~14_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.519;
+		LEVEL 0 FOR 46.794;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 14.856;
+		LEVEL 1 FOR 25.144;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 26.687;
 	}
 }
 
@@ -2249,14 +2437,15 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst2|WideOr0~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL X FOR 7.246;
+		LEVEL 0 FOR 46.832;
+		LEVEL 1 FOR 199.999;
+		LEVEL 0 FOR 19.992;
 		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 14.838;
+		LEVEL 1 FOR 25.162;
+		LEVEL 0 FOR 40.009;
+		LEVEL 1 FOR 65.922;
 	}
 }
 
@@ -2265,15 +2454,14 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst2|WideOr1~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL X FOR 7.277;
+		LEVEL 0 FOR 26.793;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 30.0;
+		LEVEL 0 FOR 25.93;
 	}
 }
 
@@ -2282,18 +2470,21 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst2|WideOr2~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL X FOR 7.246;
+		LEVEL 0 FOR 26.831;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 19.706;
+		LEVEL 0 FOR 20.294;
+		LEVEL 1 FOR 19.999;
+		LEVEL 0 FOR 79.707;
+		LEVEL 1 FOR 0.286;
+		LEVEL 0 FOR 20.008;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 50.0;
+		LEVEL 1 FOR 45.923;
 	}
 }
 
@@ -2302,21 +2493,22 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst2|WideOr3~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL X FOR 7.246;
+		LEVEL 0 FOR 26.83;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 39.993;
+		LEVEL 1 FOR 20.007;
+		LEVEL 0 FOR 140.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 120.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 34.856;
+		LEVEL 1 FOR 25.137;
+		LEVEL 0 FOR 20.007;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 39.993;
+		LEVEL 1 FOR 20.007;
+		LEVEL 0 FOR 5.924;
 	}
 }
 
@@ -2325,15 +2517,14 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst2|WideOr4~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
+		LEVEL X FOR 7.284;
+		LEVEL 0 FOR 46.767;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 280.0;
+		LEVEL 0 FOR 280.019;
+		LEVEL 1 FOR 39.714;
+		LEVEL 0 FOR 40.267;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 45.949;
 	}
 }
 
@@ -2342,14 +2533,13 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst2|WideOr5~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 180.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 30.0;
+		LEVEL X FOR 7.282;
+		LEVEL 0 FOR 106.787;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 5.931;
 	}
 }
 
@@ -2358,19 +2548,18 @@ TRANSITION_LIST("Question5_vlg_vec_tst|i1|inst2|WideOr6~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL X FOR 7.244;
+		LEVEL 0 FOR 26.822;
+		LEVEL 1 FOR 19.973;
+		LEVEL 0 FOR 40.028;
+		LEVEL 1 FOR 19.999;
 		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 19.973;
+		LEVEL 0 FOR 60.027;
+		LEVEL 1 FOR 19.973;
+		LEVEL 0 FOR 40.028;
+		LEVEL 1 FOR 19.999;
+		LEVEL 0 FOR 5.934;
 	}
 }
 
@@ -2412,7 +2601,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG0";
+	CHANNEL = "Question5_vlg_vec_tst|HEX1[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -2421,7 +2610,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG1";
+	CHANNEL = "Question5_vlg_vec_tst|HEX1[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -2430,7 +2619,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG2";
+	CHANNEL = "Question5_vlg_vec_tst|HEX1[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -2439,7 +2628,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG3";
+	CHANNEL = "Question5_vlg_vec_tst|HEX1[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -2448,7 +2637,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG4";
+	CHANNEL = "Question5_vlg_vec_tst|HEX1[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -2457,7 +2646,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG5";
+	CHANNEL = "Question5_vlg_vec_tst|HEX1[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -2466,7 +2655,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG6";
+	CHANNEL = "Question5_vlg_vec_tst|HEX1[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -2475,7 +2664,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG20";
+	CHANNEL = "Question5_vlg_vec_tst|HEX2[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -2484,7 +2673,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG21";
+	CHANNEL = "Question5_vlg_vec_tst|HEX2[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -2493,7 +2682,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG22";
+	CHANNEL = "Question5_vlg_vec_tst|HEX2[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
@@ -2502,7 +2691,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG23";
+	CHANNEL = "Question5_vlg_vec_tst|HEX2[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -2511,7 +2700,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG24";
+	CHANNEL = "Question5_vlg_vec_tst|HEX2[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -2520,7 +2709,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG25";
+	CHANNEL = "Question5_vlg_vec_tst|HEX2[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -2529,7 +2718,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|oSEG26";
+	CHANNEL = "Question5_vlg_vec_tst|HEX2[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -2682,7 +2871,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|CLK~clkctrl_outclk";
+	CHANNEL = "Question5_vlg_vec_tst|i1|CLK~clk_delay_ctrl_clkout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
@@ -2691,7 +2880,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|SET~combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|CLK~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 35;
@@ -2709,7 +2898,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[7]~27_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|SET~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
@@ -2718,7 +2907,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[4]~1_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[7]~27_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
@@ -2727,7 +2916,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[4]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
@@ -2736,7 +2925,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[1]~15_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[0]~17_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
@@ -2772,7 +2961,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[1]~_emulated_regout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[0]~_emulated_regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 44;
@@ -2781,7 +2970,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[1]~14_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[0]~16_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 45;
@@ -2889,7 +3078,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~7";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~6_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 57;
@@ -2898,7 +3087,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~8_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[4]~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
@@ -2907,7 +3096,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[5]~5_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[4]~_emulated_regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
@@ -2916,7 +3105,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[5]~_emulated_regout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[4]~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
@@ -2925,7 +3114,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[5]~4_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~7";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
@@ -2934,7 +3123,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~9";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~8_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
@@ -2943,7 +3132,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~11";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[5]~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 63;
@@ -2952,7 +3141,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~12_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[5]~_emulated_regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 64;
@@ -2961,7 +3150,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[7]~9_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[5]~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 65;
@@ -2970,7 +3159,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[7]~_emulated_regout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~9";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 66;
@@ -2979,7 +3168,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[7]~8_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~10_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 67;
@@ -2988,7 +3177,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~6_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[6]~7_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 68;
@@ -2997,7 +3186,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[4]~3_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[6]~_emulated_regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
@@ -3006,7 +3195,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[4]~_emulated_regout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[6]~6_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
@@ -3015,7 +3204,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[4]~2_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~11";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
@@ -3024,7 +3213,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~10_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~12_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
@@ -3033,7 +3222,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[6]~7_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[7]~9_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
@@ -3042,7 +3231,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[6]~_emulated_regout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[7]~_emulated_regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
@@ -3051,7 +3240,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[6]~6_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[7]~8_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
@@ -3069,7 +3258,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[0]~17_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr1~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
@@ -3078,7 +3267,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[0]~_emulated_regout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr2~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
@@ -3087,7 +3276,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[0]~16_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr3~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
@@ -3096,7 +3285,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr1~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr4~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
@@ -3105,7 +3294,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr2~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr5~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 81;
@@ -3114,7 +3303,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr3~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr6~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 82;
@@ -3123,7 +3312,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr4~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|Add0~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 83;
@@ -3132,7 +3321,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr5~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[1]~15_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 84;
@@ -3141,7 +3330,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst1|WideOr6~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[1]~_emulated_regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 85;
@@ -3150,7 +3339,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr0~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst|REG[1]~14_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 86;
@@ -3159,7 +3348,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr1~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr0~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 87;
@@ -3168,7 +3357,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr2~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr1~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 88;
@@ -3177,7 +3366,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr3~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr2~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 89;
@@ -3186,7 +3375,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr4~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr3~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 90;
@@ -3195,7 +3384,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr5~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr4~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 91;
@@ -3204,10 +3393,19 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr6~0_combout";
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr5~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 92;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Question5_vlg_vec_tst|i1|inst2|WideOr6~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 93;
 	TREE_LEVEL = 0;
 }
 ;

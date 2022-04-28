@@ -4,82 +4,82 @@ K3
 cModel Technology
 Z0 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise5\Question4\simulation\qsim
 vReg8
-Z1 I2S[99M?g:GSH7CIAV<:KY1
-Z2 VzMa9hN?=>GTRnA8<of?:R2
-Z3 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise5\Question4\simulation\qsim
-Z4 w1649587997
-Z5 8Question4.vo
-Z6 FQuestion4.vo
+Z1 !s100 ]fiQEPB3j06hGgZbm;idJ2
+Z2 Ia@c6UYH=IY4aVhhH?INhQ1
+Z3 VzMa9hN?=>GTRnA8<of?:R2
+Z4 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise5\Question4\simulation\qsim
+Z5 w1651170390
+Z6 8Question4.vo
+Z7 FQuestion4.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
-Z9 n@reg8
+Z9 !s90 -work|work|Question4.vo|
+Z10 o-work work -O0
+Z11 n@reg8
 !i10b 1
-Z10 !s100 PU1;J5aYQ;bU<EX0aM?nZ2
 !s85 0
-Z11 !s108 1649587997.960000
-Z12 !s107 Question4.vo|
-Z13 !s90 -work|work|Question4.vo|
+Z12 !s108 1651170391.921000
+Z13 !s107 Question4.vo|
 !s101 -O0
 vReg8_vlg_check_tst
 !i10b 1
-!s100 VMUPo=4f=<kM:<^jRA:2C3
-I@K;JA[3>=^gMm78D@SA[21
-VdM1eiP4C^DTXC]EMKK2Ve2
-R3
-Z14 w1649587996
-Z15 8Question4.vt
-Z16 FQuestion4.vt
+Z14 !s100 VMUPo=4f=<kM:<^jRA:2C3
+Z15 I@K;JA[3>=^gMm78D@SA[21
+Z16 VdM1eiP4C^DTXC]EMKK2Ve2
+R4
+R5
+Z17 8Question4.vt
+Z18 FQuestion4.vt
 L0 63
-R7
+R8
 r1
 !s85 0
 31
-Z17 !s108 1649587998.054000
-Z18 !s107 Question4.vt|
-Z19 !s90 -work|work|Question4.vt|
+Z19 !s108 1651170392.055000
+Z20 !s107 Question4.vt|
+Z21 !s90 -work|work|Question4.vt|
 !s101 -O0
-R8
-n@reg8_vlg_check_tst
+R10
+Z22 n@reg8_vlg_check_tst
 vReg8_vlg_sample_tst
 !i10b 1
-!s100 ZVdRe>Y?kBb^KbjJj[ThC1
-IVDdj5blXNM<1zaj2g=e]g0
-V_H<i]lZZ97gXGc7idRYOO3
-R3
-R14
-R15
-R16
+Z23 !s100 ZVdRe>Y?kBb^KbjJj[ThC1
+Z24 IVDdj5blXNM<1zaj2g=e]g0
+Z25 V_H<i]lZZ97gXGc7idRYOO3
+R4
+R5
+R17
+R18
 L0 29
-R7
+R8
 r1
 !s85 0
 31
-R17
-R18
 R19
+R20
+R21
 !s101 -O0
-R8
-n@reg8_vlg_sample_tst
+R10
+Z26 n@reg8_vlg_sample_tst
 vReg8_vlg_vec_tst
 !i10b 1
-!s100 hEKB0gV=BFR2b9c6YmW_K2
-I9m7jC=<iUV90DLI;lVo0_1
-V6lJLRG5882oDQb4=2Zb1V2
-R3
-R14
-R15
-R16
-L0 283
-R7
+Z27 !s100 hEKB0gV=BFR2b9c6YmW_K2
+Z28 I9m7jC=<iUV90DLI;lVo0_1
+Z29 V6lJLRG5882oDQb4=2Zb1V2
+R4
+R5
+R17
+R18
+Z30 L0 283
+R8
 r1
 !s85 0
 31
-R17
-R18
 R19
+R20
+R21
 !s101 -O0
-R8
-n@reg8_vlg_vec_tst
+R10
+Z31 n@reg8_vlg_vec_tst

@@ -2,28 +2,34 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Adder8
+# -- Compiling module MUX16_1
 # 
 # Top level modules:
-# 	Adder8
+# 	MUX16_1
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Adder8_vlg_sample_tst
-# -- Compiling module Adder8_vlg_check_tst
-# -- Compiling module Adder8_vlg_vec_tst
+# -- Compiling module MUX16_1_vlg_sample_tst
+# -- Compiling module MUX16_1_vlg_check_tst
+# -- Compiling module MUX16_1_vlg_vec_tst
 # 
 # Top level modules:
-# 	Adder8_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Adder8_vlg_vec_tst 
-# Loading work.Adder8_vlg_vec_tst
-# Loading work.Adder8
+# 	MUX16_1_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.MUX16_1_vlg_vec_tst 
+# Loading work.MUX16_1_vlg_vec_tst
+# Loading work.MUX16_1
 # Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
-# Loading work.Adder8_vlg_sample_tst
-# Loading work.Adder8_vlg_check_tst
+# Loading work.MUX16_1_vlg_sample_tst
+# Loading work.MUX16_1_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from Question1_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from Question1_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /MUX16_1_vlg_vec_tst File: Question1.vt
 # Simulation passed !
-# ** Note: $finish    : Question1.vt(304)
-#    Time: 1 us  Iteration: 0  Instance: /Adder8_vlg_vec_tst/tb_out
+# ** Note: $finish    : Question1.vt(150)
+#    Time: 320 ns  Iteration: 0  Instance: /MUX16_1_vlg_vec_tst/tb_out

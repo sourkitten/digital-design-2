@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise5\Question5\simulation\qsim
 vQuestion5
-Z1 !s100 D?;HDfF]5OhzkZRaD_^_b2
-Z2 I=G8BamJF_K=;a?HGdN<2X1
-Z3 VJ[K;4Q`>ZCibLP]ble^TN0
+Z1 !s100 jIFd>H0LdWUGazo:fih9^0
+Z2 IIB5z<ezj`IG=R^4>8TORL3
+Z3 VMMk0UBW9LU`PIbO5ITbYP3
 Z4 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise5\Question5\simulation\qsim
-Z5 w1649588792
+Z5 w1649590764
 Z6 8Question5.vo
 Z7 FQuestion5.vo
 L0 31
@@ -20,16 +20,16 @@ Z10 o-work work -O0
 Z11 n@question5
 !i10b 1
 !s85 0
-Z12 !s108 1649588792.995000
+Z12 !s108 1649590765.348000
 Z13 !s107 Question5.vo|
 !s101 -O0
 vQuestion5_vlg_check_tst
 !i10b 1
-Z14 !s100 JKYNoGSShPa08bT<NY5bN0
-Z15 IGg6;N^QLJcFUM<?2`PN_W3
-Z16 VL1hzhCPYj6l?_Si_M9@^61
+Z14 !s100 a9eG;CmN8W4TbWZ7M>Yze0
+Z15 Ig@Nm^X?JT[4ANmzLjS@fM0
+Z16 VT?Pn?XgMGcg8NYVX9e`Sj1
 R4
-Z17 w1649588791
+Z17 w1649590763
 Z18 8Question5.vt
 Z19 FQuestion5.vt
 L0 63
@@ -37,7 +37,7 @@ R8
 r1
 !s85 0
 31
-Z20 !s108 1649588793.081000
+Z20 !s108 1649590765.441000
 Z21 !s107 Question5.vt|
 Z22 !s90 -work|work|Question5.vt|
 !s101 -O0
@@ -65,14 +65,14 @@ R10
 Z27 n@question5_vlg_sample_tst
 vQuestion5_vlg_vec_tst
 !i10b 1
-Z28 !s100 JXJ7B_bN`O8nZcJ18cke72
-Z29 IQoz2<<d^nCkLg@Yb1YK2g1
-Z30 V_oDED0i7BzG=;0nWQhfBW3
+!s100 aI@XbNB3[>o`>k5TMKP=<0
+IQj4@:??^`c]46;m:X8?Fc1
+Z28 V_oDED0i7BzG=;0nWQhfBW3
 R4
 R17
 R18
 R19
-Z31 L0 353
+Z29 L0 293
 R8
 r1
 !s85 0
@@ -82,4 +82,4 @@ R21
 R22
 !s101 -O0
 R10
-Z32 n@question5_vlg_vec_tst
+Z30 n@question5_vlg_vec_tst

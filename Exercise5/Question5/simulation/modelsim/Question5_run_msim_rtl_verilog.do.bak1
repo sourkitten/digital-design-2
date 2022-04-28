@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+c:/users/v4ngbz/documents/quartus/libraries/corelibrary {c:/users/v4ngbz/documents/quartus/libraries/corelibrary/seg7_lut.v}
+vcom -93 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise5/Question5/Counter8.vhd}
+

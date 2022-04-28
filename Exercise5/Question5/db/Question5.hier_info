@@ -1,47 +1,4 @@
-|Question5
-HEX1[0] <= SEG7_LUT:inst1.oSEG[0]
-HEX1[1] <= SEG7_LUT:inst1.oSEG[1]
-HEX1[2] <= SEG7_LUT:inst1.oSEG[2]
-HEX1[3] <= SEG7_LUT:inst1.oSEG[3]
-HEX1[4] <= SEG7_LUT:inst1.oSEG[4]
-HEX1[5] <= SEG7_LUT:inst1.oSEG[5]
-HEX1[6] <= SEG7_LUT:inst1.oSEG[6]
-Q[0] <= Counter8:inst.Q[0]
-Q[1] <= Counter8:inst.Q[1]
-Q[2] <= Counter8:inst.Q[2]
-Q[3] <= Counter8:inst.Q[3]
-Q[4] <= Counter8:inst.Q[4]
-Q[5] <= Counter8:inst.Q[5]
-Q[6] <= Counter8:inst.Q[6]
-Q[7] <= Counter8:inst.Q[7]
-CLK => Counter8:inst.CLK
-CLR => Counter8:inst.CLR
-SET => Counter8:inst.SET
-EN => Counter8:inst.EN
-HEX2[0] <= SEG7_LUT:inst2.oSEG[0]
-HEX2[1] <= SEG7_LUT:inst2.oSEG[1]
-HEX2[2] <= SEG7_LUT:inst2.oSEG[2]
-HEX2[3] <= SEG7_LUT:inst2.oSEG[3]
-HEX2[4] <= SEG7_LUT:inst2.oSEG[4]
-HEX2[5] <= SEG7_LUT:inst2.oSEG[5]
-HEX2[6] <= SEG7_LUT:inst2.oSEG[6]
-
-
-|Question5|SEG7_LUT:inst1
-oSEG[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-iDIG[0] => Decoder0.IN3
-iDIG[1] => Decoder0.IN2
-iDIG[2] => Decoder0.IN1
-iDIG[3] => Decoder0.IN0
-
-
-|Question5|Counter8:inst
+|Counter8
 CLK => REG[0].CLK
 CLK => REG[1].CLK
 CLK => REG[2].CLK
@@ -50,6 +7,7 @@ CLK => REG[4].CLK
 CLK => REG[5].CLK
 CLK => REG[6].CLK
 CLK => REG[7].CLK
+CLR => REG[7].IN0
 CLR => REG[0].ACLR
 CLR => REG[1].ACLR
 CLR => REG[2].ACLR
@@ -58,7 +16,6 @@ CLR => REG[4].ACLR
 CLR => REG[5].ACLR
 CLR => REG[6].ACLR
 CLR => REG[7].ACLR
-CLR => REG[7].IN0
 SET => REG[7].IN1
 EN => REG[7].ENA
 EN => REG[6].ENA
@@ -76,19 +33,5 @@ Q[4] <= REG[4].DB_MAX_OUTPUT_PORT_TYPE
 Q[5] <= REG[5].DB_MAX_OUTPUT_PORT_TYPE
 Q[6] <= REG[6].DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= REG[7].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Question5|SEG7_LUT:inst2
-oSEG[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-oSEG[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-iDIG[0] => Decoder0.IN3
-iDIG[1] => Decoder0.IN2
-iDIG[2] => Decoder0.IN1
-iDIG[3] => Decoder0.IN0
 
 

@@ -1,0 +1,93 @@
+LIBRARY ieee  ; 
+LIBRARY std  ; 
+USE ieee.std_logic_1164.all  ; 
+USE ieee.std_logic_textio.all  ; 
+USE ieee.STD_LOGIC_UNSIGNED.all  ; 
+USE ieee.std_logic_unsigned.all  ; 
+USE std.textio.all  ; 
+ENTITY Counter8_tb  IS 
+END ; 
+ 
+ARCHITECTURE Counter8_tb_arch OF Counter8_tb IS
+  SIGNAL SET   :  STD_LOGIC  ; 
+  SIGNAL Q   :  std_logic_vector (7 downto 0)  ; 
+  SIGNAL CLR   :  STD_LOGIC  ; 
+  SIGNAL CLK   :  STD_LOGIC  ; 
+  SIGNAL EN   :  STD_LOGIC  ; 
+  COMPONENT Counter8  
+    PORT ( 
+      SET  : in STD_LOGIC ; 
+      Q  : out std_logic_vector (7 downto 0) ; 
+      CLR  : in STD_LOGIC ; 
+      CLK  : in STD_LOGIC ; 
+      EN  : in STD_LOGIC ); 
+  END COMPONENT ; 
+BEGIN
+  DUT  : Counter8  
+    PORT MAP ( 
+      SET   => SET  ,
+      Q   => Q  ,
+      CLR   => CLR  ,
+      CLK   => CLK  ,
+      EN   => EN   ) ; 
+
+
+
+-- "Clock Pattern" : dutyCycle = 50
+-- Start Time = 0 ps, End Time = 500 ps, Period = 20 ps
+  Process
+	Begin
+	for Z in 1 to 25
+	loop
+	    CLK  <= '1'  ;
+	   wait for 10 ps ;
+	    CLK  <= '0'  ;
+	   wait for 10 ps ;
+-- 500 ps, repeat pattern in loop.
+	end  loop;
+	wait;
+ End Process;
+
+
+-- "Constant Pattern"
+-- Start Time = 0 ps, End Time = 500 ps, Period = 0 ps
+  Process
+	Begin
+	 CLR  <= '0'  ;
+	wait for 5 ps ;
+	 CLR  <= '1'  ;
+	wait for 495 ps ;
+-- dumped values till 500 ps
+	wait;
+ End Process;
+
+
+-- "Constant Pattern"
+-- Start Time = 360 ps, End Time = 500 ps, Period = 0 ps
+  Process
+	Begin
+	 SET  <= '1'  ;
+	wait for 360 ps ;
+	 SET  <= '0'  ;
+	wait for 20 ps ;
+	 SET  <= '1'  ;
+	wait for 120 ps ;
+-- dumped values till 500 ps
+	wait;
+ End Process;
+
+
+-- "Constant Pattern"
+-- Start Time = 140 ps, End Time = 500 ps, Period = 0 ps
+  Process
+	Begin
+	 EN  <= '1'  ;
+	wait for 140 ps ;
+	 EN  <= '0'  ;
+	wait for 100 ps ;
+	 EN  <= '1'  ;
+	wait for 260 ps ;
+-- dumped values till 500 ps
+	wait;
+ End Process;
+END;
