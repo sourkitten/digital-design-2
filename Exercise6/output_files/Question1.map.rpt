@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Question1
-Thu Apr 28 23:18:48 2022
+Sun May 01 17:34:52 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,13 +13,25 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |CtrlLogic|state
+  8. State Machine - |Multiplier|CtrlLogic:U_Ctl|state
   9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |CtrlLogic
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |Multiplier
+ 14. Parameter Settings for User Entity Instance: Reg:R_A
+ 15. Parameter Settings for User Entity Instance: Reg:R_B
+ 16. Parameter Settings for User Entity Instance: Reg:R_C
+ 17. Parameter Settings for User Entity Instance: Reg:R_H
+ 18. Parameter Settings for User Entity Instance: Reg:R_L
+ 19. Parameter Settings for User Entity Instance: Adder:U_Ad
+ 20. Parameter Settings for User Entity Instance: CtrlLogic:U_Ctl
+ 21. Port Connectivity Checks: "Reg:R_L"
+ 22. Port Connectivity Checks: "Reg:R_C"
+ 23. Port Connectivity Checks: "Reg:R_B"
+ 24. Port Connectivity Checks: "Reg:R_A"
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +57,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 28 23:18:48 2022           ;
+; Analysis & Synthesis Status        ; Successful - Sun May 01 17:34:52 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Question1                                       ;
-; Top-level Entity Name              ; CtrlLogic                                       ;
+; Top-level Entity Name              ; Multiplier                                      ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 10                                              ;
+; Total logic elements               ; 18                                              ;
 ;     Total combinational functions  ; 9                                               ;
-;     Dedicated logic registers      ; 8                                               ;
-; Total registers                    ; 8                                               ;
-; Total pins                         ; 12                                              ;
+;     Dedicated logic registers      ; 16                                              ;
+; Total registers                    ; 16                                              ;
+; Total pins                         ; 20                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -68,7 +80,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; CtrlLogic          ; Question1          ;
+; Top-level entity name                                                      ; Multiplier         ; Question1          ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; VHDL Show LMF Mapping Messages                                             ; Off                ;                    ;
 ; VHDL Version                                                               ; VHDL_2008          ; VHDL_1993          ;
@@ -159,14 +171,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                  ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
-; Declare.vhd                      ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd   ;         ;
-; CtrlLogic.vhd                    ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                          ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+; Declare.vhd                      ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd    ;         ;
+; Reg.vhd                          ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vhd        ;         ;
+; Adder.vhd                        ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Adder.vhd      ;         ;
+; CtrlLogic.vhd                    ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd  ;         ;
+; Multiplier.vhd                   ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Multiplier.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -174,7 +189,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 10    ;
+; Estimated Total logic elements              ; 18    ;
 ;                                             ;       ;
 ; Total combinational functions               ; 9     ;
 ; Logic element usage by number of LUT inputs ;       ;
@@ -186,32 +201,35 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- normal mode                          ; 6     ;
 ;     -- arithmetic mode                      ; 3     ;
 ;                                             ;       ;
-; Total registers                             ; 8     ;
-;     -- Dedicated logic registers            ; 8     ;
+; Total registers                             ; 16    ;
+;     -- Dedicated logic registers            ; 16    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 12    ;
+; I/O pins                                    ; 20    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 8     ;
-; Total fan-out                               ; 53    ;
-; Average fan-out                             ; 1.83  ;
+; Maximum fan-out                             ; 16    ;
+; Total fan-out                               ; 86    ;
+; Average fan-out                             ; 1.91  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |CtrlLogic                 ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |CtrlLogic          ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
+; |Multiplier                ; 9 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |Multiplier                 ; work         ;
+;    |CtrlLogic:U_Ctl|       ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplier|CtrlLogic:U_Ctl ; work         ;
+;    |Reg:R_A|               ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplier|Reg:R_A         ; work         ;
+;    |Reg:R_B|               ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplier|Reg:R_B         ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +--------------------------------------------------------------------+
-; State Machine - |CtrlLogic|state                                   ;
+; State Machine - |Multiplier|CtrlLogic:U_Ctl|state                  ;
 +--------------+--------------+-------------+-----------+------------+
 ; Name         ; state.FINISH ; state.SHIFT ; state.ADD ; state.LOAD ;
 +--------------+--------------+-------------+-----------+------------+
@@ -222,14 +240,27 @@ Encoding Type:  One-Hot
 +--------------+--------------+-------------+-----------+------------+
 
 
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; state.FINISH                          ; Lost fanout        ;
-; Total Number of Removed Registers = 1 ;                    ;
-+---------------------------------------+--------------------+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++----------------------------------------+---------------------------------------------+
+; Register name                          ; Reason for Removal                          ;
++----------------------------------------+---------------------------------------------+
+; Reg:R_H|F[0..3]                        ; Stuck at GND due to stuck port clock_enable ;
+; Reg:R_L|F[0..3]                        ; Stuck at GND due to stuck port data_in      ;
+; Reg:R_C|F[0]                           ; Stuck at GND due to stuck port data_in      ;
+; CtrlLogic:U_Ctl|state.FINISH           ; Lost fanout                                 ;
+; Total Number of Removed Registers = 10 ;                                             ;
++----------------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                             ;
++---------------+--------------------------------+--------------------------------------------------------+
+; Register name ; Reason for Removal             ; Registers Removed due to This Register                 ;
++---------------+--------------------------------+--------------------------------------------------------+
+; Reg:R_H|F[0]  ; Stuck at GND                   ; Reg:R_L|F[3], Reg:R_L|F[2], Reg:R_L|F[1], Reg:R_L|F[0] ;
+;               ; due to stuck port clock_enable ;                                                        ;
++---------------+--------------------------------+--------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -237,33 +268,142 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 16    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |CtrlLogic|Selector1       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |Multiplier|CtrlLogic:U_Ctl|Selector1 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |CtrlLogic ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; n              ; 4     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Multiplier ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Reg:R_A ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 4     ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Reg:R_B ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 4     ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Reg:R_C ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 1     ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Reg:R_H ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 4     ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Reg:R_L ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 4     ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Adder:U_Ad ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 4     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CtrlLogic:U_Ctl ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Reg:R_L"                                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; d_in ; Input  ; Info     ; Stuck at GND                                                                        ;
+; so   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Reg:R_C"                                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; si   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; so   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Reg:R_B"                                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; d_in ; Input  ; Info     ; Stuck at GND                                                                        ;
+; so   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------+
+; Port Connectivity Checks: "Reg:R_A"    ;
++------+-------+----------+--------------+
+; Port ; Type  ; Severity ; Details      ;
++------+-------+----------+--------------+
+; d_in ; Input ; Info     ; Stuck at GND ;
++------+-------+----------+--------------+
 
 
 +-------------------------------+
@@ -281,9 +421,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 28 23:18:46 2022
+    Info: Processing started: Sun May 01 17:34:50 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Question1 -c Question1
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file simulation/modelsim/multiplier_tb.vhd
+    Info (12022): Found design unit 1: Multiplier_tb-Multiplier_tb_arch
+    Info (12023): Found entity 1: Multiplier_tb
 Info (12021): Found 1 design units, including 0 entities, in source file declare.vhd
     Info (12022): Found design unit 1: Declarations
 Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
@@ -295,23 +438,37 @@ Info (12021): Found 2 design units, including 1 entities, in source file adder.v
 Info (12021): Found 2 design units, including 1 entities, in source file ctrllogic.vhd
     Info (12022): Found design unit 1: CtrlLogic-DataFlow
     Info (12023): Found entity 1: CtrlLogic
-Info (12127): Elaborating entity "CtrlLogic" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file multiplier.vhd
+    Info (12022): Found design unit 1: Multiplier-RTL
+    Info (12023): Found entity 1: Multiplier
+Info (12127): Elaborating entity "Multiplier" for the top level hierarchy
+Info (12128): Elaborating entity "Reg" for hierarchy "Reg:R_A"
+Info (12128): Elaborating entity "Reg" for hierarchy "Reg:R_C"
+Warning (10445): VHDL Subtype or Type Declaration warning at Reg.vhd(22): subtype or type has null range
+Info (12128): Elaborating entity "Adder" for hierarchy "Adder:U_Ad"
+Info (12128): Elaborating entity "CtrlLogic" for hierarchy "CtrlLogic:U_Ctl"
 Warning (10541): VHDL Signal Declaration warning at CtrlLogic.vhd(11): used implicit default value for signal "SL_H" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at CtrlLogic.vhd(12): used implicit default value for signal "EN_H" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "SL_H" is stuck at GND
-    Warning (13410): Pin "SL_C" is stuck at GND
-    Warning (13410): Pin "EN_H" is stuck at GND
+    Warning (13410): Pin "Low[0]" is stuck at GND
+    Warning (13410): Pin "Low[1]" is stuck at GND
+    Warning (13410): Pin "Low[2]" is stuck at GND
+    Warning (13410): Pin "Low[3]" is stuck at GND
+    Warning (13410): Pin "High[0]" is stuck at GND
+    Warning (13410): Pin "High[1]" is stuck at GND
+    Warning (13410): Pin "High[2]" is stuck at GND
+    Warning (13410): Pin "High[3]" is stuck at GND
+    Warning (13410): Pin "OUTC[0]" is stuck at GND
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 10 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4645 megabytes
-    Info: Processing ended: Thu Apr 28 23:18:48 2022
+Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 18 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4640 megabytes
+    Info: Processing ended: Sun May 01 17:34:52 2022
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

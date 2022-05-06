@@ -1,5 +1,5 @@
 
-State Machine - |CtrlLogic|state
+State Machine - |Multiplier|CtrlLogic:U_Ctl|state
 Name state.FINISH state.SHIFT state.ADD state.LOAD 
 state.LOAD 0 0 0 0 
 state.ADD 0 0 1 1 

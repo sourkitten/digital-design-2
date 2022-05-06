@@ -3,106 +3,213 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise6\simulation\modelsim
-Ectrllogic
-Z1 w1651176497
-Z2 DPx4 work 12 declarations 0 22 2:C8ki0d@:@hbAm:4G<k12
-Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
-Z4 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
-Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z7 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise6\simulation\modelsim
-Z8 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd
-Z9 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd
+Eadder
+Z1 w1651168447
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise6\simulation\modelsim
+Z7 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Adder.vhd
+Z8 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Adder.vhd
 l0
-L8
-VnI_fo56YIe37T?Vz_g@5o3
-Z10 OV;C;10.1d;51
+L6
+VHl2Pja=TalM@;QGPjWeZ_3
+Z9 OV;C;10.1d;51
 33
-Z11 !s108 1651177170.388000
-Z12 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd|
-Z13 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd|
-Z14 o-2008 -work work -O0
-Z15 tExplicit 1
-!s100 ZCJ2lOkVJ2@NU9RPPdKOk0
+Z10 !s108 1651416158.332000
+Z11 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Adder.vhd|
+Z12 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Adder.vhd|
+Z13 o-2008 -work work -O0
+Z14 tExplicit 1
+!s100 Q^i0@=LKgOoHSVm26;kHN3
 !i10b 1
 Adataflow
 R2
 R3
 R4
 R5
-R6
-DEx4 work 9 ctrllogic 0 22 nI_fo56YIe37T?Vz_g@5o3
-l21
-L15
-V:zOI?:6QC`iTj?GQ`M?7Z1
-R10
+DEx4 work 5 adder 0 22 Hl2Pja=TalM@;QGPjWeZ_3
+l15
+L13
+VZel4idRA9UDW^MAAAdAE32
+R9
 33
+R10
 R11
 R12
 R13
 R14
-R15
-!s100 EX9G>ZoKGgfWP`Z1LHA6o2
+!s100 5ZK2>TiYDBoTR[l8WhA0N2
 !i10b 1
-Ectrllogic_tb
-Z16 w1651176660
+Ectrllogic
+Z15 w1651176497
+Z16 DPx4 work 12 declarations 0 22 2:C8ki0d@:@hbAm:4G<k12
 R2
-R4
-Z17 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
 R3
+R4
 R5
 R6
-R7
-Z18 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/CtrlLogic_tb.vhd
-Z19 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/CtrlLogic_tb.vhd
+Z17 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd
+Z18 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd
 l0
-L11
-VA4W`3`K;YBb_]B<>FOz^T2
-!s100 cC0Ghl;<doB1Fg_AgH;m`0
-R10
+L8
+VnI_fo56YIe37T?Vz_g@5o3
+R9
 33
-!i10b 1
-Z20 !s108 1651177170.555000
-Z21 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/CtrlLogic_tb.vhd|
-Z22 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/CtrlLogic_tb.vhd|
+Z19 !s108 1651416158.573000
+Z20 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd|
+Z21 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd|
+R13
 R14
-R15
-Actrllogic_tb_arch
-R2
-R4
-R17
-R3
-R5
-R6
-DEx4 work 12 ctrllogic_tb 0 22 A4W`3`K;YBb_]B<>FOz^T2
-l48
-L16
-VYBX39nodG;fCPo2o:L81X0
-!s100 n1C76J:X]i9[2e[U6?F8[1
-R10
-33
+!s100 ZCJ2lOkVJ2@NU9RPPdKOk0
 !i10b 1
+Adataflow
+R16
+R2
+R3
+R4
+R5
+DEx4 work 9 ctrllogic 0 22 nI_fo56YIe37T?Vz_g@5o3
+l21
+L15
+V:zOI?:6QC`iTj?GQ`M?7Z1
+R9
+33
+R19
 R20
 R21
-R22
+R13
 R14
-R15
+!s100 EX9G>ZoKGgfWP`Z1LHA6o2
+!i10b 1
 Pdeclarations
+R4
 R5
-R6
 w1651174952
-R7
+R6
 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd
 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd
 l0
 L4
 V2:C8ki0d@:@hbAm:4G<k12
-R10
+R9
 33
+R13
 R14
-R15
 !s100 :;F=QcW8OWA_=7QJ[NGe^0
 !i10b 1
-!s108 1651177170.245000
+!s108 1651416158.118000
 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd|
 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd|
+Emultiplier
+Z22 w1651413290
+R4
+R5
+R6
+Z23 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Multiplier.vhd
+Z24 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Multiplier.vhd
+l0
+L4
+V=9Q=fIbD^AIfA;DK<1PbX3
+R9
+33
+Z25 !s108 1651416158.460000
+Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Multiplier.vhd|
+Z27 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Multiplier.vhd|
+R13
+R14
+!s100 :^f]_AJjjS]1PnA6^REkg3
+!i10b 1
+Artl
+R4
+R5
+DEx4 work 10 multiplier 0 22 =9Q=fIbD^AIfA;DK<1PbX3
+l40
+L12
+VieaeTj_z^2?dFbS@Dz<gm2
+R9
+33
+R25
+R26
+R27
+R13
+R14
+!s100 9V3YhM6H3^YFNi3`;:9cO0
+!i10b 1
+Emultiplier_tb
+Z28 w1651416136
+R2
+R3
+Z29 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R4
+R5
+R6
+Z30 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/Multiplier_tb.vhd
+Z31 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/Multiplier_tb.vhd
+l0
+L7
+VFL1Szg[hdITk9BkAKWj]`2
+!s100 71YO=5XAZS3He7lFVJdZQ1
+R9
+33
+!i10b 1
+Z32 !s108 1651416158.689000
+Z33 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/Multiplier_tb.vhd|
+Z34 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/Multiplier_tb.vhd|
+R13
+R14
+Amultiplier_tb_arch
+R2
+R3
+R29
+R4
+R5
+DEx4 work 13 multiplier_tb 0 22 FL1Szg[hdITk9BkAKWj]`2
+l34
+L12
+VZKmQ9nB6Z1jgna^oT5lPz0
+!s100 k8Bc78@8a22Q0;eF::<dl3
+R9
+33
+!i10b 1
+R32
+R33
+R34
+R13
+R14
+Ereg
+Z35 w1651167578
+R4
+R5
+R6
+Z36 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vhd
+Z37 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vhd
+l0
+L4
+VGX`W>=_J3PibjAcf^JBU73
+R9
+33
+Z38 !s108 1651416158.217000
+Z39 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vhd|
+Z40 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vhd|
+R13
+R14
+!s100 1VVRdIKCQIAD8cnQ20fSn3
+!i10b 1
+Artl
+R4
+R5
+DEx4 work 3 reg 0 22 GX`W>=_J3PibjAcf^JBU73
+l15
+L13
+V8V9FbgVi8k0fU1:?lec3^1
+R9
+33
+R38
+R39
+R40
+R13
+R14
+!s100 hQcQ[Kn85^Yz]za0;RmHT2
+!i10b 1

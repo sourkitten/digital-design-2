@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Apr 28 23:18:48 2022
+Analysis & Synthesis Status : Successful - Sun May 01 17:34:52 2022
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Question1
-Top-level Entity Name : CtrlLogic
+Top-level Entity Name : Multiplier
 Family : Cyclone II
-Total logic elements : 10
+Total logic elements : 18
     Total combinational functions : 9
-    Dedicated logic registers : 8
-Total registers : 8
-Total pins : 12
+    Dedicated logic registers : 16
+Total registers : 16
+Total pins : 20
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
