@@ -1,5 +1,5 @@
 Archive Project report for Question1
-Sun May 01 17:45:29 2022
+Sun May 08 16:43:05 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -35,9 +35,9 @@ applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Sun May 01 17:45:29 2022 ;
+; Archive Project Status ; Successful - Sun May 08 16:43:05 2022 ;
 ; Revision Name          ; Question1                             ;
-; Top-level Entity Name  ; Multiplier                            ;
+; Top-level Entity Name  ; Question1                             ;
 ; Family                 ; Cyclone II                            ;
 +------------------------+---------------------------------------+
 
@@ -57,29 +57,34 @@ Info: Generated report 'Question1.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/altera/13.0sp1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4451 megabytes
-    Info: Processing ended: Sun May 01 17:45:29 2022
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sun May 08 16:43:05 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
-+---------------------------------------------------------+
-; Files Archived                                          ;
-+---------------------------------------------------------+
-; File Name                                               ;
-+---------------------------------------------------------+
-; Adder.vhd                                               ;
-; c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf ;
-; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vwf ;
-; CtrlLogic.vhd                                           ;
-; Declare.vhd                                             ;
-; incremental_db/compiled_partitions/Question1.db_info    ;
-; Multiplier.vhd                                          ;
-; Question1.qpf                                           ;
-; Question1.qsf                                           ;
-; Reg.vhd                                                 ;
-; Reg.vwf                                                 ;
-; simulation/modelsim/CtrlLogic_tb.vhd                    ;
-; simulation/modelsim/Multiplier_tb.vhd                   ;
-+---------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Files Archived                                                          ;
++-------------------------------------------------------------------------+
+; File Name                                                               ;
++-------------------------------------------------------------------------+
+; Adder.vhd                                                               ;
+; c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf                 ;
+; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vwf                 ;
+; C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/LCD_Display.vhd ;
+; C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/lpm_rom0.vhd    ;
+; C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/NewLCD.bdf      ;
+; CtrlLogic.vhd                                                           ;
+; Declare.vhd                                                             ;
+; incremental_db/compiled_partitions/Question1.db_info                    ;
+; Multiplier.vhd                                                          ;
+; Question1.bdf                                                           ;
+; Question1.qpf                                                           ;
+; Question1.qsf                                                           ;
+; Reg.vhd                                                                 ;
+; Reg.vwf                                                                 ;
+; Rom.hex                                                                 ;
+; simulation/modelsim/CtrlLogic_tb.vhd                                    ;
+; simulation/modelsim/Multiplier_tb.vhd                                   ;
++-------------------------------------------------------------------------+
 
 

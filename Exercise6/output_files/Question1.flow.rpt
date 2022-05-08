@@ -1,5 +1,5 @@
 Flow report for Question1
-Sun May 01 17:35:04 2022
+Sun May 08 16:41:34 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun May 01 17:35:04 2022           ;
+; Flow Status                        ; Successful - Sun May 08 16:41:34 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Question1                                       ;
-; Top-level Entity Name              ; Multiplier                                      ;
+; Top-level Entity Name              ; Question1                                       ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 17 / 33,216 ( < 1 % )                           ;
-;     Total combinational functions  ; 9 / 33,216 ( < 1 % )                            ;
-;     Dedicated logic registers      ; 16 / 33,216 ( < 1 % )                           ;
-; Total registers                    ; 16                                              ;
-; Total pins                         ; 20 / 475 ( 4 % )                                ;
+; Total logic elements               ; 153 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 148 / 33,216 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 85 / 33,216 ( < 1 % )                           ;
+; Total registers                    ; 85                                              ;
+; Total pins                         ; 17 / 475 ( 4 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
+; Total memory bits                  ; 256 / 483,840 ( < 1 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -64,42 +64,42 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/01/2022 17:34:50 ;
+; Start date & time ; 05/08/2022 16:41:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Question1           ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                            ;
-+--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
-+--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 255543656200010.165141569010828       ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; DUT                                   ; --            ; --          ; CtrlLogic_tb   ;
-; EDA_DESIGN_INSTANCE_NAME             ; DUT                                   ; --            ; --          ; Multiplier_tb  ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                    ; --            ; --          ; eda_simulation ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Multiplier_tb                         ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/CtrlLogic_tb.vhd  ; --            ; --          ; CtrlLogic_tb   ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/Multiplier_tb.vhd ; --            ; --          ; Multiplier_tb  ;
-; EDA_TEST_BENCH_MODULE_NAME           ; CtrlLogic_tb                          ; --            ; --          ; CtrlLogic_tb   ;
-; EDA_TEST_BENCH_MODULE_NAME           ; Multiplier_tb                         ; --            ; --          ; Multiplier_tb  ;
-; EDA_TEST_BENCH_NAME                  ; CtrlLogic_tb                          ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_NAME                  ; Multiplier_tb                         ; --            ; --          ; eda_simulation ;
-; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; 16764057                              ; --            ; Multiplier  ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; Multiplier  ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; Multiplier  ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; Multiplier                            ; Question1     ; --          ; --             ;
-; VHDL_INPUT_VERSION                   ; VHDL_2008                             ; VHDL_1993     ; --          ; --             ;
-; VHDL_SHOW_LMF_MAPPING_MESSAGES       ; Off                                   ; --            ; --          ; --             ;
-+--------------------------------------+---------------------------------------+---------------+-------------+----------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                              ;
++--------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                                   ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 255543656200010.165201727620880                         ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; DUT                                                     ; --            ; --          ; CtrlLogic_tb   ;
+; EDA_DESIGN_INSTANCE_NAME             ; DUT                                                     ; --            ; --          ; Multiplier_tb  ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                                      ; --            ; --          ; eda_simulation ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Multiplier_tb                                           ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                             ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)                               ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                         ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/CtrlLogic_tb.vhd                    ; --            ; --          ; CtrlLogic_tb   ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/Multiplier_tb.vhd                   ; --            ; --          ; Multiplier_tb  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; CtrlLogic_tb                                            ; --            ; --          ; CtrlLogic_tb   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Multiplier_tb                                           ; --            ; --          ; Multiplier_tb  ;
+; EDA_TEST_BENCH_NAME                  ; CtrlLogic_tb                                            ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; Multiplier_tb                                           ; --            ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                                    ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                      ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                       ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                                                ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                   ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                                  ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                            ; --            ; --          ; --             ;
+; SEARCH_PATH                          ; c:\users\v4ngbz\documents\quartus\libraries\corelibrary ; --            ; --          ; --             ;
+; VHDL_INPUT_VERSION                   ; VHDL_2008                                               ; VHDL_1993     ; --          ; --             ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES       ; Off                                                     ; --            ; --          ; --             ;
++--------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -107,12 +107,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4640 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:06     ; 1.0                     ; 4879 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4549 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4538 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4509 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:10                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4653 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 4874 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4561 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4509 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,0 +1,97 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Question1_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Declare.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Declarations
+# vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture RTL of Reg
+# vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Adder
+# -- Compiling architecture DataFlow of Adder
+# vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Multiplier.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Multiplier
+# -- Compiling architecture RTL of Multiplier
+# vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/CtrlLogic.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package Declarations
+# -- Compiling entity CtrlLogic
+# -- Compiling architecture DataFlow of CtrlLogic
+# 
+# vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/simulation/modelsim/Multiplier_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package Declarations
+# -- Compiling entity Multiplier_tb
+# -- Compiling architecture Multiplier_tb_arch of Multiplier_tb
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  Multiplier_tb
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Multiplier_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.declarations
+# Loading work.multiplier_tb(multiplier_tb_arch)
+# Loading work.multiplier(rtl)
+# Loading work.reg(rtl)
+# Loading work.adder(dataflow)
+# Loading work.ctrllogic(dataflow)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/DUT/U_Ad
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/DUT/U_Ad
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /multiplier_tb/DUT/U_Ad
+# ** Note: Checking...
+#    Time: 340 ns  Iteration: 1  Instance: /multiplier_tb
+# ** Note: Checking...
+#    Time: 720 ns  Iteration: 1  Instance: /multiplier_tb
+# ** Note: Checking...
+#    Time: 1100 ns  Iteration: 1  Instance: /multiplier_tb

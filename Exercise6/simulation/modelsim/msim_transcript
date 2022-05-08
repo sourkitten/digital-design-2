@@ -55,9 +55,10 @@
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
 # -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
 # -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package Declarations
 # -- Compiling entity Multiplier_tb
 # -- Compiling architecture Multiplier_tb_arch of Multiplier_tb
 # 
@@ -66,23 +67,15 @@
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_textio(body)
 # Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
 # Loading ieee.std_logic_unsigned(body)
+# Loading work.declarations
 # Loading work.multiplier_tb(multiplier_tb_arch)
 # Loading work.multiplier(rtl)
 # Loading work.reg(rtl)
 # Loading work.adder(dataflow)
-# Loading work.declarations
 # Loading work.ctrllogic(dataflow)
-# ** Warning: (vsim-8683) Uninitialized out port /multiplier_tb/DUT/U_Ctl/SL_H has no driver.
-# 
-# This port will contribute value (U) to the signal network.
-# 
-# ** Warning: (vsim-8683) Uninitialized out port /multiplier_tb/DUT/U_Ctl/EN_H has no driver.
-# 
-# This port will contribute value (U) to the signal network.
-# 
 # 
 # add wave *
 # view structure
@@ -96,3 +89,9 @@
 #    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/DUT/U_Ad
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 3  Instance: /multiplier_tb/DUT/U_Ad
+# ** Note: Checking...
+#    Time: 320 ns  Iteration: 1  Instance: /multiplier_tb
+# ** Note: Checking...
+#    Time: 660 ns  Iteration: 1  Instance: /multiplier_tb
+# ** Note: Checking...
+#    Time: 1 us  Iteration: 1  Instance: /multiplier_tb

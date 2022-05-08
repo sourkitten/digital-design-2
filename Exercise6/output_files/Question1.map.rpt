@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Question1
-Sun May 01 17:34:52 2022
+Sun May 08 16:41:18 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,25 +13,33 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |Multiplier|CtrlLogic:U_Ctl|state
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: Top-level Entity: |Multiplier
- 14. Parameter Settings for User Entity Instance: Reg:R_A
- 15. Parameter Settings for User Entity Instance: Reg:R_B
- 16. Parameter Settings for User Entity Instance: Reg:R_C
- 17. Parameter Settings for User Entity Instance: Reg:R_H
- 18. Parameter Settings for User Entity Instance: Reg:R_L
- 19. Parameter Settings for User Entity Instance: Adder:U_Ad
- 20. Parameter Settings for User Entity Instance: CtrlLogic:U_Ctl
- 21. Port Connectivity Checks: "Reg:R_L"
- 22. Port Connectivity Checks: "Reg:R_C"
- 23. Port Connectivity Checks: "Reg:R_B"
- 24. Port Connectivity Checks: "Reg:R_A"
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. State Machine - |Question1|Multiplier:inst1|CtrlLogic:U_Ctl|state
+ 11. State Machine - |Question1|NewLCD:inst|LCD_Display:inst|next_command
+ 12. State Machine - |Question1|NewLCD:inst|LCD_Display:inst|state
+ 13. Registers Removed During Synthesis
+ 14. General Register Statistics
+ 15. Inverted Register Statistics
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Source assignments for NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_7f71:auto_generated
+ 18. Parameter Settings for User Entity Instance: NewLCD:inst|LCD_Display:inst
+ 19. Parameter Settings for User Entity Instance: NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component
+ 20. Parameter Settings for User Entity Instance: Multiplier:inst1
+ 21. Parameter Settings for User Entity Instance: Multiplier:inst1|Reg:R_A
+ 22. Parameter Settings for User Entity Instance: Multiplier:inst1|Reg:R_B
+ 23. Parameter Settings for User Entity Instance: Multiplier:inst1|Reg:R_C
+ 24. Parameter Settings for User Entity Instance: Multiplier:inst1|Reg:R_H
+ 25. Parameter Settings for User Entity Instance: Multiplier:inst1|Reg:R_L
+ 26. Parameter Settings for User Entity Instance: Multiplier:inst1|Adder:U_Ad
+ 27. Parameter Settings for User Entity Instance: Multiplier:inst1|CtrlLogic:U_Ctl
+ 28. altsyncram Parameter Settings by Entity Instance
+ 29. Port Connectivity Checks: "Multiplier:inst1|Reg:R_L"
+ 30. Port Connectivity Checks: "Multiplier:inst1|Reg:R_C"
+ 31. Port Connectivity Checks: "Multiplier:inst1|Reg:R_B"
+ 32. Port Connectivity Checks: "Multiplier:inst1|Reg:R_A"
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
 
 
 
@@ -57,18 +65,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 01 17:34:52 2022           ;
+; Analysis & Synthesis Status        ; Successful - Sun May 08 16:41:18 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Question1                                       ;
-; Top-level Entity Name              ; Multiplier                                      ;
+; Top-level Entity Name              ; Question1                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 18                                              ;
-;     Total combinational functions  ; 9                                               ;
-;     Dedicated logic registers      ; 16                                              ;
-; Total registers                    ; 16                                              ;
-; Total pins                         ; 20                                              ;
+; Total logic elements               ; 162                                             ;
+;     Total combinational functions  ; 146                                             ;
+;     Dedicated logic registers      ; 85                                              ;
+; Total registers                    ; 85                                              ;
+; Total pins                         ; 17                                              ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
+; Total memory bits                  ; 256                                             ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
@@ -80,7 +88,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; Multiplier         ; Question1          ;
+; Top-level entity name                                                      ; Question1          ; Question1          ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; VHDL Show LMF Mapping Messages                                             ; Off                ;                    ;
 ; VHDL Version                                                               ; VHDL_2008          ; VHDL_1993          ;
@@ -171,17 +179,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                          ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                   ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
-; Declare.vhd                      ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd    ;         ;
-; Reg.vhd                          ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vhd        ;         ;
-; Adder.vhd                        ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Adder.vhd      ;         ;
-; CtrlLogic.vhd                    ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd  ;         ;
-; Multiplier.vhd                   ; yes             ; User VHDL File  ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Multiplier.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------+---------+
+; Rom.hex                          ; yes             ; User Hexadecimal (Intel-Format) File     ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Rom.hex                 ;         ;
+; Declare.vhd                      ; yes             ; User VHDL File                           ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.vhd             ;         ;
+; Reg.vhd                          ; yes             ; User VHDL File                           ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vhd                 ;         ;
+; Adder.vhd                        ; yes             ; User VHDL File                           ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Adder.vhd               ;         ;
+; CtrlLogic.vhd                    ; yes             ; User VHDL File                           ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd           ;         ;
+; Multiplier.vhd                   ; yes             ; User VHDL File                           ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Multiplier.vhd          ;         ;
+; Question1.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Question1.bdf           ;         ;
+; newlcd.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/users/v4ngbz/documents/quartus/libraries/corelibrary/newlcd.bdf      ;         ;
+; lcd_display.vhd                  ; yes             ; Auto-Found VHDL File                     ; c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd ;         ;
+; lpm_rom0.vhd                     ; yes             ; Auto-Found Wizard-Generated File         ; c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd    ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_7f71.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/db/altsyncram_7f71.tdf  ;         ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -189,47 +212,76 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 18    ;
+; Estimated Total logic elements              ; 162   ;
 ;                                             ;       ;
-; Total combinational functions               ; 9     ;
+; Total combinational functions               ; 146   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 2     ;
-;     -- 3 input functions                    ; 2     ;
-;     -- <=2 input functions                  ; 5     ;
+;     -- 4 input functions                    ; 64    ;
+;     -- 3 input functions                    ; 24    ;
+;     -- <=2 input functions                  ; 58    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 6     ;
-;     -- arithmetic mode                      ; 3     ;
+;     -- normal mode                          ; 116   ;
+;     -- arithmetic mode                      ; 30    ;
 ;                                             ;       ;
-; Total registers                             ; 16    ;
-;     -- Dedicated logic registers            ; 16    ;
+; Total registers                             ; 85    ;
+;     -- Dedicated logic registers            ; 85    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 20    ;
+; I/O pins                                    ; 17    ;
+; Total memory bits                           ; 256   ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 16    ;
-; Total fan-out                               ; 86    ;
-; Average fan-out                             ; 1.91  ;
+; Maximum fan-out node                        ; Rst   ;
+; Maximum fan-out                             ; 66    ;
+; Total fan-out                               ; 777   ;
+; Average fan-out                             ; 3.04  ;
 +---------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                 ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
-; |Multiplier                ; 9 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |Multiplier                 ; work         ;
-;    |CtrlLogic:U_Ctl|       ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplier|CtrlLogic:U_Ctl ; work         ;
-;    |Reg:R_A|               ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplier|Reg:R_A         ; work         ;
-;    |Reg:R_B|               ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplier|Reg:R_B         ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                            ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
+; |Question1                                   ; 146 (0)           ; 85 (0)       ; 256         ; 0            ; 0       ; 0         ; 17   ; 0            ; |Question1                                                                                           ; work         ;
+;    |Multiplier:inst1|                        ; 24 (4)            ; 25 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|Multiplier:inst1                                                                          ; work         ;
+;       |Adder:U_Ad|                           ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|Multiplier:inst1|Adder:U_Ad                                                               ; work         ;
+;       |CtrlLogic:U_Ctl|                      ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|Multiplier:inst1|CtrlLogic:U_Ctl                                                          ; work         ;
+;       |Reg:R_A|                              ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|Multiplier:inst1|Reg:R_A                                                                  ; work         ;
+;       |Reg:R_B|                              ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|Multiplier:inst1|Reg:R_B                                                                  ; work         ;
+;       |Reg:R_C|                              ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|Multiplier:inst1|Reg:R_C                                                                  ; work         ;
+;       |Reg:R_H|                              ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|Multiplier:inst1|Reg:R_H                                                                  ; work         ;
+;       |Reg:R_L|                              ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|Multiplier:inst1|Reg:R_L                                                                  ; work         ;
+;    |NewLCD:inst|                             ; 122 (0)           ; 60 (0)       ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|NewLCD:inst                                                                               ; work         ;
+;       |LCD_Display:inst|                     ; 122 (122)         ; 60 (60)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|NewLCD:inst|LCD_Display:inst                                                              ; work         ;
+;       |lpm_rom0:inst1|                       ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|NewLCD:inst|lpm_rom0:inst1                                                                ; work         ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component                                ; work         ;
+;             |altsyncram_7f71:auto_generated| ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Question1|NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_7f71:auto_generated ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                ;
++------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------+
+; Name                                                                                                 ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF     ;
++------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------+
+; NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_7f71:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 32           ; 8            ; --           ; --           ; 256  ; Rom.hex ;
++------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                        ;
++--------+--------------+---------+--------------+--------------+---------------------------------------+----------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                       ; IP Include File                                                      ;
++--------+--------------+---------+--------------+--------------+---------------------------------------+----------------------------------------------------------------------+
+; Altera ; LPM_ROM      ; N/A     ; N/A          ; N/A          ; |Question1|NewLCD:inst|lpm_rom0:inst1 ; c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd ;
++--------+--------------+---------+--------------+--------------+---------------------------------------+----------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
 +--------------------------------------------------------------------+
-; State Machine - |Multiplier|CtrlLogic:U_Ctl|state                  ;
+; State Machine - |Question1|Multiplier:inst1|CtrlLogic:U_Ctl|state  ;
 +--------------+--------------+-------------+-----------+------------+
 ; Name         ; state.FINISH ; state.SHIFT ; state.ADD ; state.LOAD ;
 +--------------+--------------+-------------+-----------+------------+
@@ -240,27 +292,61 @@ Encoding Type:  One-Hot
 +--------------+--------------+-------------+-----------+------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                   ;
-+----------------------------------------+---------------------------------------------+
-; Register name                          ; Reason for Removal                          ;
-+----------------------------------------+---------------------------------------------+
-; Reg:R_H|F[0..3]                        ; Stuck at GND due to stuck port clock_enable ;
-; Reg:R_L|F[0..3]                        ; Stuck at GND due to stuck port data_in      ;
-; Reg:R_C|F[0]                           ; Stuck at GND due to stuck port data_in      ;
-; CtrlLogic:U_Ctl|state.FINISH           ; Lost fanout                                 ;
-; Total Number of Removed Registers = 10 ;                                             ;
-+----------------------------------------+---------------------------------------------+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Question1|NewLCD:inst|LCD_Display:inst|next_command                                                                                                                                                                                                                                                                                     ;
++----------------------------+----------------------------+--------------------------+---------------------+-------------------+---------------------+-------------------------+--------------------------+--------------------+---------------------------+-----------------------+-------------------------+-----------------------+---------------------+
+; Name                       ; next_command.DISPLAY_CLEAR ; next_command.DISPLAY_OFF ; next_command.RESET3 ; next_command.HOLD ; next_command.RESET1 ; next_command.DROP_LCD_E ; next_command.RETURN_HOME ; next_command.LINE2 ; next_command.Print_String ; next_command.MODE_SET ; next_command.DISPLAY_ON ; next_command.FUNC_SET ; next_command.RESET2 ;
++----------------------------+----------------------------+--------------------------+---------------------+-------------------+---------------------+-------------------------+--------------------------+--------------------+---------------------------+-----------------------+-------------------------+-----------------------+---------------------+
+; next_command.RESET2        ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 0                   ;
+; next_command.FUNC_SET      ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 1                     ; 1                   ;
+; next_command.DISPLAY_ON    ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 1                       ; 0                     ; 1                   ;
+; next_command.MODE_SET      ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 1                     ; 0                       ; 0                     ; 1                   ;
+; next_command.Print_String  ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 1                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.LINE2         ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 1                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.RETURN_HOME   ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 1                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.DROP_LCD_E    ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 1                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.RESET1        ; 0                          ; 0                        ; 0                   ; 0                 ; 1                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.HOLD          ; 0                          ; 0                        ; 0                   ; 1                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.RESET3        ; 0                          ; 0                        ; 1                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.DISPLAY_OFF   ; 0                          ; 1                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.DISPLAY_CLEAR ; 1                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
++----------------------------+----------------------------+--------------------------+---------------------+-------------------+---------------------+-------------------------+--------------------------+--------------------+---------------------------+-----------------------+-------------------------+-----------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                             ;
-+---------------+--------------------------------+--------------------------------------------------------+
-; Register name ; Reason for Removal             ; Registers Removed due to This Register                 ;
-+---------------+--------------------------------+--------------------------------------------------------+
-; Reg:R_H|F[0]  ; Stuck at GND                   ; Reg:R_L|F[3], Reg:R_L|F[2], Reg:R_L|F[1], Reg:R_L|F[0] ;
-;               ; due to stuck port clock_enable ;                                                        ;
-+---------------+--------------------------------+--------------------------------------------------------+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Question1|NewLCD:inst|LCD_Display:inst|state                                                                                                                                                                                          ;
++---------------------+---------------------+-------------------+--------------+--------------+------------+------------------+-------------------+-------------+--------------------+----------------+------------------+----------------+--------------+
+; Name                ; state.DISPLAY_CLEAR ; state.DISPLAY_OFF ; state.RESET3 ; state.RESET2 ; state.HOLD ; state.DROP_LCD_E ; state.RETURN_HOME ; state.LINE2 ; state.Print_String ; state.MODE_SET ; state.DISPLAY_ON ; state.FUNC_SET ; state.RESET1 ;
++---------------------+---------------------+-------------------+--------------+--------------+------------+------------------+-------------------+-------------+--------------------+----------------+------------------+----------------+--------------+
+; state.RESET1        ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 0            ;
+; state.FUNC_SET      ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 1              ; 1            ;
+; state.DISPLAY_ON    ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 1                ; 0              ; 1            ;
+; state.MODE_SET      ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 1              ; 0                ; 0              ; 1            ;
+; state.Print_String  ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 1                  ; 0              ; 0                ; 0              ; 1            ;
+; state.LINE2         ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 1           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.RETURN_HOME   ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 1                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.DROP_LCD_E    ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 1                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.HOLD          ; 0                   ; 0                 ; 0            ; 0            ; 1          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.RESET2        ; 0                   ; 0                 ; 0            ; 1            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.RESET3        ; 0                   ; 0                 ; 1            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.DISPLAY_OFF   ; 0                   ; 1                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.DISPLAY_CLEAR ; 1                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
++---------------------+---------------------+-------------------+--------------+--------------+------------+------------------+-------------------+-------------+--------------------+----------------+------------------+----------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                      ;
++------------------------------------------------------+------------------------------------------------------------------+
+; Register name                                        ; Reason for Removal                                               ;
++------------------------------------------------------+------------------------------------------------------------------+
+; Multiplier:inst1|CtrlLogic:U_Ctl|state.FINISH        ; Lost fanout                                                      ;
+; NewLCD:inst|LCD_Display:inst|next_command.HOLD       ; Merged with NewLCD:inst|LCD_Display:inst|next_command.DROP_LCD_E ;
+; NewLCD:inst|LCD_Display:inst|next_command.RESET1     ; Merged with NewLCD:inst|LCD_Display:inst|next_command.DROP_LCD_E ;
+; NewLCD:inst|LCD_Display:inst|next_command.DROP_LCD_E ; Stuck at GND due to stuck port data_in                           ;
+; Total Number of Removed Registers = 4                ;                                                                  ;
++------------------------------------------------------+------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -268,107 +354,224 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 85    ;
+; Number of registers using Synchronous Clear  ; 21    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 16    ;
+; Number of registers using Asynchronous Clear ; 59    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |Multiplier|CtrlLogic:U_Ctl|Selector1 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
++----------------------------------------------------------+
+; Inverted Register Statistics                             ;
++------------------------------------------------+---------+
+; Inverted Register                              ; Fan out ;
++------------------------------------------------+---------+
+; NewLCD:inst|LCD_Display:inst|LCD_E             ; 2       ;
+; NewLCD:inst|LCD_Display:inst|LCD_RW_INT        ; 9       ;
+; NewLCD:inst|LCD_Display:inst|DATA_BUS_VALUE[5] ; 1       ;
+; NewLCD:inst|LCD_Display:inst|DATA_BUS_VALUE[4] ; 1       ;
+; NewLCD:inst|LCD_Display:inst|DATA_BUS_VALUE[3] ; 2       ;
+; Total number of inverted registers = 5         ;         ;
++------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |Multiplier ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; n              ; 4     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Question1|NewLCD:inst|LCD_Display:inst|CLK_COUNT_400HZ[11] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Question1|NewLCD:inst|LCD_Display:inst|DATA_BUS_VALUE[5]   ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |Question1|Multiplier:inst1|CtrlLogic:U_Ctl|Selector3       ;
+; 33:1               ; 3 bits    ; 66 LEs        ; 21 LEs               ; 45 LEs                 ; No         ; |Question1|NewLCD:inst|LCD_Display:inst|Next_Char[3]        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Source assignments for NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_7f71:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                 ;
++---------------------------------+--------------------+------+----------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                  ;
++---------------------------------+--------------------+------+----------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NewLCD:inst|LCD_Display:inst ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; num_hex_digits ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Reg:R_A ;
-+----------------+-------+-----------------------------+
-; Parameter Name ; Value ; Type                        ;
-+----------------+-------+-----------------------------+
-; n              ; 4     ; Signed Integer              ;
-+----------------+-------+-----------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+---------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                        ;
++------------------------------------+----------------------+---------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                     ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                  ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                              ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                     ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                     ;
+; WIDTH_A                            ; 8                    ; Signed Integer                              ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                              ;
+; NUMWORDS_A                         ; 32                   ; Signed Integer                              ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                     ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                     ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                     ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                     ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                     ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                     ;
+; WIDTH_B                            ; 1                    ; Untyped                                     ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                     ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                     ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                     ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                     ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                     ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                     ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                     ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                     ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                     ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                     ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                     ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                     ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                     ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                     ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                              ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                     ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                     ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                     ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                     ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                     ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                     ;
+; INIT_FILE                          ; Rom.hex              ; Untyped                                     ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                     ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                     ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                     ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                     ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                     ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                     ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                     ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                     ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                     ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                     ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                     ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                     ;
+; CBXI_PARAMETER                     ; altsyncram_7f71      ; Untyped                                     ;
++------------------------------------+----------------------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Reg:R_B ;
-+----------------+-------+-----------------------------+
-; Parameter Name ; Value ; Type                        ;
-+----------------+-------+-----------------------------+
-; n              ; 4     ; Signed Integer              ;
-+----------------+-------+-----------------------------+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier:inst1 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; n              ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Reg:R_C ;
-+----------------+-------+-----------------------------+
-; Parameter Name ; Value ; Type                        ;
-+----------------+-------+-----------------------------+
-; n              ; 1     ; Signed Integer              ;
-+----------------+-------+-----------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier:inst1|Reg:R_A ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Reg:R_H ;
-+----------------+-------+-----------------------------+
-; Parameter Name ; Value ; Type                        ;
-+----------------+-------+-----------------------------+
-; n              ; 4     ; Signed Integer              ;
-+----------------+-------+-----------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier:inst1|Reg:R_B ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Reg:R_L ;
-+----------------+-------+-----------------------------+
-; Parameter Name ; Value ; Type                        ;
-+----------------+-------+-----------------------------+
-; n              ; 4     ; Signed Integer              ;
-+----------------+-------+-----------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier:inst1|Reg:R_C ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 1     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Adder:U_Ad ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; n              ; 4     ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier:inst1|Reg:R_H ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CtrlLogic:U_Ctl ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; n              ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier:inst1|Reg:R_L ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier:inst1|Adder:U_Ad ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 4     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier:inst1|CtrlLogic:U_Ctl ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                       ;
++-------------------------------------------+------------------------------------------------------------+
+; Name                                      ; Value                                                      ;
++-------------------------------------------+------------------------------------------------------------+
+; Number of entity instances                ; 1                                                          ;
+; Entity Instance                           ; NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                                        ;
+;     -- WIDTH_A                            ; 8                                                          ;
+;     -- NUMWORDS_A                         ; 32                                                         ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                               ;
+;     -- WIDTH_B                            ; 1                                                          ;
+;     -- NUMWORDS_B                         ; 1                                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                     ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                               ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                       ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                  ;
++-------------------------------------------+------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Reg:R_L"                                                                            ;
+; Port Connectivity Checks: "Multiplier:inst1|Reg:R_L"                                                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -378,7 +581,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Reg:R_C"                                                                            ;
+; Port Connectivity Checks: "Multiplier:inst1|Reg:R_C"                                                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -388,7 +591,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Reg:R_B"                                                                            ;
+; Port Connectivity Checks: "Multiplier:inst1|Reg:R_B"                                                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -397,13 +600,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------+
-; Port Connectivity Checks: "Reg:R_A"    ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; d_in ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
++------------------------------------------------------+
+; Port Connectivity Checks: "Multiplier:inst1|Reg:R_A" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; d_in ; Input ; Info     ; Stuck at GND               ;
++------+-------+----------+----------------------------+
 
 
 +-------------------------------+
@@ -421,12 +624,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun May 01 17:34:50 2022
+    Info: Processing started: Sun May 08 16:41:15 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Question1 -c Question1
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file simulation/modelsim/multiplier_tb.vhd
-    Info (12022): Found design unit 1: Multiplier_tb-Multiplier_tb_arch
-    Info (12023): Found entity 1: Multiplier_tb
 Info (12021): Found 1 design units, including 0 entities, in source file declare.vhd
     Info (12022): Found design unit 1: Declarations
 Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
@@ -441,35 +641,100 @@ Info (12021): Found 2 design units, including 1 entities, in source file ctrllog
 Info (12021): Found 2 design units, including 1 entities, in source file multiplier.vhd
     Info (12022): Found design unit 1: Multiplier-RTL
     Info (12023): Found entity 1: Multiplier
-Info (12127): Elaborating entity "Multiplier" for the top level hierarchy
-Info (12128): Elaborating entity "Reg" for hierarchy "Reg:R_A"
-Info (12128): Elaborating entity "Reg" for hierarchy "Reg:R_C"
+Info (12021): Found 1 design units, including 1 entities, in source file question1.bdf
+    Info (12023): Found entity 1: Question1
+Info (12127): Elaborating entity "Question1" for the top level hierarchy
+Warning (275083): Bus "HEX10[3..0]" found using same base name as "HEX1", which might lead to a name conflict.
+Warning (275083): Bus "HEX11[3..0]" found using same base name as "HEX1", which might lead to a name conflict.
+Warning (275083): Bus "HEX12[3..0]" found using same base name as "HEX1", which might lead to a name conflict.
+Warning (275083): Bus "HEX13[3..0]" found using same base name as "HEX1", which might lead to a name conflict.
+Warning (275083): Bus "HEX20[3..0]" found using same base name as "HEX2", which might lead to a name conflict.
+Warning (275083): Bus "HEX21[3..0]" found using same base name as "HEX2", which might lead to a name conflict.
+Warning (275083): Bus "HEX22[3..0]" found using same base name as "HEX2", which might lead to a name conflict.
+Warning (275083): Bus "HEX23[3..0]" found using same base name as "HEX2", which might lead to a name conflict.
+Warning (275083): Bus "HEX30[3..0]" found using same base name as "HEX3", which might lead to a name conflict.
+Warning (275083): Bus "HEX31[3..0]" found using same base name as "HEX3", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "HEX1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX1[3..0]" to "HEX13..0"
+Warning (275080): Converted elements in bus name "HEX10" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX10[3..0]" to "HEX103..0"
+Warning (275080): Converted elements in bus name "HEX11" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX11[3..0]" to "HEX113..0"
+Warning (275080): Converted elements in bus name "HEX12" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX12[3..0]" to "HEX123..0"
+Warning (275080): Converted elements in bus name "HEX13" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX13[3..0]" to "HEX133..0"
+Warning (275080): Converted elements in bus name "HEX2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX2[3..0]" to "HEX23..0"
+Warning (275080): Converted elements in bus name "HEX20" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX20[3..0]" to "HEX203..0"
+Warning (275080): Converted elements in bus name "HEX21" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX21[3..0]" to "HEX213..0"
+Warning (275080): Converted elements in bus name "HEX22" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX22[3..0]" to "HEX223..0"
+Warning (275080): Converted elements in bus name "HEX23" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX23[3..0]" to "HEX233..0"
+Warning (275080): Converted elements in bus name "HEX3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX3[3..0]" to "HEX33..0"
+Warning (275080): Converted elements in bus name "HEX30" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX30[3..0]" to "HEX303..0"
+Warning (275080): Converted elements in bus name "HEX31" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "HEX31[3..0]" to "HEX313..0"
+Warning (275008): Primitive "GND" of instance "gnd" not used
+Warning (12125): Using design file /users/v4ngbz/documents/quartus/libraries/corelibrary/newlcd.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: NewLCD
+Info (12128): Elaborating entity "NewLCD" for hierarchy "NewLCD:inst"
+Warning (12125): Using design file /users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: LCD_Display-a
+    Info (12023): Found entity 1: LCD_Display
+Info (12128): Elaborating entity "LCD_Display" for hierarchy "NewLCD:inst|LCD_Display:inst"
+Warning (12125): Using design file /users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: lpm_rom0-SYN
+    Info (12023): Found entity 1: lpm_rom0
+Info (12128): Elaborating entity "lpm_rom0" for hierarchy "NewLCD:inst|lpm_rom0:inst1"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "Rom.hex"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "32"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "5"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7f71.tdf
+    Info (12023): Found entity 1: altsyncram_7f71
+Info (12128): Elaborating entity "altsyncram_7f71" for hierarchy "NewLCD:inst|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_7f71:auto_generated"
+Info (12128): Elaborating entity "Multiplier" for hierarchy "Multiplier:inst1"
+Info (12128): Elaborating entity "Reg" for hierarchy "Multiplier:inst1|Reg:R_A"
+Info (12128): Elaborating entity "Reg" for hierarchy "Multiplier:inst1|Reg:R_C"
 Warning (10445): VHDL Subtype or Type Declaration warning at Reg.vhd(22): subtype or type has null range
-Info (12128): Elaborating entity "Adder" for hierarchy "Adder:U_Ad"
-Info (12128): Elaborating entity "CtrlLogic" for hierarchy "CtrlLogic:U_Ctl"
-Warning (10541): VHDL Signal Declaration warning at CtrlLogic.vhd(11): used implicit default value for signal "SL_H" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at CtrlLogic.vhd(12): used implicit default value for signal "EN_H" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "Adder" for hierarchy "Multiplier:inst1|Adder:U_Ad"
+Info (12128): Elaborating entity "CtrlLogic" for hierarchy "Multiplier:inst1|CtrlLogic:U_Ctl"
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Low[0]" is stuck at GND
-    Warning (13410): Pin "Low[1]" is stuck at GND
-    Warning (13410): Pin "Low[2]" is stuck at GND
-    Warning (13410): Pin "Low[3]" is stuck at GND
-    Warning (13410): Pin "High[0]" is stuck at GND
-    Warning (13410): Pin "High[1]" is stuck at GND
-    Warning (13410): Pin "High[2]" is stuck at GND
-    Warning (13410): Pin "High[3]" is stuck at GND
-    Warning (13410): Pin "OUTC[0]" is stuck at GND
+    Warning (13410): Pin "LCD_ONOFF" is stuck at VCC
+    Warning (13410): Pin "LCD_BLONOFF" is stuck at VCC
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 18 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4640 megabytes
-    Info: Processing ended: Sun May 01 17:34:52 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info (21057): Implemented 188 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21060): Implemented 8 bidirectional pins
+    Info (21061): Implemented 163 logic cells
+    Info (21064): Implemented 8 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 4655 megabytes
+    Info: Processing ended: Sun May 08 16:41:18 2022
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
