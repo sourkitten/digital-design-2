@@ -1,0 +1,28 @@
+Quartus II Archive log --	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/simulation/modelsim/Question2.qarlog
+
+Archive:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/simulation/modelsim/Question2.qar
+Date:		Sun May 15 17:50:45 2022
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/BubbleSort.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/Question1.qpf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/Question1.qsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/RAM256x8.mif
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/RAM265x8.cmp
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/RAM265x8.qip
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/RAM265x8.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/Rom.hex
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/Sorter.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/Sorterbdf.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/assignment_defaults.qdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/incremental_db/compiled_partitions/Question1.db_info
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/simulation/modelsim/RAM32x8_tb.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2/simulation/modelsim/Sorter_tb.vhd
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/LCD_Display.vhd
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/NewLCD.bdf
+C:/Users/v4ngbz/Documents/Quartus/Libraries/CoreLibrary/lpm_rom0.vhd
+	======= Total: 17 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

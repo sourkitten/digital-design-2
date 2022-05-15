@@ -56,13 +56,44 @@ set_global_assignment -name SEARCH_PATH "c:\\users\\v4ngbz\\documents\\quartus\\
 set_global_assignment -name QIP_FILE RAM32x8.qip
 set_global_assignment -name MIF_FILE RAM32x8.mif
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH RAM32x8_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Sorter_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME RAM32x8_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME DUT -section_id RAM32x8_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME RAM32x8_tb -section_id RAM32x8_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/RAM32x8_tb.vhd -section_id RAM32x8_tb
 set_global_assignment -name VHDL_FILE BubbleSort.vhd
 set_global_assignment -name VHDL_FILE Sorter.vhd
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name BDF_FILE Sorterbdf.bdf
+set_global_assignment -name HEX_FILE Rom.hex
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_N2 -to CLK50
+set_location_assignment PIN_G26 -to CLK~
+set_location_assignment PIN_H3 -to DBUS[7]
+set_location_assignment PIN_H4 -to DBUS[6]
+set_location_assignment PIN_J3 -to DBUS[5]
+set_location_assignment PIN_J4 -to DBUS[4]
+set_location_assignment PIN_H2 -to DBUS[3]
+set_location_assignment PIN_H1 -to DBUS[2]
+set_location_assignment PIN_J2 -to DBUS[1]
+set_location_assignment PIN_J1 -to DBUS[0]
+set_location_assignment PIN_AF13 -to EXTAdress[4]
+set_location_assignment PIN_AE14 -to EXTAdress[3]
+set_location_assignment PIN_P25 -to EXTAdress[2]
+set_location_assignment PIN_N26 -to EXTAdress[1]
+set_location_assignment PIN_N25 -to EXTAdress[0]
+set_location_assignment PIN_V2 -to Launch
+set_location_assignment PIN_K2 -to LCD_BLONOFF
+set_location_assignment PIN_K3 -to LCD_E
+set_location_assignment PIN_L4 -to LCD_ONOFF
+set_location_assignment PIN_K1 -to LCD_RS
+set_location_assignment PIN_K4 -to LCD_RW
+set_location_assignment PIN_N23 -to reset~
+set_location_assignment PIN_AE22 -to Complete
+set_global_assignment -name EDA_TEST_BENCH_NAME Sorter_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME DUT -section_id Sorter_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Sorter_tb -section_id Sorter_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/RAM32x8_tb.vhd -section_id RAM32x8_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Sorter_tb.vhd -section_id Sorter_tb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
