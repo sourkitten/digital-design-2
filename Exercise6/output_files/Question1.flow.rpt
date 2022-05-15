@@ -1,5 +1,5 @@
 Flow report for Question1
-Sun May 08 16:41:34 2022
+Fri May 13 12:04:23 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun May 08 16:41:34 2022           ;
+; Flow Status                        ; Successful - Fri May 13 12:04:23 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Question1                                       ;
 ; Top-level Entity Name              ; Question1                                       ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/08/2022 16:41:16 ;
+; Start date & time ; 05/13/2022 12:04:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Question1           ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                                   ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 255543656200010.165201727620880                         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 255543656200010.165243264502308                         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; DUT                                                     ; --            ; --          ; CtrlLogic_tb   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; DUT                                                     ; --            ; --          ; Multiplier_tb  ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                                      ; --            ; --          ; eda_simulation ;
@@ -107,12 +107,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4653 MB             ; 00:00:03                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 4874 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4561 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4653 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 4874 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4561 MB             ; 00:00:03                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4509 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:15                           ;
+; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

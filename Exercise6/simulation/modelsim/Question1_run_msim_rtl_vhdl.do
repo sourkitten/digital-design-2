@@ -9,6 +9,8 @@ vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Declare.v
 vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Reg.vhd}
 vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Adder.vhd}
 vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/Multiplier.vhd}
+vcom -2008 -work work {c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd}
+vcom -2008 -work work {c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd}
 vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/CtrlLogic.vhd}
 
 vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6/simulation/modelsim/Multiplier_tb.vhd}

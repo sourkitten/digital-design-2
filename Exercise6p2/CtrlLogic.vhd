@@ -6,7 +6,7 @@ use ieee.std_logic_arith.all;
 use work.Declarations.all;
 
 entity CtrlLogic is
-	generic ( n: integer := 4 );
+	generic ( n: integer := 8 );
 	port ( 	Rst, CLK : in std_logic;
 				EN_A, SL_A, EN_B, SL_B, EN_H : out std_logic;
 				SL_H, EN_L, SL_L, EN_C, SL_C : out std_logic);

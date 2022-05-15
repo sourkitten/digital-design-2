@@ -17,7 +17,7 @@ L6
 VHl2Pja=TalM@;QGPjWeZ_3
 Z9 OV;C;10.1d;51
 33
-Z10 !s108 1652015136.697000
+Z10 !s108 1652603074.207000
 Z11 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Adder.vhd|
 Z12 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Adder.vhd|
 Z13 o-2008 -work work -O0
@@ -43,7 +43,7 @@ R14
 !s100 5ZK2>TiYDBoTR[l8WhA0N2
 !i10b 1
 Ectrllogic
-Z15 w1652012842
+Z15 w1652602840
 Z16 DPx4 work 12 declarations 0 22 2:C8ki0d@:@hbAm:4G<k12
 R2
 R3
@@ -54,15 +54,15 @@ Z17 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/CtrlLogic.vhd
 Z18 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/CtrlLogic.vhd
 l0
 L8
-VN0UPN]lfz43CWNgcT8AQI2
+V?a8^YXefB8DUU]decPV?i2
 R9
 33
-Z19 !s108 1652015136.888000
+Z19 !s108 1652603074.724000
 Z20 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/CtrlLogic.vhd|
 Z21 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/CtrlLogic.vhd|
 R13
 R14
-!s100 Y42RE]>Z;cb>FRUh=C^Fg0
+!s100 =HiF;Oe_JWSA^>JD^<Fj31
 !i10b 1
 Adataflow
 R16
@@ -70,7 +70,7 @@ R2
 R3
 R4
 R5
-DEx4 work 9 ctrllogic 0 22 N0UPN]lfz43CWNgcT8AQI2
+DEx4 work 9 ctrllogic 0 22 ?a8^YXefB8DUU]decPV?i2
 l23
 L15
 V2A?Cfl2j`5:chUzeNdhkN2
@@ -99,24 +99,98 @@ R13
 R14
 !s100 :;F=QcW8OWA_=7QJ[NGe^0
 !i10b 1
-!s108 1652015136.492000
+!s108 1652603073.882000
 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Declare.vhd|
 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Declare.vhd|
-Emultiplier
-Z22 w1652011033
+Elcd_display
+Z22 w1383308658
+R3
+R2
 R4
 R5
 R6
-Z23 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Multiplier.vhd
-Z24 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Multiplier.vhd
+Z23 8c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd
+Z24 Fc:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd
+l0
+L6
+VJ@lbj_A_WlF`]7o=N>?9V0
+R9
+33
+Z25 !s108 1652603074.473000
+Z26 !s90 -reportprogress|300|-2008|-work|work|c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd|
+Z27 !s107 c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd|
+R13
+R14
+!s100 3YAFj8Ee>VNe=Ee[WLWzl2
+!i10b 1
+Aa
+R3
+R2
+R4
+R5
+DEx4 work 11 lcd_display 0 22 J@lbj_A_WlF`]7o=N>?9V0
+l102
+L87
+V6;nXLZdJE7m[OoJMn]7gJ1
+R9
+33
+R25
+R26
+R27
+R13
+R14
+!s100 CI2BD=1Q7PFf40lSb=J[A3
+!i10b 1
+Elpm_rom0
+Z28 w1860695828
+R4
+R5
+R6
+Z29 8c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd
+Z30 Fc:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd
+l0
+L42
+VVIDm`C?k2mZiEXLa8J]@[1
+R9
+33
+Z31 !s108 1652603074.600000
+Z32 !s90 -reportprogress|300|-2008|-work|work|c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd|
+Z33 !s107 c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd|
+R13
+R14
+!s100 0[6IJ5C4?YX:L_=2dhXOl0
+!i10b 1
+Asyn
+R4
+R5
+DEx4 work 8 lpm_rom0 0 22 VIDm`C?k2mZiEXLa8J]@[1
+l81
+L52
+V8RI;;6J3ShWE]@6AXLF_g0
+R9
+33
+R31
+R32
+R33
+R13
+R14
+!s100 BZ8ZB>1kYB2:5=lAObf2=2
+!i10b 1
+Emultiplier
+Z34 w1652011033
+R4
+R5
+R6
+Z35 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Multiplier.vhd
+Z36 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Multiplier.vhd
 l0
 L4
 VdB]`Fm:OfHS`SKUADl0Uk1
 R9
 33
-Z25 !s108 1652015136.794000
-Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Multiplier.vhd|
-Z27 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Multiplier.vhd|
+Z37 !s108 1652603074.359000
+Z38 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Multiplier.vhd|
+Z39 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Multiplier.vhd|
 R13
 R14
 !s100 =WHkFHoI<JP41mYTTd^j?0
@@ -130,24 +204,24 @@ L13
 VYUKA?PhYIQY^If9Vk1<Uf3
 R9
 33
-R25
-R26
-R27
+R37
+R38
+R39
 R13
 R14
 !s100 S>lV8DhWJ<6n10ejW0SJG3
 !i10b 1
 Emultiplier_tb
-Z28 w1652015054
+Z40 w1652015054
 R16
 R3
-Z29 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+Z41 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
 R2
 R4
 R5
 R6
-Z30 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/simulation/modelsim/Multiplier_tb.vhd
-Z31 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/simulation/modelsim/Multiplier_tb.vhd
+Z42 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/simulation/modelsim/Multiplier_tb.vhd
+Z43 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/simulation/modelsim/Multiplier_tb.vhd
 l0
 L9
 VHP0cLEf`HBRo^O`nKBm`R1
@@ -155,15 +229,15 @@ VHP0cLEf`HBRo^O`nKBm`R1
 R9
 33
 !i10b 1
-Z32 !s108 1652015136.990000
-Z33 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/simulation/modelsim/Multiplier_tb.vhd|
-Z34 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/simulation/modelsim/Multiplier_tb.vhd|
+Z44 !s108 1652603074.844000
+Z45 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/simulation/modelsim/Multiplier_tb.vhd|
+Z46 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/simulation/modelsim/Multiplier_tb.vhd|
 R13
 R14
 Amultiplier_tb_arch
 R16
 R3
-R29
+R41
 R2
 R4
 R5
@@ -175,26 +249,26 @@ VMX0:UmzdAh@McVnf;c1En3
 R9
 33
 !i10b 1
-R32
-R33
-R34
+R44
+R45
+R46
 R13
 R14
 Ereg
-Z35 w1651167578
+Z47 w1651167578
 R4
 R5
 R6
-Z36 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Reg.vhd
-Z37 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Reg.vhd
+Z48 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Reg.vhd
+Z49 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Reg.vhd
 l0
 L4
 VGX`W>=_J3PibjAcf^JBU73
 R9
 33
-Z38 !s108 1652015136.595000
-Z39 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Reg.vhd|
-Z40 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Reg.vhd|
+Z50 !s108 1652603074.072000
+Z51 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Reg.vhd|
+Z52 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise6p2/Reg.vhd|
 R13
 R14
 !s100 1VVRdIKCQIAD8cnQ20fSn3
@@ -208,9 +282,9 @@ L13
 V8V9FbgVi8k0fU1:?lec3^1
 R9
 33
-R38
-R39
-R40
+R50
+R51
+R52
 R13
 R14
 !s100 hQcQ[Kn85^Yz]za0;RmHT2

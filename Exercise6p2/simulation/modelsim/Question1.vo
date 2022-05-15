@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "05/08/2022 16:41:11"
+// DATE "05/13/2022 12:02:56"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -371,18 +371,18 @@ wire \inst|inst|Selector1~0_combout ;
 wire \inst|inst|LCD_RS~regout ;
 wire \inst|inst|LCD_E~0_combout ;
 wire \inst|inst|LCD_E~regout ;
+wire [7:0] \BIN~combout ;
+wire [7:0] \AIN~combout ;
+wire [7:0] \inst|inst1|altsyncram_component|auto_generated|q_a ;
 wire [7:0] \inst|inst|DATA_BUS_VALUE ;
 wire [7:0] \inst1|R_H|F ;
-wire [7:0] \inst1|R_A|F ;
-wire [7:0] \inst|inst1|altsyncram_component|auto_generated|q_a ;
 wire [19:0] \inst|inst|CLK_COUNT_400HZ ;
 wire [7:0] \inst1|R_L|F ;
 wire [0:0] \inst1|R_C|F ;
+wire [7:0] \inst1|R_A|F ;
+wire [7:0] \inst1|R_B|F ;
 wire [4:0] \inst|inst|CHAR_COUNT ;
 wire [8:0] \inst1|U_Ctl|count ;
-wire [7:0] \BIN~combout ;
-wire [7:0] \AIN~combout ;
-wire [7:0] \inst1|R_B|F ;
 
 wire [7:0] \inst|inst1|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus ;
 
@@ -495,7 +495,7 @@ defparam \inst|inst1|altsyncram_component|auto_generated|ram_block1a0 .port_b_ad
 defparam \inst|inst1|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_width = 8;
 defparam \inst|inst1|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M4K";
 defparam \inst|inst1|altsyncram_component|auto_generated|ram_block1a0 .safe_write = "err_on_2clk";
-defparam \inst|inst1|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 256'h00000000527C00437C0000427C0000412020202020524558454C5049544C554D;
+defparam \inst|inst1|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 256'h00000000527C00437C0000427C0000412020202020205245494C5049544C554D;
 // synopsys translate_on
 
 // Location: LCFF_X56_Y23_N13

@@ -1,0 +1,26 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise6p2\simulation\modelsim
+vQuestion1
+!i10b 1
+!s100 UL[OCjDRUlC29:38]RL[G3
+I>iWjT;GC<mafCYN]NcX7?1
+VhdSU14cS^A[:Tz`eB9N3m1
+Z1 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise6p2\simulation\modelsim
+w1652017271
+8Question1.vo
+FQuestion1.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1652427331.182000
+!s107 Question1.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Question1.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+n@question1
