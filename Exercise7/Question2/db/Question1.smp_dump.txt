@@ -1,5 +1,5 @@
 
-State Machine - |Sorterbdf|Sorter:inst|BubbleSort:BS|state
+State Machine - |Sorterbdf|BubbleSort:inst|state
 Name state.CheckFlag state.CheckLoop state.WriteB state.SendAddrB_w state.WriteA state.SendAddrA_w state.Compare state.GetB state.SendAddrB_r state.GetA state.SendAddrA_r state.Waiting 
 state.Waiting 0 0 0 0 0 0 0 0 0 0 0 0 
 state.SendAddrA_r 0 0 0 0 0 0 0 0 0 0 1 1 

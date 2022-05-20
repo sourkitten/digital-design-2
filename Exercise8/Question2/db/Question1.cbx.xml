@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Question1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Vector_multiplier_sum_code|RAM256x4:b2v_inst8|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_jtc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

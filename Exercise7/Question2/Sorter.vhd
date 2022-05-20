@@ -27,7 +27,7 @@ architecture RTL of Sorter is
 				FINISH  : 	in		std_logic_vector (7 downto	0);
 				Address :	out	std_logic_vector (7 downto	0);
 				DataOut :	out	std_logic_vector (7 downto	0);
-				Complete, WR :	out std_logic
+				Complet, WR :	out std_logic
 				);
 
 	end component;
@@ -44,10 +44,11 @@ architecture RTL of Sorter is
 
 	end component;
 
-signal dataBtoR : STD_LOGIC_VECTOR (7 downto 0);
-signal dataRtoB : STD_LOGIC_VECTOR (7 downto 0);
-signal addr		 : STD_LOGIC_VECTOR (7 downto 0);
-signal WriteEn	 : STD_LOGIC;
+signal dataBtoR 		: STD_LOGIC_VECTOR (7 downto 0);
+signal dataRtoB 		: STD_LOGIC_VECTOR (7 downto 0);
+signal addr, addrsus : STD_LOGIC_VECTOR (7 downto 0);
+signal WriteEn	 		: STD_LOGIC;
+signal complet 		: STD_LOGIC;
 	
 begin
 
@@ -55,9 +56,9 @@ Data <= dataRtoB;
 
 	BS : BubbleSort port map ( clk => CLK, launch => Launch, reset => Reset, DataIn => dataRtoB, START => START,
 										FINISH => FINISH, Address => addr, DataOut => dataBtoR,
-										Complete => Complete, WR => WriteEn );
+										Complet => Complet, WR => WriteEn );
 
-	RAM : RAM265x8	 port map ( address => addr, clock => CLK, data => dataBtoR, wren => WriteEn, q => dataRtoB);
+	RAM : RAM265x8	 port map ( address => addrsus, clock => CLK, data => dataBtoR, wren => WriteEn, q => dataRtoB);
 	
 
 	

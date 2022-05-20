@@ -3,6 +3,9 @@ LCD_RS <= NewLCD:inst3.LCD_RS
 reset~ => NewLCD:inst3.Reset~
 reset~ => rst.IN0
 CLK50 => NewLCD:inst3.CLK_50MHz
+CLK50 => LPM_FF:inst6.clock
+CLK50 => BubbleSort:inst.clk
+CLK50 => RAM265x8:inst2.clock
 DBUS[0] <> NewLCD:inst3.DATA_BUS[0]
 DBUS[1] <> NewLCD:inst3.DATA_BUS[1]
 DBUS[2] <> NewLCD:inst3.DATA_BUS[2]
@@ -11,29 +14,29 @@ DBUS[4] <> NewLCD:inst3.DATA_BUS[4]
 DBUS[5] <> NewLCD:inst3.DATA_BUS[5]
 DBUS[6] <> NewLCD:inst3.DATA_BUS[6]
 DBUS[7] <> NewLCD:inst3.DATA_BUS[7]
+Launch => rst1.IN0
+B[0] => BubbleSort:inst.FINISH[0]
+B[1] => BubbleSort:inst.FINISH[1]
+B[2] => BubbleSort:inst.FINISH[2]
+B[3] => BubbleSort:inst.FINISH[3]
+B[4] => BubbleSort:inst.FINISH[4]
+B[5] => BubbleSort:inst.FINISH[5]
+B[6] => BubbleSort:inst.FINISH[6]
+B[7] => BubbleSort:inst.FINISH[7]
+A[0] => BubbleSort:inst.START[0]
+A[1] => BubbleSort:inst.START[1]
+A[2] => BubbleSort:inst.START[2]
+A[3] => BubbleSort:inst.START[3]
+A[4] => BubbleSort:inst.START[4]
+A[5] => BubbleSort:inst.START[5]
+A[6] => BubbleSort:inst.START[6]
+A[7] => BubbleSort:inst.START[7]
 CLK~ => clk.IN0
-Launch => Sorter:inst.Launch
-B[0] => Sorter:inst.FINISH[0]
-B[1] => Sorter:inst.FINISH[1]
-B[2] => Sorter:inst.FINISH[2]
-B[3] => Sorter:inst.FINISH[3]
-B[4] => Sorter:inst.FINISH[4]
-B[5] => Sorter:inst.FINISH[5]
-B[6] => Sorter:inst.FINISH[6]
-B[7] => Sorter:inst.FINISH[7]
-A[0] => Sorter:inst.START[0]
-A[1] => Sorter:inst.START[1]
-A[2] => Sorter:inst.START[2]
-A[3] => Sorter:inst.START[3]
-A[4] => Sorter:inst.START[4]
-A[5] => Sorter:inst.START[5]
-A[6] => Sorter:inst.START[6]
-A[7] => Sorter:inst.START[7]
 LCD_E <= NewLCD:inst3.LCD_E
 LCD_RW <= NewLCD:inst3.LCD_RW
 LCD_ONOFF <= NewLCD:inst3.LCD_STATUS_OUT
 LCD_BLONOFF <= NewLCD:inst3.LCD_BL_STATUS_OUT
-Complete <= Sorter:inst.Complete
+Complete <= BubbleSort:inst.Complete
 Data[0] <= Output[0].DB_MAX_OUTPUT_PORT_TYPE
 Data[1] <= Output[1].DB_MAX_OUTPUT_PORT_TYPE
 Data[2] <= Output[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -534,39 +537,150 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|Sorterbdf|Sorter:inst
-CLK => BubbleSort:BS.clk
-CLK => RAM265x8:RAM.clock
-Reset => BubbleSort:BS.reset
-Launch => BubbleSort:BS.launch
-START[0] => BubbleSort:BS.START[0]
-START[1] => BubbleSort:BS.START[1]
-START[2] => BubbleSort:BS.START[2]
-START[3] => BubbleSort:BS.START[3]
-START[4] => BubbleSort:BS.START[4]
-START[5] => BubbleSort:BS.START[5]
-START[6] => BubbleSort:BS.START[6]
-START[7] => BubbleSort:BS.START[7]
-FINISH[0] => BubbleSort:BS.FINISH[0]
-FINISH[1] => BubbleSort:BS.FINISH[1]
-FINISH[2] => BubbleSort:BS.FINISH[2]
-FINISH[3] => BubbleSort:BS.FINISH[3]
-FINISH[4] => BubbleSort:BS.FINISH[4]
-FINISH[5] => BubbleSort:BS.FINISH[5]
-FINISH[6] => BubbleSort:BS.FINISH[6]
-FINISH[7] => BubbleSort:BS.FINISH[7]
-Data[0] <= RAM265x8:RAM.q[0]
-Data[1] <= RAM265x8:RAM.q[1]
-Data[2] <= RAM265x8:RAM.q[2]
-Data[3] <= RAM265x8:RAM.q[3]
-Data[4] <= RAM265x8:RAM.q[4]
-Data[5] <= RAM265x8:RAM.q[5]
-Data[6] <= RAM265x8:RAM.q[6]
-Data[7] <= RAM265x8:RAM.q[7]
-Complete <= BubbleSort:BS.Complete
+|Sorterbdf|LPM_FF:inst6
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[7].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Sorterbdf|Sorter:inst|BubbleSort:BS
+|Sorterbdf|BUSMUX:inst4
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+dataa[6] => lpm_mux:$00000.data[0][6]
+dataa[7] => lpm_mux:$00000.data[0][7]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+datab[6] => lpm_mux:$00000.data[1][6]
+datab[7] => lpm_mux:$00000.data[1][7]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+result[6] <= lpm_mux:$00000.result[6]
+result[7] <= lpm_mux:$00000.result[7]
+
+
+|Sorterbdf|BUSMUX:inst4|lpm_mux:$00000
+data[0][0] => mux_smc:auto_generated.data[0]
+data[0][1] => mux_smc:auto_generated.data[1]
+data[0][2] => mux_smc:auto_generated.data[2]
+data[0][3] => mux_smc:auto_generated.data[3]
+data[0][4] => mux_smc:auto_generated.data[4]
+data[0][5] => mux_smc:auto_generated.data[5]
+data[0][6] => mux_smc:auto_generated.data[6]
+data[0][7] => mux_smc:auto_generated.data[7]
+data[1][0] => mux_smc:auto_generated.data[8]
+data[1][1] => mux_smc:auto_generated.data[9]
+data[1][2] => mux_smc:auto_generated.data[10]
+data[1][3] => mux_smc:auto_generated.data[11]
+data[1][4] => mux_smc:auto_generated.data[12]
+data[1][5] => mux_smc:auto_generated.data[13]
+data[1][6] => mux_smc:auto_generated.data[14]
+data[1][7] => mux_smc:auto_generated.data[15]
+sel[0] => mux_smc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_smc:auto_generated.result[0]
+result[1] <= mux_smc:auto_generated.result[1]
+result[2] <= mux_smc:auto_generated.result[2]
+result[3] <= mux_smc:auto_generated.result[3]
+result[4] <= mux_smc:auto_generated.result[4]
+result[5] <= mux_smc:auto_generated.result[5]
+result[6] <= mux_smc:auto_generated.result[6]
+result[7] <= mux_smc:auto_generated.result[7]
+
+
+|Sorterbdf|BUSMUX:inst4|lpm_mux:$00000|mux_smc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[6].IN1
+data[7] => result_node[7].IN1
+data[8] => result_node[0].IN1
+data[9] => result_node[1].IN1
+data[10] => result_node[2].IN1
+data[11] => result_node[3].IN1
+data[12] => result_node[4].IN1
+data[13] => result_node[5].IN1
+data[14] => result_node[6].IN1
+data[15] => result_node[7].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result_node[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result_node[7].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[7].IN0
+sel[0] => _.IN0
+sel[0] => result_node[6].IN0
+sel[0] => _.IN0
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|Sorterbdf|BubbleSort:inst
 clk => dataB[0].CLK
 clk => dataB[1].CLK
 clk => dataB[2].CLK
@@ -649,7 +763,7 @@ Complete <= Complete.DB_MAX_OUTPUT_PORT_TYPE
 WR <= WR.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Sorterbdf|Sorter:inst|RAM265x8:RAM
+|Sorterbdf|RAM265x8:inst2
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -678,7 +792,7 @@ q[6] <= altsyncram:altsyncram_component.q_a[6]
 q[7] <= altsyncram:altsyncram_component.q_a[7]
 
 
-|Sorterbdf|Sorter:inst|RAM265x8:RAM|altsyncram:altsyncram_component
+|Sorterbdf|RAM265x8:inst2|altsyncram:altsyncram_component
 wren_a => altsyncram_rtc1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -727,7 +841,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Sorterbdf|Sorter:inst|RAM265x8:RAM|altsyncram:altsyncram_component|altsyncram_rtc1:auto_generated
+|Sorterbdf|RAM265x8:inst2|altsyncram:altsyncram_component|altsyncram_rtc1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -824,5 +938,96 @@ wren_a => ram_block1a4.PORTAWE
 wren_a => ram_block1a5.PORTAWE
 wren_a => ram_block1a6.PORTAWE
 wren_a => ram_block1a7.PORTAWE
+
+
+|Sorterbdf|lpm_counter0:inst1
+aclr => lpm_counter:LPM_COUNTER_component.aclr
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
+q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
+q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
+q[3] <= lpm_counter:LPM_COUNTER_component.q[3]
+q[4] <= lpm_counter:LPM_COUNTER_component.q[4]
+q[5] <= lpm_counter:LPM_COUNTER_component.q[5]
+q[6] <= lpm_counter:LPM_COUNTER_component.q[6]
+q[7] <= lpm_counter:LPM_COUNTER_component.q[7]
+
+
+|Sorterbdf|lpm_counter0:inst1|lpm_counter:LPM_COUNTER_component
+clock => cntr_lni:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_lni:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => cntr_lni:auto_generated.aclr
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+data[5] => ~NO_FANOUT~
+data[6] => ~NO_FANOUT~
+data[7] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_lni:auto_generated.q[0]
+q[1] <= cntr_lni:auto_generated.q[1]
+q[2] <= cntr_lni:auto_generated.q[2]
+q[3] <= cntr_lni:auto_generated.q[3]
+q[4] <= cntr_lni:auto_generated.q[4]
+q[5] <= cntr_lni:auto_generated.q[5]
+q[6] <= cntr_lni:auto_generated.q[6]
+q[7] <= cntr_lni:auto_generated.q[7]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|Sorterbdf|lpm_counter0:inst1|lpm_counter:LPM_COUNTER_component|cntr_lni:auto_generated
+aclr => counter_reg_bit1a[7].ACLR
+aclr => counter_reg_bit1a[6].ACLR
+aclr => counter_reg_bit1a[5].ACLR
+aclr => counter_reg_bit1a[4].ACLR
+aclr => counter_reg_bit1a[3].ACLR
+aclr => counter_reg_bit1a[2].ACLR
+aclr => counter_reg_bit1a[1].ACLR
+aclr => counter_reg_bit1a[0].ACLR
+clock => counter_reg_bit1a[7].CLK
+clock => counter_reg_bit1a[6].CLK
+clock => counter_reg_bit1a[5].CLK
+clock => counter_reg_bit1a[4].CLK
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
+q[3] <= counter_reg_bit1a[3].REGOUT
+q[4] <= counter_reg_bit1a[4].REGOUT
+q[5] <= counter_reg_bit1a[5].REGOUT
+q[6] <= counter_reg_bit1a[6].REGOUT
+q[7] <= counter_reg_bit1a[7].REGOUT
 
 

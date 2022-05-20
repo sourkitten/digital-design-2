@@ -1,0 +1,1119 @@
+TimeQuest Timing Analyzer report for Question1
+Fri May 20 12:51:45 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'CLK'
+ 12. Slow Model Hold: 'CLK'
+ 13. Slow Model Minimum Pulse Width: 'CLK'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'CLK'
+ 24. Fast Model Hold: 'CLK'
+ 25. Fast Model Minimum Pulse Width: 'CLK'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Question1                                                         ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; CLK        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                           ;
++------------+-----------------+------------+-------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                  ;
++------------+-----------------+------------+-------------------------------------------------------+
+; 232.83 MHz ; 200.0 MHz       ; CLK        ; limit due to high minimum pulse width violation (tch) ;
++------------+-----------------+------------+-------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CLK   ; -3.295 ; -111.619      ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 0.391 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; CLK   ; -2.000 ; -124.380              ;
++-------+--------+-----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'CLK'                                                                                                                                                                                                     ;
++--------+------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                                  ; To Node                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; -3.295 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.266      ;
+; -3.295 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.266      ;
+; -3.295 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.266      ;
+; -3.295 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.266      ;
+; -3.295 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.266      ;
+; -3.295 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.266      ;
+; -3.294 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.265      ;
+; -3.294 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.265      ;
+; -3.294 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.265      ;
+; -3.294 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.265      ;
+; -3.294 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.265      ;
+; -3.294 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[5]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.265      ;
+; -3.280 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.251      ;
+; -3.280 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.251      ;
+; -3.280 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.251      ;
+; -3.280 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.251      ;
+; -3.280 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.251      ;
+; -3.280 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.251      ;
+; -3.276 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.247      ;
+; -3.276 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.247      ;
+; -3.276 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.247      ;
+; -3.276 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.247      ;
+; -3.276 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.247      ;
+; -3.276 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[4]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.247      ;
+; -3.268 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.239      ;
+; -3.268 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.239      ;
+; -3.268 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.239      ;
+; -3.268 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.239      ;
+; -3.268 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.239      ;
+; -3.268 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.239      ;
+; -3.266 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.237      ;
+; -3.266 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.237      ;
+; -3.266 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.237      ;
+; -3.266 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.237      ;
+; -3.266 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.237      ;
+; -3.266 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[1]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.237      ;
+; -3.264 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.235      ;
+; -3.264 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.235      ;
+; -3.264 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.235      ;
+; -3.264 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.235      ;
+; -3.264 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.235      ;
+; -3.264 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.235      ;
+; -3.263 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.234      ;
+; -3.263 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.234      ;
+; -3.263 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.234      ;
+; -3.263 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.234      ;
+; -3.263 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.234      ;
+; -3.263 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[0]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.234      ;
+; -3.252 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.223      ;
+; -3.252 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.223      ;
+; -3.252 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.223      ;
+; -3.252 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.223      ;
+; -3.252 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.223      ;
+; -3.252 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.223      ;
+; -3.248 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.219      ;
+; -3.248 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.219      ;
+; -3.248 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.219      ;
+; -3.248 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.219      ;
+; -3.248 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.219      ;
+; -3.248 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[3]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.219      ;
+; -3.122 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[7]          ; CLK          ; CLK         ; 1.000        ; -0.056     ; 4.102      ;
+; -3.122 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[7]          ; CLK          ; CLK         ; 1.000        ; -0.056     ; 4.102      ;
+; -3.122 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[7]          ; CLK          ; CLK         ; 1.000        ; -0.056     ; 4.102      ;
+; -3.122 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[7]          ; CLK          ; CLK         ; 1.000        ; -0.056     ; 4.102      ;
+; -3.122 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[7]          ; CLK          ; CLK         ; 1.000        ; -0.056     ; 4.102      ;
+; -3.122 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[7]          ; CLK          ; CLK         ; 1.000        ; -0.056     ; 4.102      ;
+; -3.041 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.012      ;
+; -3.041 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.012      ;
+; -3.041 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.012      ;
+; -3.041 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.012      ;
+; -3.041 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.012      ;
+; -3.041 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.012      ;
+; -3.039 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[7]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.010      ;
+; -3.039 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[7]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.010      ;
+; -3.039 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[7]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.010      ;
+; -3.039 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[7]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.010      ;
+; -3.039 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[7]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.010      ;
+; -3.039 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[7]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.010      ;
+; -3.037 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.008      ;
+; -3.037 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.008      ;
+; -3.037 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.008      ;
+; -3.037 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.008      ;
+; -3.037 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.008      ;
+; -3.037 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[2]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 4.008      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.983 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[6]          ; CLK          ; CLK         ; 1.000        ; -0.065     ; 3.954      ;
+; -2.838 ; BubbleSort:BS|state.Waiting                                                                                ; BubbleSort:BS|state.SendAddrA_r ; CLK          ; CLK         ; 1.000        ; 0.010      ; 3.884      ;
+; -2.753 ; BubbleSort:BS|dataA[0]                                                                                     ; BubbleSort:BS|count[0]          ; CLK          ; CLK         ; 1.000        ; -0.001     ; 3.788      ;
+; -2.753 ; BubbleSort:BS|dataA[0]                                                                                     ; BubbleSort:BS|count[1]          ; CLK          ; CLK         ; 1.000        ; -0.001     ; 3.788      ;
+; -2.753 ; BubbleSort:BS|dataA[0]                                                                                     ; BubbleSort:BS|count[2]          ; CLK          ; CLK         ; 1.000        ; -0.001     ; 3.788      ;
++--------+------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'CLK'                                                                                                                                                                                                     ;
++-------+---------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                       ; To Node                                                                                                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.Compare                                                                                ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|state.GetA                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; BubbleSort:BS|delay             ; BubbleSort:BS|delay                                                                                        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; BubbleSort:BS|state.GetB        ; BubbleSort:BS|state.GetB                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; BubbleSort:BS|Flag              ; BubbleSort:BS|Flag                                                                                         ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.530 ; BubbleSort:BS|state.CheckLoop   ; BubbleSort:BS|state.CheckFlag                                                                              ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.796      ;
+; 0.543 ; BubbleSort:BS|state.WriteB      ; BubbleSort:BS|state.SendAddrA_w                                                                            ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.809      ;
+; 0.549 ; BubbleSort:BS|delay             ; BubbleSort:BS|state.GetB                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.815      ;
+; 0.551 ; BubbleSort:BS|delay             ; BubbleSort:BS|state.GetA                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.817      ;
+; 0.576 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.Waiting                                                                                ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.842      ;
+; 0.788 ; BubbleSort:BS|state.SendAddrA_r ; BubbleSort:BS|state.GetA                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.054      ;
+; 0.816 ; BubbleSort:BS|count[1]          ; BubbleSort:BS|count[1]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.082      ;
+; 0.816 ; BubbleSort:BS|count[3]          ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.082      ;
+; 0.825 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|delay                                                                                        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.091      ;
+; 0.829 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.CheckFlag                                                                              ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.095      ;
+; 0.835 ; BubbleSort:BS|state.GetB        ; BubbleSort:BS|delay                                                                                        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.101      ;
+; 0.850 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.SendAddrB_r                                                                            ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.116      ;
+; 0.851 ; BubbleSort:BS|count[0]          ; BubbleSort:BS|count[0]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.117      ;
+; 0.852 ; BubbleSort:BS|count[2]          ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.118      ;
+; 0.853 ; BubbleSort:BS|count[4]          ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.119      ;
+; 0.854 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|Flag                                                                                         ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.120      ;
+; 0.856 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.SendAddrB_w                                                                            ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.122      ;
+; 0.857 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.CheckLoop                                                                              ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.123      ;
+; 0.867 ; BubbleSort:BS|state.SendAddrA_w ; BubbleSort:BS|state.WriteA                                                                                 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.133      ;
+; 0.894 ; BubbleSort:BS|dataB[6]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.192      ;
+; 0.894 ; BubbleSort:BS|dataB[3]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg3  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.192      ;
+; 0.895 ; BubbleSort:BS|dataB[5]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg5  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.193      ;
+; 0.895 ; BubbleSort:BS|dataB[2]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.193      ;
+; 0.895 ; BubbleSort:BS|dataB[1]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.193      ;
+; 0.895 ; BubbleSort:BS|dataB[0]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.193      ;
+; 0.942 ; BubbleSort:BS|count[4]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; CLK          ; CLK         ; 0.000        ; 0.066      ; 1.242      ;
+; 0.943 ; BubbleSort:BS|count[2]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; CLK          ; CLK         ; 0.000        ; 0.066      ; 1.243      ;
+; 0.946 ; BubbleSort:BS|count[1]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; CLK          ; CLK         ; 0.000        ; 0.066      ; 1.246      ;
+; 0.950 ; BubbleSort:BS|state.SendAddrB_w ; BubbleSort:BS|state.WriteB                                                                                 ; CLK          ; CLK         ; 0.000        ; 0.010      ; 1.226      ;
+; 0.979 ; BubbleSort:BS|state.WriteA      ; BubbleSort:BS|state.CheckLoop                                                                              ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.235      ;
+; 1.042 ; BubbleSort:BS|dataA[3]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg3  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.340      ;
+; 1.042 ; BubbleSort:BS|dataA[5]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg5  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.340      ;
+; 1.125 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|state.SendAddrB_r                                                                            ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.381      ;
+; 1.158 ; BubbleSort:BS|dataB[4]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg4  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.456      ;
+; 1.163 ; BubbleSort:BS|count[3]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; CLK          ; CLK         ; 0.000        ; 0.066      ; 1.463      ;
+; 1.199 ; BubbleSort:BS|count[1]          ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.465      ;
+; 1.199 ; BubbleSort:BS|count[3]          ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.465      ;
+; 1.200 ; BubbleSort:BS|count[0]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; CLK          ; CLK         ; 0.000        ; 0.066      ; 1.500      ;
+; 1.236 ; BubbleSort:BS|state.SendAddrB_r ; BubbleSort:BS|state.GetB                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.010      ; 1.512      ;
+; 1.237 ; BubbleSort:BS|count[0]          ; BubbleSort:BS|count[1]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.503      ;
+; 1.238 ; BubbleSort:BS|count[2]          ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.504      ;
+; 1.270 ; BubbleSort:BS|count[1]          ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.536      ;
+; 1.274 ; BubbleSort:BS|state.CheckLoop   ; BubbleSort:BS|state.SendAddrA_r                                                                            ; CLK          ; CLK         ; 0.000        ; 0.010      ; 1.550      ;
+; 1.307 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ; CLK          ; CLK         ; 0.000        ; 0.055      ; 1.596      ;
+; 1.307 ; BubbleSort:BS|dataA[1]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.605      ;
+; 1.308 ; BubbleSort:BS|count[0]          ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.574      ;
+; 1.309 ; BubbleSort:BS|count[2]          ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.575      ;
+; 1.315 ; BubbleSort:BS|state.GetB        ; BubbleSort:BS|state.Compare                                                                                ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.571      ;
+; 1.341 ; BubbleSort:BS|count[1]          ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.607      ;
+; 1.349 ; BubbleSort:BS|dataA[6]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.647      ;
+; 1.355 ; BubbleSort:BS|dataA[2]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.653      ;
+; 1.373 ; BubbleSort:BS|delay             ; BubbleSort:BS|dataA[7]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.639      ;
+; 1.379 ; BubbleSort:BS|count[0]          ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.645      ;
+; 1.379 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.SendAddrA_r                                                                            ; CLK          ; CLK         ; 0.000        ; 0.010      ; 1.655      ;
+; 1.428 ; BubbleSort:BS|state.WriteB      ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.684      ;
+; 1.432 ; BubbleSort:BS|dataA[7]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ; CLK          ; CLK         ; 0.000        ; 0.055      ; 1.721      ;
+; 1.450 ; BubbleSort:BS|count[0]          ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.470 ; BubbleSort:BS|state.GetB        ; BubbleSort:BS|state.SendAddrB_r                                                                            ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.726      ;
+; 1.473 ; BubbleSort:BS|state.GetB        ; BubbleSort:BS|state.SendAddrB_w                                                                            ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.729      ;
+; 1.505 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; CLK          ; CLK         ; 0.000        ; 0.056      ; 1.795      ;
+; 1.536 ; BubbleSort:BS|dataA[0]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.834      ;
+; 1.548 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ; CLK          ; CLK         ; 0.000        ; 0.055      ; 1.837      ;
+; 1.549 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ; CLK          ; CLK         ; 0.000        ; 0.055      ; 1.838      ;
+; 1.550 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ; CLK          ; CLK         ; 0.000        ; 0.055      ; 1.839      ;
+; 1.552 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|Flag                                                                                         ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.818      ;
+; 1.552 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ; CLK          ; CLK         ; 0.000        ; 0.055      ; 1.841      ;
+; 1.562 ; BubbleSort:BS|dataB[7]          ; BubbleSort:BS|state.CheckLoop                                                                              ; CLK          ; CLK         ; 0.000        ; -0.001     ; 1.827      ;
+; 1.565 ; BubbleSort:BS|dataB[7]          ; BubbleSort:BS|state.SendAddrB_w                                                                            ; CLK          ; CLK         ; 0.000        ; -0.001     ; 1.830      ;
+; 1.568 ; BubbleSort:BS|dataB[7]          ; BubbleSort:BS|state.CheckFlag                                                                              ; CLK          ; CLK         ; 0.000        ; -0.001     ; 1.833      ;
+; 1.568 ; BubbleSort:BS|delay             ; BubbleSort:BS|state.Compare                                                                                ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.824      ;
+; 1.569 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|count[0]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.835      ;
+; 1.569 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|count[1]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.835      ;
+; 1.569 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.835      ;
+; 1.569 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.835      ;
+; 1.569 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.835      ;
+; 1.569 ; BubbleSort:BS|dataB[7]          ; BubbleSort:BS|state.Waiting                                                                                ; CLK          ; CLK         ; 0.000        ; -0.001     ; 1.834      ;
+; 1.569 ; BubbleSort:BS|delay             ; BubbleSort:BS|state.SendAddrB_r                                                                            ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.825      ;
+; 1.572 ; BubbleSort:BS|delay             ; BubbleSort:BS|state.SendAddrB_w                                                                            ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.828      ;
+; 1.579 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|state.Waiting                                                                                ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.845      ;
+; 1.614 ; BubbleSort:BS|dataA[4]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg4  ; CLK          ; CLK         ; 0.000        ; 0.064      ; 1.912      ;
+; 1.617 ; BubbleSort:BS|state.Waiting     ; BubbleSort:BS|Flag                                                                                         ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.883      ;
+; 1.619 ; BubbleSort:BS|state.SendAddrA_w ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ; CLK          ; CLK         ; 0.000        ; 0.055      ; 1.908      ;
+; 1.623 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|dataA[7]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.889      ;
+; 1.651 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|count[0]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.917      ;
+; 1.651 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|count[1]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.917      ;
+; 1.651 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.917      ;
+; 1.651 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.917      ;
+; 1.651 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.917      ;
+; 1.673 ; BubbleSort:BS|state.WriteB      ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.929      ;
+; 1.673 ; BubbleSort:BS|Flag              ; BubbleSort:BS|count[0]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.939      ;
+; 1.673 ; BubbleSort:BS|Flag              ; BubbleSort:BS|count[1]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.939      ;
+; 1.673 ; BubbleSort:BS|Flag              ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.939      ;
+; 1.673 ; BubbleSort:BS|Flag              ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.939      ;
+; 1.673 ; BubbleSort:BS|Flag              ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.939      ;
+; 1.699 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|state.Compare                                                                                ; CLK          ; CLK         ; 0.000        ; -0.010     ; 1.955      ;
++-------+---------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLK'                                                                                                                                                       ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                                     ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg3  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg3  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg4  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg4  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg5  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg5  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a1~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a1~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a2~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a2~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a3~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a3~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a4~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a4~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a5~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a5~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a6~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a6~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a7~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a7~porta_memory_reg0  ;
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLK   ; Rise       ; CLK                                                                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|Flag                                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|Flag                                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|count[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|count[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|count[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|count[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|count[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|count[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|count[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|count[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|count[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|count[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[5]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[5]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[6]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[6]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[7]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[7]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[5]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[5]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[6]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[6]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[7]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[7]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|delay                                                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|delay                                                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|state.CheckFlag                                                                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|state.CheckFlag                                                                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|state.CheckLoop                                                                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|state.CheckLoop                                                                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|state.Compare                                                                                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|state.Compare                                                                                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|state.GetA                                                                                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|state.GetA                                                                                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|state.GetB                                                                                   ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Launch    ; CLK        ; 7.738 ; 7.738 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; Launch    ; CLK        ; -6.961 ; -6.961 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; Complete  ; CLK        ; 8.489  ; 8.489  ; Rise       ; CLK             ;
+; Data[*]   ; CLK        ; 10.469 ; 10.469 ; Rise       ; CLK             ;
+;  Data[0]  ; CLK        ; 10.183 ; 10.183 ; Rise       ; CLK             ;
+;  Data[1]  ; CLK        ; 10.078 ; 10.078 ; Rise       ; CLK             ;
+;  Data[2]  ; CLK        ; 10.145 ; 10.145 ; Rise       ; CLK             ;
+;  Data[3]  ; CLK        ; 9.639  ; 9.639  ; Rise       ; CLK             ;
+;  Data[4]  ; CLK        ; 10.147 ; 10.147 ; Rise       ; CLK             ;
+;  Data[5]  ; CLK        ; 10.161 ; 10.161 ; Rise       ; CLK             ;
+;  Data[6]  ; CLK        ; 9.935  ; 9.935  ; Rise       ; CLK             ;
+;  Data[7]  ; CLK        ; 10.469 ; 10.469 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; Complete  ; CLK        ; 8.489  ; 8.489  ; Rise       ; CLK             ;
+; Data[*]   ; CLK        ; 9.639  ; 9.639  ; Rise       ; CLK             ;
+;  Data[0]  ; CLK        ; 10.183 ; 10.183 ; Rise       ; CLK             ;
+;  Data[1]  ; CLK        ; 10.078 ; 10.078 ; Rise       ; CLK             ;
+;  Data[2]  ; CLK        ; 10.145 ; 10.145 ; Rise       ; CLK             ;
+;  Data[3]  ; CLK        ; 9.639  ; 9.639  ; Rise       ; CLK             ;
+;  Data[4]  ; CLK        ; 10.147 ; 10.147 ; Rise       ; CLK             ;
+;  Data[5]  ; CLK        ; 10.161 ; 10.161 ; Rise       ; CLK             ;
+;  Data[6]  ; CLK        ; 9.935  ; 9.935  ; Rise       ; CLK             ;
+;  Data[7]  ; CLK        ; 10.469 ; 10.469 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CLK   ; -1.597 ; -44.057       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 0.215 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; CLK   ; -2.000 ; -124.380              ;
++-------+--------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CLK'                                                                                                                                                                                                                                                                               ;
++--------+------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                                  ; To Node                                                                                                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.597 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[5]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.558      ;
+; -1.576 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.537      ;
+; -1.576 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.537      ;
+; -1.576 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.537      ;
+; -1.576 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.537      ;
+; -1.576 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.537      ;
+; -1.576 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.537      ;
+; -1.572 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.533      ;
+; -1.572 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.533      ;
+; -1.572 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.533      ;
+; -1.572 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.533      ;
+; -1.572 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.533      ;
+; -1.572 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[4]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.533      ;
+; -1.571 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.532      ;
+; -1.571 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.532      ;
+; -1.571 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.532      ;
+; -1.571 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.532      ;
+; -1.571 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.532      ;
+; -1.571 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.532      ;
+; -1.569 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.530      ;
+; -1.569 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.530      ;
+; -1.569 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.530      ;
+; -1.569 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.530      ;
+; -1.569 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.530      ;
+; -1.569 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[1]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.530      ;
+; -1.567 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.528      ;
+; -1.567 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.528      ;
+; -1.567 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.528      ;
+; -1.567 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.528      ;
+; -1.567 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.528      ;
+; -1.567 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.528      ;
+; -1.566 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.527      ;
+; -1.566 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.527      ;
+; -1.566 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.527      ;
+; -1.566 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.527      ;
+; -1.566 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.527      ;
+; -1.566 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[0]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.527      ;
+; -1.561 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.522      ;
+; -1.561 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.522      ;
+; -1.561 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.522      ;
+; -1.561 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.522      ;
+; -1.561 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.522      ;
+; -1.561 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.522      ;
+; -1.556 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.517      ;
+; -1.556 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.517      ;
+; -1.556 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.517      ;
+; -1.556 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.517      ;
+; -1.556 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.517      ;
+; -1.556 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[3]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.517      ;
+; -1.478 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.062     ; 2.448      ;
+; -1.478 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.062     ; 2.448      ;
+; -1.478 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.062     ; 2.448      ;
+; -1.478 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.062     ; 2.448      ;
+; -1.478 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.062     ; 2.448      ;
+; -1.478 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.062     ; 2.448      ;
+; -1.470 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.431      ;
+; -1.470 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.431      ;
+; -1.470 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataA[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.431      ;
+; -1.470 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataA[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.431      ;
+; -1.470 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataA[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.431      ;
+; -1.470 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataA[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.431      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[2]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.467 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[7]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.428      ;
+; -1.460 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_memory_reg0 ; CLK          ; CLK         ; 1.000        ; -0.017     ; 2.442      ;
+; -1.460 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a1~porta_memory_reg0 ; CLK          ; CLK         ; 1.000        ; -0.017     ; 2.442      ;
+; -1.460 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a2~porta_memory_reg0 ; CLK          ; CLK         ; 1.000        ; -0.017     ; 2.442      ;
+; -1.460 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg3  ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a3~porta_memory_reg0 ; CLK          ; CLK         ; 1.000        ; -0.017     ; 2.442      ;
+; -1.460 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg4  ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a4~porta_memory_reg0 ; CLK          ; CLK         ; 1.000        ; -0.017     ; 2.442      ;
+; -1.460 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg5  ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a5~porta_memory_reg0 ; CLK          ; CLK         ; 1.000        ; -0.017     ; 2.442      ;
+; -1.460 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a6~porta_memory_reg0 ; CLK          ; CLK         ; 1.000        ; -0.017     ; 2.442      ;
+; -1.460 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a7~porta_memory_reg0 ; CLK          ; CLK         ; 1.000        ; -0.017     ; 2.442      ;
+; -1.448 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataB[6]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.409      ;
+; -1.448 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; BubbleSort:BS|dataA[6]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.409      ;
+; -1.448 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataB[6]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.409      ;
+; -1.448 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; BubbleSort:BS|dataB[6]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.409      ;
+; -1.448 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; BubbleSort:BS|dataB[6]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.409      ;
+; -1.448 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; BubbleSort:BS|dataB[6]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.409      ;
+; -1.448 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; BubbleSort:BS|dataB[6]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.409      ;
+; -1.448 ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; BubbleSort:BS|dataA[6]                                                                                    ; CLK          ; CLK         ; 1.000        ; -0.071     ; 2.409      ;
++--------+------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'CLK'                                                                                                                                                                                                     ;
++-------+---------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                       ; To Node                                                                                                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.Compare                                                                                ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|state.GetA                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; BubbleSort:BS|delay             ; BubbleSort:BS|delay                                                                                        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; BubbleSort:BS|state.GetB        ; BubbleSort:BS|state.GetB                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; BubbleSort:BS|Flag              ; BubbleSort:BS|Flag                                                                                         ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.243 ; BubbleSort:BS|state.CheckLoop   ; BubbleSort:BS|state.CheckFlag                                                                              ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.395      ;
+; 0.254 ; BubbleSort:BS|state.WriteB      ; BubbleSort:BS|state.SendAddrA_w                                                                            ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.406      ;
+; 0.254 ; BubbleSort:BS|delay             ; BubbleSort:BS|state.GetB                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.406      ;
+; 0.257 ; BubbleSort:BS|delay             ; BubbleSort:BS|state.GetA                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.409      ;
+; 0.267 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.Waiting                                                                                ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.419      ;
+; 0.359 ; BubbleSort:BS|state.SendAddrA_r ; BubbleSort:BS|state.GetA                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.511      ;
+; 0.366 ; BubbleSort:BS|count[1]          ; BubbleSort:BS|count[1]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.518      ;
+; 0.366 ; BubbleSort:BS|count[3]          ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.518      ;
+; 0.370 ; BubbleSort:BS|state.GetB        ; BubbleSort:BS|delay                                                                                        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.522      ;
+; 0.374 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|delay                                                                                        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.526      ;
+; 0.379 ; BubbleSort:BS|count[0]          ; BubbleSort:BS|count[0]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.531      ;
+; 0.379 ; BubbleSort:BS|count[2]          ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.531      ;
+; 0.380 ; BubbleSort:BS|count[4]          ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.532      ;
+; 0.383 ; BubbleSort:BS|dataB[6]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.591      ;
+; 0.383 ; BubbleSort:BS|dataB[3]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg3  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.591      ;
+; 0.384 ; BubbleSort:BS|dataB[5]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg5  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.592      ;
+; 0.384 ; BubbleSort:BS|dataB[2]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.592      ;
+; 0.384 ; BubbleSort:BS|dataB[1]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.592      ;
+; 0.384 ; BubbleSort:BS|dataB[0]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.592      ;
+; 0.387 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.SendAddrB_r                                                                            ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.539      ;
+; 0.389 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|Flag                                                                                         ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.541      ;
+; 0.391 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.CheckLoop                                                                              ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.543      ;
+; 0.393 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.CheckFlag                                                                              ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.545      ;
+; 0.396 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.SendAddrB_w                                                                            ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.548      ;
+; 0.404 ; BubbleSort:BS|count[4]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ; CLK          ; CLK         ; 0.000        ; 0.073      ; 0.615      ;
+; 0.405 ; BubbleSort:BS|count[2]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ; CLK          ; CLK         ; 0.000        ; 0.073      ; 0.616      ;
+; 0.407 ; BubbleSort:BS|count[1]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ; CLK          ; CLK         ; 0.000        ; 0.073      ; 0.618      ;
+; 0.419 ; BubbleSort:BS|state.SendAddrA_w ; BubbleSort:BS|state.WriteA                                                                                 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.571      ;
+; 0.419 ; BubbleSort:BS|dataA[5]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg5  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.627      ;
+; 0.420 ; BubbleSort:BS|dataA[3]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg3  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.628      ;
+; 0.431 ; BubbleSort:BS|state.SendAddrB_w ; BubbleSort:BS|state.WriteB                                                                                 ; CLK          ; CLK         ; 0.000        ; 0.011      ; 0.594      ;
+; 0.457 ; BubbleSort:BS|state.WriteA      ; BubbleSort:BS|state.CheckLoop                                                                              ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.598      ;
+; 0.499 ; BubbleSort:BS|count[3]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ; CLK          ; CLK         ; 0.000        ; 0.073      ; 0.710      ;
+; 0.504 ; BubbleSort:BS|count[1]          ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; BubbleSort:BS|count[3]          ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.656      ;
+; 0.508 ; BubbleSort:BS|dataB[4]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg4  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.716      ;
+; 0.511 ; BubbleSort:BS|count[0]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ; CLK          ; CLK         ; 0.000        ; 0.073      ; 0.722      ;
+; 0.519 ; BubbleSort:BS|count[0]          ; BubbleSort:BS|count[1]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.671      ;
+; 0.519 ; BubbleSort:BS|count[2]          ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.671      ;
+; 0.533 ; BubbleSort:BS|dataA[1]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.741      ;
+; 0.539 ; BubbleSort:BS|count[1]          ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.691      ;
+; 0.547 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.746      ;
+; 0.547 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|state.SendAddrB_r                                                                            ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.688      ;
+; 0.554 ; BubbleSort:BS|count[0]          ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.706      ;
+; 0.554 ; BubbleSort:BS|count[2]          ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.706      ;
+; 0.556 ; BubbleSort:BS|dataA[6]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.764      ;
+; 0.557 ; BubbleSort:BS|dataA[2]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.765      ;
+; 0.568 ; BubbleSort:BS|state.SendAddrB_r ; BubbleSort:BS|state.GetB                                                                                   ; CLK          ; CLK         ; 0.000        ; 0.011      ; 0.731      ;
+; 0.569 ; BubbleSort:BS|state.CheckLoop   ; BubbleSort:BS|state.SendAddrA_r                                                                            ; CLK          ; CLK         ; 0.000        ; 0.011      ; 0.732      ;
+; 0.574 ; BubbleSort:BS|count[1]          ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.726      ;
+; 0.589 ; BubbleSort:BS|count[0]          ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.741      ;
+; 0.599 ; BubbleSort:BS|dataA[7]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.798      ;
+; 0.614 ; BubbleSort:BS|state.Compare     ; BubbleSort:BS|state.SendAddrA_r                                                                            ; CLK          ; CLK         ; 0.000        ; 0.011      ; 0.777      ;
+; 0.618 ; BubbleSort:BS|state.GetB        ; BubbleSort:BS|state.Compare                                                                                ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.759      ;
+; 0.624 ; BubbleSort:BS|count[0]          ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.776      ;
+; 0.637 ; BubbleSort:BS|dataA[0]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.845      ;
+; 0.648 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; CLK          ; CLK         ; 0.000        ; 0.062      ; 0.848      ;
+; 0.654 ; BubbleSort:BS|state.WriteB      ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.795      ;
+; 0.660 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.859      ;
+; 0.661 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.860      ;
+; 0.662 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.861      ;
+; 0.664 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.863      ;
+; 0.676 ; BubbleSort:BS|state.GetB        ; BubbleSort:BS|state.SendAddrB_r                                                                            ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.817      ;
+; 0.676 ; BubbleSort:BS|state.SendAddrA_w ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.875      ;
+; 0.679 ; BubbleSort:BS|state.GetB        ; BubbleSort:BS|state.SendAddrB_w                                                                            ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.820      ;
+; 0.681 ; BubbleSort:BS|dataA[4]          ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg4  ; CLK          ; CLK         ; 0.000        ; 0.070      ; 0.889      ;
+; 0.698 ; BubbleSort:BS|delay             ; BubbleSort:BS|dataA[7]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.850      ;
+; 0.706 ; BubbleSort:BS|dataB[7]          ; BubbleSort:BS|state.CheckFlag                                                                              ; CLK          ; CLK         ; 0.000        ; -0.002     ; 0.856      ;
+; 0.706 ; BubbleSort:BS|dataB[7]          ; BubbleSort:BS|state.CheckLoop                                                                              ; CLK          ; CLK         ; 0.000        ; -0.002     ; 0.856      ;
+; 0.706 ; BubbleSort:BS|dataB[7]          ; BubbleSort:BS|state.SendAddrB_w                                                                            ; CLK          ; CLK         ; 0.000        ; -0.002     ; 0.856      ;
+; 0.707 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|Flag                                                                                         ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.859      ;
+; 0.709 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|state.Waiting                                                                                ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.861      ;
+; 0.711 ; BubbleSort:BS|dataB[7]          ; BubbleSort:BS|state.Waiting                                                                                ; CLK          ; CLK         ; 0.000        ; -0.002     ; 0.861      ;
+; 0.722 ; BubbleSort:BS|state.Waiting     ; BubbleSort:BS|Flag                                                                                         ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.874      ;
+; 0.727 ; BubbleSort:BS|delay             ; BubbleSort:BS|state.Compare                                                                                ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.868      ;
+; 0.728 ; BubbleSort:BS|delay             ; BubbleSort:BS|state.SendAddrB_r                                                                            ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.869      ;
+; 0.731 ; BubbleSort:BS|delay             ; BubbleSort:BS|state.SendAddrB_w                                                                            ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.872      ;
+; 0.757 ; BubbleSort:BS|state.WriteB      ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.898      ;
+; 0.770 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|state.Compare                                                                                ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.911      ;
+; 0.771 ; BubbleSort:BS|state.SendAddrA_w ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.970      ;
+; 0.771 ; BubbleSort:BS|state.WriteB      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ; CLK          ; CLK         ; 0.000        ; 0.062      ; 0.971      ;
+; 0.772 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.913      ;
+; 0.774 ; BubbleSort:BS|state.GetA        ; BubbleSort:BS|state.SendAddrB_w                                                                            ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.915      ;
+; 0.777 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|count[0]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.929      ;
+; 0.777 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|count[1]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.929      ;
+; 0.777 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|count[2]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.929      ;
+; 0.777 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.929      ;
+; 0.777 ; BubbleSort:BS|state.CheckFlag   ; BubbleSort:BS|count[4]                                                                                     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.929      ;
+; 0.783 ; BubbleSort:BS|state.WriteB      ; BubbleSort:BS|count[3]                                                                                     ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.924      ;
+; 0.785 ; BubbleSort:BS|state.WriteB      ; BubbleSort:BS|count[1]                                                                                     ; CLK          ; CLK         ; 0.000        ; -0.011     ; 0.926      ;
+; 0.785 ; BubbleSort:BS|state.WriteA      ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg4  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.984      ;
+; 0.786 ; BubbleSort:BS|state.SendAddrA_w ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg3  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.985      ;
+; 0.787 ; BubbleSort:BS|state.SendAddrA_w ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg5  ; CLK          ; CLK         ; 0.000        ; 0.061      ; 0.986      ;
+; 0.787 ; BubbleSort:BS|count[4]          ; BubbleSort:BS|state.Compare                                                                                ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.939      ;
+; 0.788 ; BubbleSort:BS|dataB[7]          ; BubbleSort:BS|Flag                                                                                         ; CLK          ; CLK         ; 0.000        ; -0.002     ; 0.938      ;
++-------+---------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLK'                                                                                                                                                       ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                                     ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg1 ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg2 ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg3 ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_address_reg4 ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg1  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg2  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg3  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg3  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg4  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg4  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg5  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg5  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg6  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_datain_reg7  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a1~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a1~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a2~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a2~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a3~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a3~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a4~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a4~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a5~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a5~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a6~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a6~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; High Pulse Width ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a7~porta_memory_reg0  ;
+; -2.000 ; 0.500        ; 2.500          ; Low Pulse Width  ; CLK   ; Rise       ; RAM32x8:RAM|altsyncram:altsyncram_component|altsyncram_8qc1:auto_generated|ram_block1a7~porta_memory_reg0  ;
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLK   ; Rise       ; CLK                                                                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|Flag                                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|Flag                                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|count[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|count[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|count[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|count[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|count[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|count[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|count[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|count[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|count[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|count[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[5]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[5]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[6]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[6]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataA[7]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataA[7]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[0]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[1]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[2]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[3]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[4]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[5]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[5]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[6]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[6]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|dataB[7]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|dataB[7]                                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|delay                                                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|delay                                                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|state.CheckFlag                                                                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|state.CheckFlag                                                                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|state.CheckLoop                                                                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|state.CheckLoop                                                                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|state.Compare                                                                                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|state.Compare                                                                                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|state.GetA                                                                                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; BubbleSort:BS|state.GetA                                                                                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; BubbleSort:BS|state.GetB                                                                                   ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Launch    ; CLK        ; 3.887 ; 3.887 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; Launch    ; CLK        ; -3.534 ; -3.534 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Complete  ; CLK        ; 4.680 ; 4.680 ; Rise       ; CLK             ;
+; Data[*]   ; CLK        ; 6.040 ; 6.040 ; Rise       ; CLK             ;
+;  Data[0]  ; CLK        ; 5.914 ; 5.914 ; Rise       ; CLK             ;
+;  Data[1]  ; CLK        ; 5.853 ; 5.853 ; Rise       ; CLK             ;
+;  Data[2]  ; CLK        ; 5.876 ; 5.876 ; Rise       ; CLK             ;
+;  Data[3]  ; CLK        ; 5.694 ; 5.694 ; Rise       ; CLK             ;
+;  Data[4]  ; CLK        ; 5.875 ; 5.875 ; Rise       ; CLK             ;
+;  Data[5]  ; CLK        ; 5.904 ; 5.904 ; Rise       ; CLK             ;
+;  Data[6]  ; CLK        ; 5.809 ; 5.809 ; Rise       ; CLK             ;
+;  Data[7]  ; CLK        ; 6.040 ; 6.040 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Complete  ; CLK        ; 4.680 ; 4.680 ; Rise       ; CLK             ;
+; Data[*]   ; CLK        ; 5.694 ; 5.694 ; Rise       ; CLK             ;
+;  Data[0]  ; CLK        ; 5.914 ; 5.914 ; Rise       ; CLK             ;
+;  Data[1]  ; CLK        ; 5.853 ; 5.853 ; Rise       ; CLK             ;
+;  Data[2]  ; CLK        ; 5.876 ; 5.876 ; Rise       ; CLK             ;
+;  Data[3]  ; CLK        ; 5.694 ; 5.694 ; Rise       ; CLK             ;
+;  Data[4]  ; CLK        ; 5.875 ; 5.875 ; Rise       ; CLK             ;
+;  Data[5]  ; CLK        ; 5.904 ; 5.904 ; Rise       ; CLK             ;
+;  Data[6]  ; CLK        ; 5.809 ; 5.809 ; Rise       ; CLK             ;
+;  Data[7]  ; CLK        ; 6.040 ; 6.040 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -3.295   ; 0.215 ; N/A      ; N/A     ; -2.000              ;
+;  CLK             ; -3.295   ; 0.215 ; N/A      ; N/A     ; -2.000              ;
+; Design-wide TNS  ; -111.619 ; 0.0   ; 0.0      ; 0.0     ; -124.38             ;
+;  CLK             ; -111.619 ; 0.000 ; N/A      ; N/A     ; -124.380            ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Launch    ; CLK        ; 7.738 ; 7.738 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; Launch    ; CLK        ; -3.534 ; -3.534 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; Complete  ; CLK        ; 8.489  ; 8.489  ; Rise       ; CLK             ;
+; Data[*]   ; CLK        ; 10.469 ; 10.469 ; Rise       ; CLK             ;
+;  Data[0]  ; CLK        ; 10.183 ; 10.183 ; Rise       ; CLK             ;
+;  Data[1]  ; CLK        ; 10.078 ; 10.078 ; Rise       ; CLK             ;
+;  Data[2]  ; CLK        ; 10.145 ; 10.145 ; Rise       ; CLK             ;
+;  Data[3]  ; CLK        ; 9.639  ; 9.639  ; Rise       ; CLK             ;
+;  Data[4]  ; CLK        ; 10.147 ; 10.147 ; Rise       ; CLK             ;
+;  Data[5]  ; CLK        ; 10.161 ; 10.161 ; Rise       ; CLK             ;
+;  Data[6]  ; CLK        ; 9.935  ; 9.935  ; Rise       ; CLK             ;
+;  Data[7]  ; CLK        ; 10.469 ; 10.469 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Complete  ; CLK        ; 4.680 ; 4.680 ; Rise       ; CLK             ;
+; Data[*]   ; CLK        ; 5.694 ; 5.694 ; Rise       ; CLK             ;
+;  Data[0]  ; CLK        ; 5.914 ; 5.914 ; Rise       ; CLK             ;
+;  Data[1]  ; CLK        ; 5.853 ; 5.853 ; Rise       ; CLK             ;
+;  Data[2]  ; CLK        ; 5.876 ; 5.876 ; Rise       ; CLK             ;
+;  Data[3]  ; CLK        ; 5.694 ; 5.694 ; Rise       ; CLK             ;
+;  Data[4]  ; CLK        ; 5.875 ; 5.875 ; Rise       ; CLK             ;
+;  Data[5]  ; CLK        ; 5.904 ; 5.904 ; Rise       ; CLK             ;
+;  Data[6]  ; CLK        ; 5.809 ; 5.809 ; Rise       ; CLK             ;
+;  Data[7]  ; CLK        ; 6.040 ; 6.040 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 584      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 584      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 19    ; 19   ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 49    ; 49   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri May 20 12:51:44 2022
+Info: Command: quartus_sta Question1 -c Question1
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Question1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLK CLK
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -3.295
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.295      -111.619 CLK 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 CLK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.000      -124.380 CLK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.597
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.597       -44.057 CLK 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 CLK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.000      -124.380 CLK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4553 megabytes
+    Info: Processing ended: Fri May 20 12:51:45 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

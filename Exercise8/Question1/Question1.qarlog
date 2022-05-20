@@ -1,0 +1,35 @@
+Quartus II Archive log --	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Question1.qarlog
+
+Archive:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Question1.qar
+Date:		Fri May 20 15:11:26 2022
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Adder.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/CtrlLogic.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Declare.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/MainControlUnit.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Multiplier.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Question1.qpf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Question1.qsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/RAM256x4.cmp
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/RAM256x4.mif
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/RAM256x4.qip
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/RAM256x4.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Reg.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Rom.hex
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Vector_multiplier_sum.bdf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Vector_multiplier_sum_code.vhd
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/incremental_db/compiled_partitions/Question1.db_info
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/simulation/modelsim/VMS_tb.vhd
+c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 18 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Fri May 20 15:11:53 2022
+Source archive file:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Question1.qar
+Archive was extracted into	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/
+		 - successfully.

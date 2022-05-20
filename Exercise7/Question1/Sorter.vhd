@@ -17,7 +17,6 @@ end Sorter;
 architecture RTL of Sorter is
 
 	component BubbleSort
-
 		port (
 				clk,	launch,	reset :	in	std_logic;
 				DataIn  : 	in		std_logic_vector (7 downto	0);
@@ -29,7 +28,6 @@ architecture RTL of Sorter is
 	end component;
 
 	component RAM32x8
-
 		port (
 		address		: IN  STD_LOGIC_VECTOR (4 DOWNTO 0);
 		clock			: IN  STD_LOGIC;

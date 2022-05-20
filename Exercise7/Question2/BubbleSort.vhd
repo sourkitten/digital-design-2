@@ -4,7 +4,6 @@ use ieee.std_logic_textio.all  ;
 use ieee.std_logic_unsigned.all  ; 
 
 entity BubbleSort is
-	generic (n: integer :=4);
 	port (	clk,	launch,	reset :	in	std_logic;
 				DataIn  : 	in		std_logic_vector (7 downto	0);
 				START   : 	in		std_logic_vector (7 downto	0);

@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise7\Question1\simulation\modelsim
 Ebubblesort
-Z1 w1652610603
+Z1 w1652651901
 Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z4 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
@@ -15,15 +15,15 @@ Z8 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/BubbleSort.vhd
 Z9 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/BubbleSort.vhd
 l0
 L6
-ViX7FTcAh4]mPFJ^:cMg:71
+VOQ1_2B:]B<NNN=[faZO393
 Z10 OV;C;10.1d;51
 33
-Z11 !s108 1652622847.214000
+Z11 !s108 1653040218.895000
 Z12 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/BubbleSort.vhd|
 Z13 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/BubbleSort.vhd|
 Z14 o-2008 -work work -O0
 Z15 tExplicit 1
-!s100 19A_EfX;m1@L1VNV0HCP>2
+!s100 0GzO]XgId_Q9J<58FDXDc1
 !i10b 1
 Artl
 R2
@@ -31,9 +31,9 @@ R3
 R4
 R5
 R6
-DEx4 work 10 bubblesort 0 22 iX7FTcAh4]mPFJ^:cMg:71
-l39
-L15
+DEx4 work 10 bubblesort 0 22 OQ1_2B:]B<NNN=[faZO393
+l38
+L14
 VgZW?B2ZY0o@SlBz92UR==0
 R10
 33
@@ -42,23 +42,132 @@ R12
 R13
 R14
 R15
-!s100 9niDDUC]@m_ID6iZjGlgT0
+!s100 UffgZWjTmT1=nkj1O=ZNH0
 !i10b 1
-Eram32x8
-Z16 w1652606644
+Elcd_display
+Z16 w1383308658
+R3
+R2
 R5
 R6
 R7
-Z17 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/RAM32x8.vhd
-Z18 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/RAM32x8.vhd
+Z17 8c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd
+Z18 Fc:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd
+l0
+L6
+VJ@lbj_A_WlF`]7o=N>?9V0
+R10
+33
+Z19 !s108 1653040219.098000
+Z20 !s90 -reportprogress|300|-2008|-work|work|c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd|
+Z21 !s107 c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd|
+R14
+R15
+!s100 3YAFj8Ee>VNe=Ee[WLWzl2
+!i10b 1
+Aa
+R3
+R2
+R5
+R6
+DEx4 work 11 lcd_display 0 22 J@lbj_A_WlF`]7o=N>?9V0
+l102
+L87
+V6;nXLZdJE7m[OoJMn]7gJ1
+R10
+33
+R19
+R20
+R21
+R14
+R15
+!s100 CI2BD=1Q7PFf40lSb=J[A3
+!i10b 1
+Elpm_counter0
+Z22 w1653034866
+R5
+R6
+R7
+Z23 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/lpm_counter0.vhd
+Z24 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/lpm_counter0.vhd
+l0
+L42
+V;mQ2J:@B]c8FD<2:^<ERj1
+R10
+33
+Z25 !s108 1653040219.004000
+Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/lpm_counter0.vhd|
+Z27 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/lpm_counter0.vhd|
+R14
+R15
+!s100 zcjW=fz]1WgHRnEZR1NWP0
+!i10b 1
+Asyn
+R5
+R6
+DEx4 work 12 lpm_counter0 0 22 ;mQ2J:@B]c8FD<2:^<ERj1
+l74
+L53
+V=djYV6?gZ:NHgng>FIS]_1
+R10
+33
+R25
+R26
+R27
+R14
+R15
+!s100 ZaAjM7de2`ik^gJS^AhR80
+!i10b 1
+Elpm_rom0
+Z28 w1860695828
+R5
+R6
+R7
+Z29 8c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd
+Z30 Fc:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd
+l0
+L42
+VVIDm`C?k2mZiEXLa8J]@[1
+R10
+33
+Z31 !s108 1653040219.192000
+Z32 !s90 -reportprogress|300|-2008|-work|work|c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd|
+Z33 !s107 c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd|
+R14
+R15
+!s100 0[6IJ5C4?YX:L_=2dhXOl0
+!i10b 1
+Asyn
+R5
+R6
+DEx4 work 8 lpm_rom0 0 22 VIDm`C?k2mZiEXLa8J]@[1
+l81
+L52
+V8RI;;6J3ShWE]@6AXLF_g0
+R10
+33
+R31
+R32
+R33
+R14
+R15
+!s100 BZ8ZB>1kYB2:5=lAObf2=2
+!i10b 1
+Eram32x8
+Z34 w1652606644
+R5
+R6
+R7
+Z35 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/RAM32x8.vhd
+Z36 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/RAM32x8.vhd
 l0
 L42
 V9@MeJd7Hd2c;A7DVf3OIK2
 R10
 33
-Z19 !s108 1652622847.091000
-Z20 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/RAM32x8.vhd|
-Z21 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/RAM32x8.vhd|
+Z37 !s108 1653040218.817000
+Z38 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/RAM32x8.vhd|
+Z39 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/RAM32x8.vhd|
 R14
 R15
 !s100 eG[?lLSBd<?og`]fVOaDm1
@@ -72,58 +181,23 @@ L54
 VJOB0:k7]`SmoEC=odeKCW3
 R10
 33
-R19
-R20
-R21
+R37
+R38
+R39
 R14
 R15
 !s100 W>KTkR[fUZBN[HgldOj<23
 !i10b 1
-Esorter
-Z22 w1652622801
-R5
-R6
-R7
-Z23 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/Sorter.vhd
-Z24 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/Sorter.vhd
-l0
-L4
-Vb;H]WGSYH^5hF]k^G0_7Z3
-R10
-33
-Z25 !s108 1652622847.333000
-Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/Sorter.vhd|
-Z27 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/Sorter.vhd|
-R14
-R15
-!s100 VWPz3]V7?ULHJWSKaO11i3
-!i10b 1
-Artl
-R5
-R6
-DEx4 work 6 sorter 0 22 b;H]WGSYH^5hF]k^G0_7Z3
-l48
-L17
-VdFA7oZP3Jo=HO8N@[:Bj;2
-R10
-33
-R25
-R26
-R27
-R14
-R15
-!s100 <1l2]3:YNNObMX_NJKHKa1
-!i10b 1
 Esorter_tb
-Z28 w1652620764
+Z40 w1652620764
 R3
 R4
 R2
 R5
 R6
 R7
-Z29 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/simulation/modelsim/Sorter_tb.vhd
-Z30 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/simulation/modelsim/Sorter_tb.vhd
+Z41 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/simulation/modelsim/Sorter_tb.vhd
+Z42 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/simulation/modelsim/Sorter_tb.vhd
 l0
 L8
 VAc6iS^B<7>m1mz>JBEkeX3
@@ -131,9 +205,9 @@ VAc6iS^B<7>m1mz>JBEkeX3
 R10
 33
 !i10b 1
-Z31 !s108 1652622847.445000
-Z32 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/simulation/modelsim/Sorter_tb.vhd|
-Z33 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/simulation/modelsim/Sorter_tb.vhd|
+Z43 !s108 1653040219.332000
+Z44 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/simulation/modelsim/Sorter_tb.vhd|
+Z45 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question1/simulation/modelsim/Sorter_tb.vhd|
 R14
 R15
 Asorter_tb_arch
@@ -150,8 +224,8 @@ VTk0DQc:Ad0h^bA?=PXNBV0
 R10
 33
 !i10b 1
-R31
-R32
-R33
+R43
+R44
+R45
 R14
 R15

@@ -79,13 +79,7 @@ applicable agreement for further details.
 		(text "WR" (rect 169 75 187 87)(font "Arial" ))
 		(line (pt 208 80)(pt 192 80)(line_width 1))
 	)
-	(parameter
-		"n"
-		"4"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
 		(rectangle (rect 16 16 192 96)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 224 -64 324 16))
 )

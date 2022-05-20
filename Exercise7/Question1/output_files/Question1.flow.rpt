@@ -1,5 +1,5 @@
 Flow report for Question1
-Sun May 15 16:53:52 2022
+Fri May 20 12:08:29 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun May 15 16:53:52 2022           ;
+; Flow Status                        ; Successful - Fri May 20 12:08:29 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Question1                                       ;
-; Top-level Entity Name              ; Sorter                                          ;
+; Top-level Entity Name              ; Sorterbdf                                       ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 48 / 33,216 ( < 1 % )                           ;
-;     Total combinational functions  ; 45 / 33,216 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 35 / 33,216 ( < 1 % )                           ;
-; Total registers                    ; 35                                              ;
-; Total pins                         ; 12 / 475 ( 3 % )                                ;
+; Total logic elements               ; 174 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 169 / 33,216 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 105 / 33,216 ( < 1 % )                          ;
+; Total registers                    ; 105                                             ;
+; Total pins                         ; 26 / 475 ( 5 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 256 / 483,840 ( < 1 % )                         ;
+; Total memory bits                  ; 512 / 483,840 ( < 1 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/15/2022 16:53:34 ;
+; Start date & time ; 05/20/2022 12:08:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Question1           ;
 +-------------------+---------------------+
@@ -75,10 +75,10 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                                   ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 255543656200010.165262281409408                         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 255543656200010.165303769005780                         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; DUT                                                     ; --            ; --          ; RAM32x8_tb     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; DUT                                                     ; --            ; --          ; Sorter_tb      ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Sorter_tb                                               ; --            ; --          ; eda_simulation ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; RAM32x8_tb                                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                                  ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                         ; --            ; --          ; eda_simulation ;
@@ -93,12 +93,12 @@ applicable agreement for further details.
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                                      ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                                       ; --            ; --          ; --             ;
 ; MISC_FILE                            ; RAM32x8.cmp                                             ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; 16764057                                                ; --            ; Sorter      ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                   ; --            ; Sorter      ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                                  ; --            ; Sorter      ; Top            ;
+; PARTITION_COLOR                      ; 16764057                                                ; --            ; Sorterbdf   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                   ; --            ; Sorterbdf   ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                                  ; --            ; Sorterbdf   ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                                            ; --            ; --          ; --             ;
 ; SEARCH_PATH                          ; c:\users\v4ngbz\documents\quartus\libraries\corelibrary ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; Sorter                                                  ; Question1     ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; Sorterbdf                                               ; Question1     ; --          ; --             ;
 ; VHDL_INPUT_VERSION                   ; VHDL_2008                                               ; VHDL_1993     ; --          ; --             ;
 ; VHDL_SHOW_LMF_MAPPING_MESSAGES       ; Off                                                     ; --            ; --          ; --             ;
 +--------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
@@ -109,12 +109,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4653 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 4873 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4562 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4509 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4657 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 4880 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4561 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4547 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4509 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:14                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

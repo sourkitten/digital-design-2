@@ -14,7 +14,7 @@ ARCHITECTURE Sorter_tb_arch OF Sorter_tb IS
   COMPONENT Sorter
     PORT ( 
       CLK, Reset, Launch : in STD_LOGIC;
-		Complete : out STD_LOGIC;
+		Complet	: out STD_LOGIC;
 		START		: in	std_logic_vector (7 downto	0);
 		FINISH	: in	std_logic_vector (7 downto	0);
       Data		: out STD_LOGIC_VECTOR (7 downto 0)  ); 
@@ -25,7 +25,7 @@ BEGIN
       CLK		=> CLK		,
       Reset		=> Reset		,
       Launch	=> Launch	,
-      Complete => Complete ,
+      Complet	=> Complete ,
 		START		=> A			,
 		FINISH	=> B			,
       Data		=> Data); 

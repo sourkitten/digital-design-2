@@ -1,7 +1,9 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Question1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Sorterbdf|BUSMUX:inst4|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Sorterbdf|NewLCD:inst3|lpm_rom0:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7f71.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Sorterbdf|Sorter:inst|RAM265x8:RAM|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_rtc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Sorterbdf|RAM265x8:inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_rtc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Sorterbdf|lpm_counter0:inst1|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_lni.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

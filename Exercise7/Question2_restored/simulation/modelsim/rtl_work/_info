@@ -1,0 +1,231 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise7\Question2_restored\simulation\modelsim
+Ebubblesort
+Z1 w1652623964
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dC:\Users\v4ngbz\Documents\Quartus\DD2\Exercise7\Question2_restored\simulation\modelsim
+Z8 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/BubbleSort.vhd
+Z9 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/BubbleSort.vhd
+l0
+L6
+V>VR:@9e>3iLZIA0hmF<nm0
+Z10 OV;C;10.1d;51
+33
+Z11 !s108 1653038181.460000
+Z12 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/BubbleSort.vhd|
+Z13 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/BubbleSort.vhd|
+Z14 o-2008 -work work -O0
+Z15 tExplicit 1
+!s100 IK8WYO9k2^l@hc=cW88j?2
+!i10b 1
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 bubblesort 0 22 >VR:@9e>3iLZIA0hmF<nm0
+l41
+L17
+V]`92SAegGHOM87OI[SIN_0
+R10
+33
+R11
+R12
+R13
+R14
+R15
+!s100 XhI`Od83VhGW[cH`d;@PF0
+!i10b 1
+Elcd_display
+Z16 w1383308658
+R3
+R2
+R5
+R6
+R7
+Z17 8c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd
+Z18 Fc:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd
+l0
+L6
+VJ@lbj_A_WlF`]7o=N>?9V0
+R10
+33
+Z19 !s108 1653038181.836000
+Z20 !s90 -reportprogress|300|-2008|-work|work|c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd|
+Z21 !s107 c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lcd_display.vhd|
+R14
+R15
+!s100 3YAFj8Ee>VNe=Ee[WLWzl2
+!i10b 1
+Aa
+R3
+R2
+R5
+R6
+DEx4 work 11 lcd_display 0 22 J@lbj_A_WlF`]7o=N>?9V0
+l102
+L87
+V6;nXLZdJE7m[OoJMn]7gJ1
+R10
+33
+R19
+R20
+R21
+R14
+R15
+!s100 CI2BD=1Q7PFf40lSb=J[A3
+!i10b 1
+Elpm_rom0
+Z22 w1860695828
+R5
+R6
+R7
+Z23 8c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd
+Z24 Fc:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd
+l0
+L42
+VVIDm`C?k2mZiEXLa8J]@[1
+R10
+33
+Z25 !s108 1653038181.976000
+Z26 !s90 -reportprogress|300|-2008|-work|work|c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd|
+Z27 !s107 c:/users/v4ngbz/documents/quartus/libraries/corelibrary/lpm_rom0.vhd|
+R14
+R15
+!s100 0[6IJ5C4?YX:L_=2dhXOl0
+!i10b 1
+Asyn
+R5
+R6
+DEx4 work 8 lpm_rom0 0 22 VIDm`C?k2mZiEXLa8J]@[1
+l81
+L52
+V8RI;;6J3ShWE]@6AXLF_g0
+R10
+33
+R25
+R26
+R27
+R14
+R15
+!s100 BZ8ZB>1kYB2:5=lAObf2=2
+!i10b 1
+Eram265x8
+Z28 w1652623253
+R5
+R6
+R7
+Z29 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/RAM265x8.vhd
+Z30 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/RAM265x8.vhd
+l0
+L42
+V7mVEg[bGo^I4^F5_B3alN3
+R10
+33
+Z31 !s108 1653038181.742000
+Z32 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/RAM265x8.vhd|
+Z33 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/RAM265x8.vhd|
+R14
+R15
+!s100 ]g9aF`o73RH]`L^MNGIEC2
+!i10b 1
+Asyn
+R5
+R6
+DEx4 work 8 ram265x8 0 22 7mVEg[bGo^I4^F5_B3alN3
+l86
+L54
+V_KE^azBdh?6ZU9K@:`MoA0
+R10
+33
+R31
+R32
+R33
+R14
+R15
+!s100 =NQ;]4<YYCXfjOk?V<z9E0
+!i10b 1
+Esorter
+Z34 w1652624083
+R5
+R6
+R7
+Z35 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/Sorter.vhd
+Z36 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/Sorter.vhd
+l0
+L4
+VUC1e^F=C5]dK?mMZ:e25:3
+R10
+33
+Z37 !s108 1653038181.648000
+Z38 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/Sorter.vhd|
+Z39 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/Sorter.vhd|
+R14
+R15
+!s100 HNXW5EM<J_1TajiC][feD2
+!i10b 1
+Artl
+R5
+R6
+DEx4 work 6 sorter 0 22 UC1e^F=C5]dK?mMZ:e25:3
+l52
+L19
+Ve8`kHz09SmPkL@b9TN;QE3
+R10
+33
+R37
+R38
+R39
+R14
+R15
+!s100 bFkL>3nSX=G=;hEhnCKa91
+!i10b 1
+Esorter_tb
+Z40 w1652624971
+R3
+R4
+R2
+R5
+R6
+R7
+Z41 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/simulation/modelsim/Sorter_tb.vhd
+Z42 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/simulation/modelsim/Sorter_tb.vhd
+l0
+L8
+VAc6iS^B<7>m1mz>JBEkeX3
+!s100 M5:7X5[5iDe3bAjV6Pg[d1
+R10
+33
+!i10b 1
+Z43 !s108 1653038182.070000
+Z44 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/simulation/modelsim/Sorter_tb.vhd|
+Z45 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise7/Question2_restored/simulation/modelsim/Sorter_tb.vhd|
+R14
+R15
+Asorter_tb_arch
+R3
+R4
+R2
+R5
+R6
+DEx4 work 9 sorter_tb 0 22 Ac6iS^B<7>m1mz>JBEkeX3
+l22
+L11
+V@FoHh0b:OfWR]TW[^j4Z=2
+!s100 >TOja<Y]cCH4Z^H9I?BGW2
+R10
+33
+!i10b 1
+R43
+R44
+R45
+R14
+R15
