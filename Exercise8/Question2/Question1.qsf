@@ -59,9 +59,9 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME DUT -section_id VMS_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME VMS_tb -section_id VMS_tb
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
 set_global_assignment -name SEARCH_PATH "c:\\users\\v4ngbz\\documents\\quartus\\libraries\\corelibrary"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/VMS_tb.vhd -section_id VMS_tb
+set_global_assignment -name SEARCH_PATH simulation/modelsim/ -tag from_archive
+set_global_assignment -name SDC_FILE Question1_5.37ns.out.sdc
 set_global_assignment -name VHDL_FILE Vector_multiplier_sum_code.vhd
 set_global_assignment -name QIP_FILE RAM256x4.qip
 set_global_assignment -name VHDL_FILE Reg.vhd
@@ -72,7 +72,26 @@ set_global_assignment -name VHDL_FILE Adder.vhd
 set_global_assignment -name VHDL_FILE MainControlUnit.vhd
 set_global_assignment -name BDF_FILE Vector_multiplier_sum.bdf
 set_global_assignment -name MIF_FILE RAM256x4.mif
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/VMS_tb.vhd -section_id VMS_tb
 set_global_assignment -name HEX_FILE Rom.hex
-set_global_assignment -name SEARCH_PATH simulation/modelsim/ -tag from_archive
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_H3 -to DBUS[7]
+set_location_assignment PIN_H4 -to DBUS[6]
+set_location_assignment PIN_J3 -to DBUS[5]
+set_location_assignment PIN_J4 -to DBUS[4]
+set_location_assignment PIN_H2 -to DBUS[3]
+set_location_assignment PIN_H1 -to DBUS[2]
+set_location_assignment PIN_J2 -to DBUS[1]
+set_location_assignment PIN_J1 -to DBUS[0]
+set_location_assignment PIN_N2 -to CLK50
+set_location_assignment PIN_G26 -to Launch
+set_location_assignment PIN_K2 -to LCD_BLONOFF
+set_location_assignment PIN_K3 -to LCD_E
+set_location_assignment PIN_L4 -to LCD_ONOFF
+set_location_assignment PIN_K1 -to LCD_RS
+set_location_assignment PIN_K4 -to LCD_RW
+set_location_assignment PIN_V2 -to rst
+set_location_assignment PIN_AE22 -to FF
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

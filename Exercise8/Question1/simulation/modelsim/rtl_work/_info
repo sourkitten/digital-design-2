@@ -17,7 +17,7 @@ L6
 VHl2Pja=TalM@;QGPjWeZ_3
 Z9 OV;C;10.1d;51
 33
-Z10 !s108 1653057075.059000
+Z10 !s108 1653127195.506000
 Z11 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Adder.vhd|
 Z12 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Adder.vhd|
 Z13 o-2008 -work work -O0
@@ -57,7 +57,7 @@ L8
 V?a8^YXefB8DUU]decPV?i2
 R9
 33
-Z19 !s108 1653057075.409000
+Z19 !s108 1653127195.742000
 Z20 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/CtrlLogic.vhd|
 Z21 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/CtrlLogic.vhd|
 R13
@@ -99,7 +99,7 @@ R13
 R14
 !s100 :;F=QcW8OWA_=7QJ[NGe^0
 !i10b 1
-!s108 1653057074.909000
+!s108 1653127195.407000
 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Declare.vhd|
 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Declare.vhd|
 Emaincontrolunit
@@ -116,7 +116,7 @@ L6
 Ve>IP8N:FUciYz=2PgKUfc1
 R9
 33
-Z25 !s108 1653057075.221000
+Z25 !s108 1653127195.626000
 Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/MainControlUnit.vhd|
 Z27 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/MainControlUnit.vhd|
 R13
@@ -153,7 +153,7 @@ L4
 VdB]`Fm:OfHS`SKUADl0Uk1
 R9
 33
-Z31 !s108 1653057074.746000
+Z31 !s108 1653127195.293000
 Z32 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Multiplier.vhd|
 Z33 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Multiplier.vhd|
 R13
@@ -188,7 +188,7 @@ L42
 V1djU3EY7lWQm?H:1lfhVg0
 R9
 33
-Z37 !s108 1653057074.435000
+Z37 !s108 1653127195.059000
 Z38 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/RAM256x4.vhd|
 Z39 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/RAM256x4.vhd|
 R13
@@ -223,7 +223,7 @@ L4
 VGX`W>=_J3PibjAcf^JBU73
 R9
 33
-Z43 !s108 1653057074.598000
+Z43 !s108 1653127195.167000
 Z44 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Reg.vhd|
 Z45 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Reg.vhd|
 R13
@@ -258,7 +258,7 @@ L24
 VA<WaDcNZdh41g`T^b8:<T0
 R9
 33
-Z49 !s108 1653057074.247000
+Z49 !s108 1653127194.928000
 Z50 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Vector_multiplier_sum_code.vhd|
 Z51 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/Vector_multiplier_sum_code.vhd|
 R13
@@ -282,7 +282,7 @@ R14
 !s100 kV;YDYRUMARL:FJ15m<8H2
 !i10b 1
 Evms_tb
-Z52 w1653046172
+Z52 w1653126565
 R3
 Z53 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
 R2
@@ -298,7 +298,7 @@ VFb[Pj<k=_ZZQNXk:`TXzJ3
 R9
 33
 !i10b 1
-Z56 !s108 1653057075.569000
+Z56 !s108 1653127195.852000
 Z57 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/simulation/modelsim/VMS_tb.vhd|
 Z58 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question1/simulation/modelsim/VMS_tb.vhd|
 R13
@@ -312,8 +312,8 @@ R5
 DEx4 work 6 vms_tb 0 22 Fb[Pj<k=_ZZQNXk:`TXzJ3
 l20
 L11
-VZc_PJnF8?Y4AgKQ9GkVc`1
-!s100 Tn>o62db_mmAFlo0L2PO23
+VY6dXGJ;IbB>R<l`BWe=bH2
+!s100 S1SbMY;IY=S=8fVD:PXo23
 R9
 33
 !i10b 1

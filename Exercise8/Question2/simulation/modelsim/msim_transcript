@@ -116,12 +116,12 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 10 ns  Iteration: 1  Instance: /vms_tb/DUT/b2v_inst4/U_Ctl
+#    Time: 3 ns  Iteration: 1  Instance: /vms_tb/DUT/b2v_inst4/U_Ctl
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 30 ns  Iteration: 1  Instance: /vms_tb/DUT/b2v_inst4/U_Ctl
+#    Time: 9 ns  Iteration: 1  Instance: /vms_tb/DUT/b2v_inst4/U_Ctl
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 30 ns  Iteration: 3  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
+#    Time: 9 ns  Iteration: 3  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 30 ns  Iteration: 3  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
+#    Time: 9 ns  Iteration: 3  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 30 ns  Iteration: 4  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
+#    Time: 9 ns  Iteration: 4  Instance: /vms_tb/DUT/b2v_inst4/U_Ad

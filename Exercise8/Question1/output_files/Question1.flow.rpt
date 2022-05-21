@@ -1,5 +1,5 @@
 Flow report for Question1
-Fri May 20 15:10:51 2022
+Sat May 21 14:35:59 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,14 +40,14 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri May 20 15:10:51 2022           ;
+; Flow Status                        ; Successful - Sat May 21 14:35:59 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Question1                                       ;
 ; Top-level Entity Name              ; Vector_multiplier_sum_code                      ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 89 / 33,216 ( < 1 % )                           ;
+; Total logic elements               ; 88 / 33,216 ( < 1 % )                           ;
 ;     Total combinational functions  ; 76 / 33,216 ( < 1 % )                           ;
 ;     Dedicated logic registers      ; 71 / 33,216 ( < 1 % )                           ;
 ; Total registers                    ; 71                                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/20/2022 15:10:38 ;
+; Start date & time ; 05/21/2022 14:35:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Question1           ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------------------------+---------------+----------------------------+----------------+
 ; Assignment Name                      ; Value                                                   ; Default Value ; Entity Name                ; Section Id     ;
 +--------------------------------------+---------------------------------------------------------+---------------+----------------------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 255543656200010.165304863713004                         ; --            ; --                         ; --             ;
+; COMPILER_SIGNATURE_ID                ; 255543656200010.165313294110496                         ; --            ; --                         ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; DUT                                                     ; --            ; --                         ; VMS_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; VMS_tb                                                  ; --            ; --                         ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                                    ; --            ; --                         ; eda_simulation ;
@@ -105,12 +105,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4653 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 4873 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4566 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4654 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 4880 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4570 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4509 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:11                           ;
+; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:12                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

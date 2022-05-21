@@ -1,7 +1,7 @@
 Quartus II Archive log --	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/Question2.qarlog
 
 Archive:	C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/Question2.qar
-Date:		Fri May 20 18:33:47 2022
+Date:		Sat May 21 14:35:21 2022
 Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 
 	=========== Files Selected: ===========
@@ -12,6 +12,8 @@ C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Multiplier.vhd
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Question1.qpf
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Question1.qsf
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Question1_2ns.out.sdc
+C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Question1_5.37ns.out.sdc
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.cmp
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.mif
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.qip
@@ -23,7 +25,7 @@ C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Vector_multiplier_sum_
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/assignment_defaults.qdf
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/incremental_db/compiled_partitions/Question1.db_info
 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/VMS_tb.vhd
-	======= Total: 18 files to archive =======
+	======= Total: 20 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.

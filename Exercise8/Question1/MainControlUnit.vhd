@@ -32,20 +32,10 @@ architecture RTL of MainControlUnit is
 	signal state	 	: states := LD_A;
 	signal S_A, S_B 	: std_logic_vector(n-1 downto 0);
 	signal count_addr : std_logic_vector(addr-1 downto 0);
-	signal count		: std_logic_vector(4 downto 0); -- counter that waits for the multiplier to finish
+	-- counter that waits for the multiplier to finish
+	signal count		: std_logic_vector(4 downto 0);
 
 begin
-
---CNT: process(rst, clk)
---	begin
---		if rst = '1' then
---			count <= "00000";
---		elsif (CLK'event and CLK='1') then
---			if state = Multiply then count <= count+'1';
---			else count <= "00000";
---			end if;
---		end if;
---end process;
 
 -- Main Loop. Runs in 13 cycles per loop for a total of rom/2 loops.
 Main: process(rst, clk)

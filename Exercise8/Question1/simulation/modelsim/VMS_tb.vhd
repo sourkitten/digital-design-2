@@ -33,7 +33,7 @@ BEGIN
 	Begin
 	 rst  <= '1' ;
 	 LAUNCH <= '1';
-	wait for 12 ns ;
+	wait for 3 ns ;
 	 rst  <= '0' ;
 	wait;
  End Process;
@@ -43,16 +43,16 @@ BEGIN
   Process
 	Begin
 	 clk  <= '0'   ;
-	wait for 10 ns ;
+	wait for 2.5 ns ;
 	loop
 	    clk  <= '1'   ;
-	   wait for 10 ns ;
+	   wait for 2.5 ns ;
 	    clk  <= '0'   ;
-	   wait for 10 ns ;
+	   wait for 2.5 ns ;
 		exit when (FF'last_value = '0' and FF = '1');
 	end  loop;
 	 clk  <= '1'   ;
-	wait for 10 ns ;
+	wait for 2.5 ns ;
 	wait;
  End Process;
  
