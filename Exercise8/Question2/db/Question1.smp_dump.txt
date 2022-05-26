@@ -1,17 +1,9 @@
 
-State Machine - |Vector_multiplier_sum_code|Multiplier:b2v_inst4|CtrlLogic:U_Ctl|state
-Name state.FINISH state.SHIFT state.ADD state.LOAD 
-state.LOAD 0 0 0 0 
-state.ADD 0 0 1 1 
-state.SHIFT 0 1 0 1 
-state.FINISH 1 0 0 1 
-
 State Machine - |Vector_multiplier_sum_code|MainControlUnit:b2v_inst|state
-Name state.FINISH state.ADD state.MULTIPLY state.LD_B state.LAUNCH state.WAITING state.LD_A 
-state.LD_A 0 0 0 0 0 0 0 
-state.WAITING 0 0 0 0 0 1 1 
-state.LAUNCH 0 0 0 0 1 0 1 
-state.LD_B 0 0 0 1 0 0 1 
-state.MULTIPLY 0 0 1 0 0 0 1 
-state.ADD 0 1 0 0 0 0 1 
-state.FINISH 1 0 0 0 0 0 1 
+Name state.FINISH state.ADD state.LD_B state.LAUNCH state.WAITING state.LD_A 
+state.LD_A 0 0 0 0 0 0 
+state.WAITING 0 0 0 0 1 1 
+state.LAUNCH 0 0 0 1 0 1 
+state.LD_B 0 0 1 0 0 1 
+state.ADD 0 1 0 0 0 1 
+state.FINISH 1 0 0 0 0 1 

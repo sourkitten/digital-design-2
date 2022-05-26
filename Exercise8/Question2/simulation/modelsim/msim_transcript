@@ -17,6 +17,15 @@
 # -- Loading package std_logic_1164
 # -- Compiling entity Vector_multiplier_sum_code
 # -- Compiling architecture bdf_type of Vector_multiplier_sum_code
+# vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity MainControlUnit
+# -- Compiling architecture RTL of MainControlUnit
 # vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -38,12 +47,6 @@
 # -- Loading package std_logic_1164
 # -- Compiling entity Multiplier
 # -- Compiling architecture RTL of Multiplier
-# vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Declare.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package Declarations
 # vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Adder.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -53,25 +56,6 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity Adder
 # -- Compiling architecture DataFlow of Adder
-# vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity MainControlUnit
-# -- Compiling architecture RTL of MainControlUnit
-# vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/CtrlLogic.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package Declarations
-# -- Compiling entity CtrlLogic
-# -- Compiling architecture DataFlow of CtrlLogic
 # 
 # vcom -2008 -work work {C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/VMS_tb.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -95,11 +79,9 @@
 # Loading work.vms_tb(vms_tb_arch)
 # Loading work.vector_multiplier_sum_code(bdf_type)
 # Loading work.maincontrolunit(rtl)
+# Loading work.adder(dataflow)
 # Loading work.reg(rtl)
 # Loading work.multiplier(rtl)
-# Loading work.adder(dataflow)
-# Loading work.declarations
-# Loading work.ctrllogic(dataflow)
 # Loading work.ram256x4(syn)
 # Loading altera_mf.altera_common_conversion(body)
 # Loading altera_mf.altera_device_families(body)
@@ -112,16 +94,16 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
+#    Time: 0 ps  Iteration: 0  Instance: /vms_tb/DUT/b2v_inst1
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
+#    Time: 0 ps  Iteration: 0  Instance: /vms_tb/DUT/b2v_inst1
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3 ns  Iteration: 1  Instance: /vms_tb/DUT/b2v_inst4/U_Ctl
+#    Time: 0 ps  Iteration: 1  Instance: /vms_tb/DUT/b2v_inst1
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 1  Instance: /vms_tb/DUT/b2v_inst4/U_Ctl
+#    Time: 0 ps  Iteration: 1  Instance: /vms_tb/DUT/b2v_inst1
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 3  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
+#    Time: 0 ps  Iteration: 3  Instance: /vms_tb/DUT/b2v_inst1
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 3  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
+#    Time: 21105 ps  Iteration: 4  Instance: /vms_tb/DUT/b2v_inst1
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 4  Instance: /vms_tb/DUT/b2v_inst4/U_Ad
+#    Time: 21105 ps  Iteration: 5  Instance: /vms_tb/DUT/b2v_inst1

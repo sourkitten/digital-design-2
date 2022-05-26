@@ -43,16 +43,16 @@ BEGIN
   Process
 	Begin
 	 clk  <= '0'   ;
-	wait for 3 ns ;
+	wait for 3.015 ns ;
 	loop
 	    clk  <= '1'   ;
-	   wait for 3 ns ;
+	   wait for 3.015 ns ;
 	    clk  <= '0'   ;
-	   wait for 3 ns ;
+	   wait for 3.015 ns ;
 		exit when (FF'last_value = '0' and FF = '1');
 	end  loop;
 	 clk  <= '1'   ;
-	wait for 3 ns ;
+	wait for 3.015 ns ;
 	wait;
  End Process;
  

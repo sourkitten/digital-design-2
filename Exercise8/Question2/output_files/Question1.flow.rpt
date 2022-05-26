@@ -1,5 +1,5 @@
 Flow report for Question1
-Sat May 21 13:38:40 2022
+Thu May 26 19:27:57 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sat May 21 13:38:40 2022           ;
+; Flow Status                        ; Successful - Thu May 26 19:27:57 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Question1                                       ;
 ; Top-level Entity Name              ; Vector_multiplier_sum_code                      ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 104 / 33,216 ( < 1 % )                          ;
-;     Total combinational functions  ; 92 / 33,216 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 71 / 33,216 ( < 1 % )                           ;
-; Total registers                    ; 71                                              ;
+; Total logic elements               ; 63 / 33,216 ( < 1 % )                           ;
+;     Total combinational functions  ; 62 / 33,216 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 38 / 33,216 ( < 1 % )                           ;
+; Total registers                    ; 38                                              ;
 ; Total pins                         ; 21 / 475 ( 4 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 1,024 / 483,840 ( < 1 % )                       ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/21/2022 13:38:25 ;
+; Start date & time ; 05/26/2022 19:27:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Question1           ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------------------------+---------------+----------------------------+----------------+
 ; Assignment Name                      ; Value                                                   ; Default Value ; Entity Name                ; Section Id     ;
 +--------------------------------------+---------------------------------------------------------+---------------+----------------------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 255543656200010.165312950504484                         ; --            ; --                         ; --             ;
+; COMPILER_SIGNATURE_ID                ; 255543656200010.165358246046820                         ; --            ; --                         ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; DUT                                                     ; --            ; --                         ; VMS_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; VMS_tb                                                  ; --            ; --                         ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                                    ; --            ; --                         ; eda_simulation ;
@@ -92,6 +92,8 @@ applicable agreement for further details.
 ; PARTITION_COLOR                      ; 16764057                                                ; --            ; Vector_multiplier_sum_code ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                   ; --            ; Vector_multiplier_sum_code ; Top            ;
 ; PARTITION_NETLIST_TYPE               ; SOURCE                                                  ; --            ; Vector_multiplier_sum_code ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                     ; --            ; --                         ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                   ; --            ; --                         ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                                            ; --            ; --                         ; --             ;
 ; SEARCH_PATH                          ; c:\users\v4ngbz\documents\quartus\libraries\corelibrary ; --            ; --                         ; --             ;
 ; SEARCH_PATH                          ; simulation/modelsim/                                    ; --            ; --                         ; --             ;
@@ -107,11 +109,11 @@ applicable agreement for further details.
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4653 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:06     ; 1.0                     ; 4884 MB             ; 00:00:06                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4561 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4509 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:12                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 4874 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4562 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4509 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:13                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

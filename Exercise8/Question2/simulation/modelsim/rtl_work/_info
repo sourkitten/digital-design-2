@@ -17,7 +17,7 @@ L6
 VHl2Pja=TalM@;QGPjWeZ_3
 Z9 OV;C;10.1d;51
 33
-Z10 !s108 1653129536.860000
+Z10 !s108 1653582613.015000
 Z11 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Adder.vhd|
 Z12 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Adder.vhd|
 Z13 o-2008 -work work -O0
@@ -42,155 +42,95 @@ R13
 R14
 !s100 5ZK2>TiYDBoTR[l8WhA0N2
 !i10b 1
-Ectrllogic
-Z15 w1652602840
-Z16 DPx4 work 12 declarations 0 22 2:C8ki0d@:@hbAm:4G<k12
-R2
-R3
-R4
-R5
-R6
-Z17 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/CtrlLogic.vhd
-Z18 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/CtrlLogic.vhd
-l0
-L8
-V?a8^YXefB8DUU]decPV?i2
-R9
-33
-Z19 !s108 1653129537.053000
-Z20 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/CtrlLogic.vhd|
-Z21 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/CtrlLogic.vhd|
-R13
-R14
-!s100 =HiF;Oe_JWSA^>JD^<Fj31
-!i10b 1
-Adataflow
-R16
-R2
-R3
-R4
-R5
-DEx4 work 9 ctrllogic 0 22 ?a8^YXefB8DUU]decPV?i2
-l23
-L15
-V2A?Cfl2j`5:chUzeNdhkN2
-R9
-33
-R19
-R20
-R21
-R13
-R14
-!s100 @4CTjYWfHN`N@@I[XHlOR2
-!i10b 1
-Pdeclarations
-R4
-R5
-w1652009659
-R6
-8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Declare.vhd
-FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Declare.vhd
-l0
-L4
-V2:C8ki0d@:@hbAm:4G<k12
-R9
-33
-R13
-R14
-!s100 :;F=QcW8OWA_=7QJ[NGe^0
-!i10b 1
-!s108 1653129536.779000
-!s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Declare.vhd|
-!s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Declare.vhd|
 Emaincontrolunit
-Z22 w1653045269
+Z15 w1653580098
 R3
 R2
 R4
 R5
 R6
-Z23 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd
-Z24 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd
+Z16 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd
+Z17 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd
 l0
 L6
-Ve>IP8N:FUciYz=2PgKUfc1
+V::A95fZ63<`@U3U3H0A0a1
 R9
 33
-Z25 !s108 1653129536.955000
-Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd|
-Z27 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd|
+Z18 !s108 1653582612.589000
+Z19 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd|
+Z20 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/MainControlUnit.vhd|
 R13
 R14
-!s100 7oYfe`Dm@J0X=iIm[M]Dk1
+!s100 S99zY85X4BXdd21XDoz?N3
 !i10b 1
 Artl
 R3
 R2
 R4
 R5
-DEx4 work 15 maincontrolunit 0 22 e>IP8N:FUciYz=2PgKUfc1
-l37
+DEx4 work 15 maincontrolunit 0 22 ::A95fZ63<`@U3U3H0A0a1
+l36
 L29
-VPW20:;eWN^AQcA]QSE@P00
+V9Ko>;7B8zgRPD2N^MWzB]2
 R9
 33
-R25
-R26
-R27
+R18
+R19
+R20
 R13
 R14
-!s100 0@edhMI49TaW=aoiKzZB^3
+!s100 mOM[jW^RO01UmgVR1Lk^k2
 !i10b 1
 Emultiplier
-Z28 w1652951875
+Z21 w1653581519
 R4
 R5
 R6
-Z29 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Multiplier.vhd
-Z30 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Multiplier.vhd
+Z22 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Multiplier.vhd
+Z23 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Multiplier.vhd
 l0
 L4
-VdB]`Fm:OfHS`SKUADl0Uk1
+VO3=Y8X37CQ3@b;17ZNV<^2
 R9
 33
-Z31 !s108 1653129536.684000
-Z32 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Multiplier.vhd|
-Z33 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Multiplier.vhd|
+Z24 !s108 1653582612.906000
+Z25 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Multiplier.vhd|
+Z26 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Multiplier.vhd|
 R13
 R14
-!s100 =WHkFHoI<JP41mYTTd^j?0
+!s100 OYJ;A4ePUAP[AO8mQYT;h0
 !i10b 1
 Artl
 R4
 R5
-DEx4 work 10 multiplier 0 22 dB]`Fm:OfHS`SKUADl0Uk1
-l41
-L13
-V@;2TH>=9j<:2JNGTjHSQ83
+DEx4 work 10 multiplier 0 22 O3=Y8X37CQ3@b;17ZNV<^2
+l14
+L11
+Ve@FcX[14SazI1?3Vc5Jmn0
 R9
 33
-R31
-R32
-R33
+R24
+R25
+R26
 R13
 R14
-!s100 T4Djk_RDUHX51`]1fMe=61
+!s100 mDLO6LkDH@1S_KG=EhNG?3
 !i10b 1
 Eram256x4
-Z34 w1652951705
+Z27 w1652951705
 R4
 R5
 R6
-Z35 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.vhd
-Z36 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.vhd
+Z28 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.vhd
+Z29 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.vhd
 l0
 L42
 V1djU3EY7lWQm?H:1lfhVg0
 R9
 33
-Z37 !s108 1653129536.502000
-Z38 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.vhd|
-Z39 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.vhd|
+Z30 !s108 1653582612.698000
+Z31 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.vhd|
+Z32 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/RAM256x4.vhd|
 R13
 R14
 !s100 X:E=M0bm?oa8L9J79FBHm1
@@ -204,28 +144,28 @@ L54
 V9gJiA2E1WlgH0EBKZ^5DP2
 R9
 33
-R37
-R38
-R39
+R30
+R31
+R32
 R13
 R14
 !s100 RBeFVO18KL=PF?aW0^Oo=3
 !i10b 1
 Ereg
-Z40 w1651167578
+Z33 w1651167578
 R4
 R5
 R6
-Z41 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Reg.vhd
-Z42 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Reg.vhd
+Z34 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Reg.vhd
+Z35 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Reg.vhd
 l0
 L4
 VGX`W>=_J3PibjAcf^JBU73
 R9
 33
-Z43 !s108 1653129536.595000
-Z44 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Reg.vhd|
-Z45 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Reg.vhd|
+Z36 !s108 1653582612.806000
+Z37 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Reg.vhd|
+Z38 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Reg.vhd|
 R13
 R14
 !s100 1VVRdIKCQIAD8cnQ20fSn3
@@ -239,28 +179,28 @@ L13
 V8V9FbgVi8k0fU1:?lec3^1
 R9
 33
-R43
-R44
-R45
+R36
+R37
+R38
 R13
 R14
 !s100 hQcQ[Kn85^Yz]za0;RmHT2
 !i10b 1
 Evector_multiplier_sum_code
-Z46 w1653060597
+Z39 w1653579010
 R4
 R5
 R6
-Z47 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Vector_multiplier_sum_code.vhd
-Z48 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Vector_multiplier_sum_code.vhd
+Z40 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Vector_multiplier_sum_code.vhd
+Z41 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Vector_multiplier_sum_code.vhd
 l0
 L24
 VA<WaDcNZdh41g`T^b8:<T0
 R9
 33
-Z49 !s108 1653129536.386000
-Z50 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Vector_multiplier_sum_code.vhd|
-Z51 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Vector_multiplier_sum_code.vhd|
+Z42 !s108 1653582612.471000
+Z43 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Vector_multiplier_sum_code.vhd|
+Z44 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Vector_multiplier_sum_code.vhd|
 R13
 R14
 !s100 O=;3he<6OD50f4M]@F?X11
@@ -269,28 +209,28 @@ Abdf_type
 R4
 R5
 DEx4 work 26 vector_multiplier_sum_code 0 22 A<WaDcNZdh41g`T^b8:<T0
-l120
+l108
 L36
-VN^kTzWm7cBzlDhgFICVl=0
+Vj=RClj<gXW>g7hdO>Ra662
 R9
 33
-R49
-R50
-R51
+R42
+R43
+R44
 R13
 R14
-!s100 IMoSzho]_R<KO2dO]LO>]3
+!s100 VUUETOK>58RJO5GXN]]9@1
 !i10b 1
 Evms_tb
-Z52 w1653125800
+Z45 w1653581767
 R3
-Z53 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+Z46 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
 R2
 R4
 R5
 R6
-Z54 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/VMS_tb.vhd
-Z55 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/VMS_tb.vhd
+Z47 8C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/VMS_tb.vhd
+Z48 FC:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/VMS_tb.vhd
 l0
 L8
 VFb[Pj<k=_ZZQNXk:`TXzJ3
@@ -298,27 +238,27 @@ VFb[Pj<k=_ZZQNXk:`TXzJ3
 R9
 33
 !i10b 1
-Z56 !s108 1653129537.717000
-Z57 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/VMS_tb.vhd|
-Z58 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/VMS_tb.vhd|
+Z49 !s108 1653582613.121000
+Z50 !s90 -reportprogress|300|-2008|-work|work|C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/VMS_tb.vhd|
+Z51 !s107 C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/VMS_tb.vhd|
 R13
 R14
 Avms_tb_arch
 R3
-R53
+R46
 R2
 R4
 R5
 DEx4 work 6 vms_tb 0 22 Fb[Pj<k=_ZZQNXk:`TXzJ3
 l20
 L11
-V_PD[gm52F9YZFZQ3GWI0^3
-!s100 YZQiz1ME>2E7jDhUCW5W83
+V>eMRhkJCf:a4]e7f0>R[T0
+!s100 LWB@<a@4faIRgeIdU>j8E1
 R9
 33
 !i10b 1
-R56
-R57
-R58
+R49
+R50
+R51
 R13
 R14

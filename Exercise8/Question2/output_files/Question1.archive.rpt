@@ -1,5 +1,5 @@
 Archive Project report for Question1
-Sat May 21 14:35:21 2022
+Thu May 26 19:51:45 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -35,7 +35,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Sat May 21 14:35:21 2022 ;
+; Archive Project Status ; Successful - Thu May 26 19:51:45 2022 ;
 ; Revision Name          ; Question1                             ;
 ; Top-level Entity Name  ; Vector_multiplier_sum_code            ;
 ; Family                 ; Cyclone II                            ;
@@ -50,16 +50,16 @@ Info: File Set 'Source control' contains:
     Info: Automatically detected source files
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/simulation/modelsim/Question2.qar'
+Info: Generated archive 'C:/Users/v4ngbz/Documents/Quartus/DD2/Exercise8/Question2/Question2.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'Question1.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/altera/13.0sp1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4451 megabytes
-    Info: Processing ended: Sat May 21 14:35:21 2022
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Thu May 26 19:51:45 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +------------------------------------------------------+
@@ -69,7 +69,6 @@ Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
 +------------------------------------------------------+
 ; Adder.vhd                                            ;
 ; assignment_defaults.qdf                              ;
-; CtrlLogic.vhd                                        ;
 ; Declare.vhd                                          ;
 ; incremental_db/compiled_partitions/Question1.db_info ;
 ; MainControlUnit.vhd                                  ;
@@ -78,6 +77,7 @@ Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
 ; Question1.qsf                                        ;
 ; Question1_2ns.out.sdc                                ;
 ; Question1_5.37ns.out.sdc                             ;
+; Question1_6ns.out.sdc                                ;
 ; RAM256x4.cmp                                         ;
 ; RAM256x4.mif                                         ;
 ; RAM256x4.qip                                         ;
